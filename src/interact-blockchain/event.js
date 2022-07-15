@@ -32,8 +32,8 @@ async function saveNewEventToFile(contract, eventName, eventFieldNames, options,
 
 async function listenNewEventToSave(blockNumber, contract, eventName, eventFieldNames, options, filePath) {
     console.log("Proceesing to block: ", blockNumber)
-    options.fromBlock = 27182997
-    options.toBlock = 27182997
+    options.fromBlock = blockNumber
+    options.toBlock = blockNumber
     const newEvent = await getDataEvent(contract, options, eventName)
     if (JSON.stringify(newEvent) != "[]") {
         console.log("Found out new transaction in this block " + blockNumber)
