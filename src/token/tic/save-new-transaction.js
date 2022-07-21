@@ -3,9 +3,10 @@ const { web3 } = require("../../../lib/utils")
 const tickToken = require("./token.json")
 const abi = tickToken.abi
 const address = tickToken.address;
+const eviroment_mumbai = process.env.EVIROMENT_MUMBAI;
+const _web3 = web3(eviroment_mumbai)
 //save transaction to file txt
 async function listenNewTransactionToSave(options , filePath){
-    const _web3 = web3()
     if (_web3) {
         let contract = new _web3.eth.Contract(abi, address)
         let eventFieldNames = ['from', 'to', 'value']

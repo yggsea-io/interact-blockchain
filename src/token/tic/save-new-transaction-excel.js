@@ -2,6 +2,9 @@ const { web3 } = require("../../../lib/utils")
 const { getDataEvent } = require("../../interact-blockchain/event")
 const { addTransactions } = require("../../interact-excel/add-transaction")
 const { getData } = require("../../interact-excel/getData")
+require('dotenv').config();
+const eviroment_mumbai = process.env.EVIROMENT_MUMBAI;
+const _web3 = web3(eviroment_mumbai)
 
 const tickToken = require("./token.json")
 const abi = tickToken.abi
@@ -11,7 +14,6 @@ const blockFilterCurrent = blockNumberDeploy;
 
 //Can only get range heigh block is 1000 
 const tranOn1000Block =  async(_fromBlock, _toBlock) =>{
-    const _web3 = web3()
     if (_web3) {
         let contract = new _web3.eth.Contract(abi, address)
         let options = {
@@ -24,7 +26,6 @@ const tranOn1000Block =  async(_fromBlock, _toBlock) =>{
 
 }
 async function getNewTransactions(fileName) {
-    const _web3 = web3()
     var allNewTransaction
     const currentBlock = await _web3.eth.getBlockNumber()
     var _fromBlock = blockFilterCurrent
@@ -53,7 +54,6 @@ async function getNewTransactions(fileName) {
 
 async function updateToBlockFilter() {
     try {
-        const _web3 = web3()
         const currentBlock = await _web3.eth.getBlockNumber()
         if (blockFilterCurrent >= currentBlock) {
             return blockFilterCurrent

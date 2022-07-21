@@ -1,7 +1,9 @@
 var Web3 = require('web3')
 const { web3 } = require('../../lib/utils')
-const { appendDataTofile } = require('../../lib/utils')
+const { AppendDataToFile } = require('../../lib/utils')
 const { waitFor } = require('../../lib/utils')
+require('dotenv').config();
+const eviroment_mumbai = process.env.EVIROMENT_MUMBAI;
 
 let latestKnownBlockNumber = -1;
 let blockTime = 5000;
@@ -17,20 +19,20 @@ const getDataEvent = async (contract, options, eventName) => {
 }
 
 // eventFields must is array string
-async function saveNewEventToFile(contract, eventName, eventFieldNames, options, filePath) {
-    const _web3 = web3()
+async function SaveNewEventToFile(contract, eventName, eventFieldNames, options, filePath) {
+    const _web3 = web3(eviroment_mumbai)
     const currentBlockNumber = await _web3.eth.getBlockNumber()
 
     while (latestKnownBlockNumber == -1 || currentBlockNumber > latestKnownBlockNumber) {
         //liten new block to perform action
-        await listenNewEventToSave(latestKnownBlockNumber == -1 ? currentBlockNumber : latestKnownBlockNumber + 1,
+        await ListenNewEventToSave(latestKnownBlockNumber == -1 ? currentBlockNumber : latestKnownBlockNumber + 1,
             contract, eventName, eventFieldNames, options, filePath);
     }
     await waitFor(3000)
-    setTimeout(saveNewEventToFile, blockTime, contract, eventName, eventFieldNames ,options, filePath);
+    setTimeout(SaveNewEventToFile, blockTime, contract, eventName, eventFieldNames ,options, filePath);
 }
 
-async function listenNewEventToSave(blockNumber, contract, eventName, eventFieldNames, options, filePath) {
+async function ListenNewEventToSave(blockNumber, contract, eventName, eventFieldNames, options, filePath) {
     console.log("Proceesing to block: ", blockNumber)
     options.fromBlock = blockNumber
     options.toBlock = blockNumber
@@ -46,7 +48,7 @@ async function listenNewEventToSave(blockNumber, contract, eventName, eventField
         data += 'transaction hash: ' + newEvent[0].transactionHash + ", "
              + 'block: ' + newEvent[0].blockNumber
         console.log("data", data)
-        appendDataTofile(filePath, data)
+        AppendDataToFile(filePath, data)
     } else{
         console.log("No transaction to save")
     } 
@@ -56,5 +58,5 @@ async function listenNewEventToSave(blockNumber, contract, eventName, eventField
 
 module.exports = {
     getDataEvent,
-    saveNewEventToFile
+    SaveNewEventToFile
 }

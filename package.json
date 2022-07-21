@@ -5,14 +5,16 @@
   "license": "MIT",
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.0",
+    "axios": "^0.27.2",
     "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
     "fs": "^0.0.1-security",
     "web3": "^1.7.4",
     "xlsx": "^0.18.5"
   },
   "scripts": {
     "save-new-transaction-tic": "node src/token/tic/save-new-transaction",
-    "save-new-transaction-excel-tic": "node src/token/tic/save-new-transaction-excel"
-
+    "save-new-transaction-excel-tic": "node src/token/tic/save-new-transaction-excel",
+    "get-unicorns-address-info": "node src/token/unicorn/get-addresses-info"
   }
 }

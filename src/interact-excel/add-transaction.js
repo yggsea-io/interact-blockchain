@@ -1,7 +1,7 @@
 const xlsx = require("xlsx")
 const path = require("path");
 
-function addTransactions(filePath, transactions, workSheetColumnNames, workSheetName) {
+function AddTransactions(filePath, transactions, workSheetColumnNames, workSheetName) {
     console.log("transations", transactions)
     if(typeof(transactions == undefined)){
         return
@@ -26,5 +26,5 @@ function addTransactions(filePath, transactions, workSheetColumnNames, workSheet
     return true
 }
 module.exports = {
-    addTransactions
+    AddTransactions
 }
