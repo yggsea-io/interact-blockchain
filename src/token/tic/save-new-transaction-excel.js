@@ -1,11 +1,9 @@
+const { getDataEvent } = require("../../../lib/ether/event");
+const { setDataToFile } = require("../../../lib/excel/xlxs/add-transaction");
 const { web3 } = require("../../../lib/utils")
-const { getDataEvent } = require("../../interact-blockchain/event")
-const { addTransactions } = require("../../interact-excel/add-transaction")
-const { getData } = require("../../interact-excel/getData")
 require('dotenv').config();
 const eviroment_mumbai = process.env.EVIROMENT_MUMBAI;
 const _web3 = web3(eviroment_mumbai)
-
 const tickToken = require("./token.json")
 const abi = tickToken.abi
 const address = tickToken.address;
@@ -20,10 +18,9 @@ const tranOn1000Block =  async(_fromBlock, _toBlock) =>{
             fromBlock: _fromBlock,
             toBlock: _toBlock
         };
-        const newTransactions = await getDataEvent(contract, options, "Transfer")
+        const newTransactions = await getDataEvent (contract, options, "Transfer")
         return newTransactions
     }
-
 }
 async function getNewTransactions(fileName) {
     var allNewTransaction
@@ -70,8 +67,19 @@ async function updateToBlockFilter() {
 }
 
 async function addNewTransationsExcel(fileName) {
-    const newTransactions = await getNewTransactions()
-    console.log("all new transation", newTransactions)
+    const newTransactions = await getNewTransactions(fileName)
+    if(typeof(newTransactions == undefined)){
+        return
+    }
+    const data = transactions.map(tran => {
+        return [
+            tran.returnValues.from,
+            tran.returnValues.to,
+            tran.returnValues.value,
+            tran.transactionHash,
+            tran.blockNumber
+        ]
+    })
     if (newTransactions == "[]" && newTransactions != 'undefined') {
         console.log("No new transactions")
         return
@@ -84,6 +92,6 @@ async function addNewTransationsExcel(fileName) {
         "Block"
     ]
     const workSheetName = "Transaction of Tic Token"
-    addTransactions(fileName, newTransactions, workSheetColumnNames, workSheetName)
+    setDataToFile(fileName, data, workSheetColumnNames, workSheetName)
 }
 addNewTransationsExcel("transaction_of_tic_token.xlsx")

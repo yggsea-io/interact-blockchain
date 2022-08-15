@@ -1,4 +1,4 @@
-const { saveNewEventToFile } = require("../../interact-blockchain/event")
+const { SaveNewEventToFile } = require("../../../lib/ether/event");
 const { web3 } = require("../../../lib/utils")
 const tickToken = require("./token.json")
 const abi = tickToken.abi
@@ -10,7 +10,7 @@ async function listenNewTransactionToSave(options , filePath){
     if (_web3) {
         let contract = new _web3.eth.Contract(abi, address)
         let eventFieldNames = ['from', 'to', 'value']
-        saveNewEventToFile(contract, 'Transfer', eventFieldNames ,options , filePath)
+        SaveNewEventToFile(contract, 'Transfer', eventFieldNames ,options , filePath)
     }else {
         console.log("Can't connect to web3")
     }
