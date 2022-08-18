@@ -8,19 +8,23 @@
     "@openzeppelin/contracts": "^4.7.0",
     "@solana/web3.js": "^1.53.0",
     "axios": "^0.27.2",
+    "bip39": "^3.0.4",
     "body-parser": "^1.20.0",
     "bs58": "^5.0.0",
+    "csv-parser": "^3.0.0",
     "dotenv": "^16.0.1",
+    "ed25519-hd-key": "^1.3.0",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-wallet": "^1.0.2",
     "ethers": "^5.6.9",
     "express": "^4.18.1",
-    "fs": "^0.0.1-security",
+    "fast-csv": "^4.3.6",
+    "line-by-line": "^0.1.6",
     "mongoose": "^6.5.0",
     "web3": "^1.7.4",
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "save-new-transaction-tic": "node src/token/tic/save-new-transaction",
-    "save-new-transaction-excel-tic": "node src/token/tic/save-new-transaction-excel",
-    "get-unicorns-address-info": "node src/token/unicorn/get-addresses-info"
+    "solana-test": "node test/test"
   }
 }

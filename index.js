@@ -1,5 +1,5 @@
 const { LAMPORTS_PER_SOL } = require("@solana/web3.js");
-const { transferSplToken } = require("./lib/solana/token")
+const { transferSplToken } = require("./src/common/solana/token")
 const bs58 = require("bs58");
 
 (async()=>{

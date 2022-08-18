@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { AppendDataToFile, waitFor } = require("../../lib/utils")
+const { AppendDataToFile, waitFor } = require("../common/utils")
 
 const apiKey = "BhC1-Caq1J4CsOBRFRF3kDI51RRDsYVb"
 // replace with your Alchemy api key

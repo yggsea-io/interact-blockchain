@@ -15,7 +15,10 @@ const {
     Keypair
 } = require("@solana/web3.js")
 
+const bip39 = require('bip39');
 const bs58 = require("bs58");
+const ed = require('ed25519-hd-key');
+
 const connection = new Connection(clusterApiUrl("devnet"))
 
 async function transferSplToken(fromPrivateKey, toAddress, mintAddress, value) {
@@ -81,7 +84,7 @@ async function getAllTokenByOwner(ownerAddress, isExistAmount) {
         if(!isExistAmount){
             result.push(accountInfo)
         }else{
-            //console.log(`pubkey: ${e.pubkey.toBase58()}`);
+            console.log(`pubkey: ${e.pubkey.toBase58()}`);
             if(accountInfo.amount.toString() != '0'
                      && accountInfo.amount.toString() != '1'){
                 result.push(accountInfo)
@@ -98,6 +101,13 @@ async function getTokenAccount(ownerAddress, mintAddress){
         mint: mintPubKey,
     });
     return response
+}
+
+const getKeypair = (mnemonic, i) => {
+    const path = `m/44'/501'/${i}'/0'`;
+    const seed = bip39.mnemonicToSeedSync(mnemonic);
+    const derivedSeed = ed.derivePath(path, seed.toString('hex')).key;
+    return anchor.web3.Keypair.fromSeed(derivedSeed.slice(0, 32));
 }
 
 module.exports = {

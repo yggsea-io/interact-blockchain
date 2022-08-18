@@ -1,7 +1,7 @@
-const { web3 } = require("../lib/utils")
-const { convert18DecimalsToNomal } = require("../lib/utils")
+const { web3 } = require("./common/utils")
+const { convert18DecimalsToNomal } = require("./common/utils")
 const abi = require("./abi/erc20.json");
-const { readData, writeData } = require("../lib/excel/csv/csv.js.js");
+const { readData, writeData } = require("./common/excel/csv/csv.js.js.js");
 const address = "0x200C234721b5e549c3693CCc93cF191f90dC2aF9";
 const _web3 = web3("https://bsc-dataseed.binance.org")
 
@@ -11,7 +11,6 @@ async function exportCSV() {
         let data1 = await readData ("./DR07.csv", 2);
         let data2 = await readData("./DR23.csv", 2);
         let result = []
-
         for (var i = 0; i < 100; i++) {
             let item = []
             item.push(data1[i][2])
@@ -32,6 +31,5 @@ async function exportCSV() {
         const header = ['address', 'amount1', 'amount2', 'balance', 'check']
         writeData(result, header, "out.csv")
     }
-
 }
 exportCSV()

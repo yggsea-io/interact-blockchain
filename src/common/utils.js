@@ -1,7 +1,6 @@
-let Web3 = require("web3")
 const fs = require('fs')
 const { BigNumber } = require('ethers');
-require('dotenv').config();
+const LineByLine = require('line-by-line');
 
 function expandTo18Decimals(n) {
   return BigNumber.from(n).mul(BigNumber.from(10).pow(18))
@@ -9,11 +8,6 @@ function expandTo18Decimals(n) {
 
 function convert18DecimalsToNomal(n) {
   return BigNumber.from(n).div(BigNumber.from(10).pow(18))
-}
-
-const web3 = (eviroment) => {
-  const _web3 = new Web3(new Web3.providers.HttpProvider(eviroment));
-  return _web3
 }
 
 const waitFor = delay => new Promise(resolve => setTimeout(resolve, delay));
@@ -27,10 +21,19 @@ function AppendDataToFile(filePath, data) {
   )
 }
 
+function getDataFromFileTxt(filePath) {
+  const lr = new LineByLine(filePath);
+  let rs = [];
+  lr.on('line', (line) => {
+      rs.push(line.trim());
+  });
+  return new Promise((res, rej) => lr.on('end', () => res(rs)).on('error', err => rej(err)));
+}
+
 module.exports = {
   waitFor,
-  web3,
   AppendDataToFile,
   expandTo18Decimals,
-  convert18DecimalsToNomal
+  convert18DecimalsToNomal,
+  getDataFromFileTxt
 }
