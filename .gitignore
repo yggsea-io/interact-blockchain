@@ -3,3 +3,4 @@ node_modules
 src/task-ether/test.js
 src/**/test*.js
 src/old-task
+src/server/db

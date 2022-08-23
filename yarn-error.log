@@ -1,5 +1,5 @@
 Arguments: 
-  /opt/homebrew/Cellar/node/18.6.0/bin/node /usr/local/bin/yarn add etherethereumjs-common
+  /opt/homebrew/Cellar/node/18.6.0/bin/node /usr/local/bin/yarn add myslp
 
 PATH: 
   /Users/kieuthien/.local/share/solana/install/active_release/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/kieuthien/.local/share/solana/install/active_release/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/kieuthien/.cargo/bin
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/etherethereumjs-common: Not found
+  Error: https://registry.yarnpkg.com/myslp: Not found
       at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
       at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:513:28)
@@ -37,22 +37,27 @@ npm manifest:
       "@openzeppelin/contracts": "^4.7.0",
       "@solana/web3.js": "^1.53.0",
       "axios": "^0.27.2",
+      "bip39": "^3.0.4",
       "body-parser": "^1.20.0",
       "bs58": "^5.0.0",
       "csv-parser": "^3.0.0",
       "dotenv": "^16.0.1",
+      "ed25519-hd-key": "^1.3.0",
+      "ethereumjs-tx": "^2.1.2",
+      "ethereumjs-wallet": "^1.0.2",
       "ethers": "^5.6.9",
       "express": "^4.18.1",
       "fast-csv": "^4.3.6",
+      "line-by-line": "^0.1.6",
       "mongoose": "^6.5.0",
       "web3": "^1.7.4",
       "xlsx": "^0.18.5"
     },
     "scripts": {
-      "save-new-transaction-tic": "node src/token/tic/save-new-transaction",
-      "save-new-transaction-excel-tic": "node src/token/tic/save-new-transaction-excel",
-      "get-unicorns-address-info": "node src/token/unicorn/get-addresses-info"
-    }
+      "solana-test": "node test/test"
+    },
+    "repository": "https://github.com/yggsea-io/interact-blockchain.git",
+    "author": "kieudaithien1 <thienkieu@yggsea.io>"
   }
 
 yarn manifest: 
@@ -721,6 +726,13 @@ Lockfile:
     dependencies:
       defer-to-connect "^1.0.1"
   
+  "@types/bn.js@^4.11.3":
+    version "4.11.6"
+    resolved "https://registry.yarnpkg.com/@types/bn.js/-/bn.js-4.11.6.tgz#c306c70d9358aaea33cd4eda092a742b9505967c"
+    integrity sha512-pqr857jrp2kPuO9uRjZ3PwnJTjoQy+fcdxvBTvHm6dkmEL9q+hDD/2j/0ELOBPtPnS8LjCX0gI9nbl8lVkadpg==
+    dependencies:
+      "@types/node" "*"
+  
   "@types/bn.js@^5.1.0":
     version "5.1.0"
     resolved "https://registry.yarnpkg.com/@types/bn.js/-/bn.js-5.1.0.tgz#32c5d271503a12653c62cf4d2b45e6eab8cebc68"
@@ -821,6 +833,11 @@ Lockfile:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.0.0.tgz#e21df10ad6c2053295bcbb8dab40b09dbea87e4d"
     integrity sha512-H7wUZRn8WpTq9jocdxQ2c8x2sKo9ZVmzfRE13GiNJXfp7NcKYEdvl3vspKjXox6RIG2VtaRe4JFvxG4rqp2Zuw==
+  
+  aes-js@^3.1.2:
+    version "3.1.2"
+    resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.1.2.tgz#db9aabde85d5caabbfc0d4f2a4446960f627146a"
+    integrity sha512-e5pEa2kBnBOgR4Y/p20pskXI74UEz7de8ZGVo58asOtvSVG5YAbJeELPZxOmt+Bnz3rX753YKhfIn4X4l1PPRQ==
   
   ajv@^6.12.3:
     version "6.12.6"
@@ -1094,6 +1111,16 @@ Lockfile:
       pbkdf2 "^3.0.9"
       randombytes "^2.0.1"
   
+  bip39@^3.0.4:
+    version "3.0.4"
+    resolved "https://registry.yarnpkg.com/bip39/-/bip39-3.0.4.tgz#5b11fed966840b5e1b8539f0f54ab6392969b2a0"
+    integrity sha512-YZKQlb752TrUWqHWj7XAwCSjYEgGAk+/Aas3V7NyjQeZYsztO8JnQUaCWhcnL4T+jL8nvB8typ2jRPzTlgugNw==
+    dependencies:
+      "@types/node" "11.11.6"
+      create-hash "^1.1.0"
+      pbkdf2 "^3.0.9"
+      randombytes "^2.0.1"
+  
   bl@^4.1.0:
     version "4.1.0"
     resolved "https://registry.yarnpkg.com/bl/-/bl-4.1.0.tgz#451535264182bec2fbbc83a62ab98cf11d9f7b3a"
@@ -1123,7 +1150,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-5.2.0.tgz#358860674396c6997771a9d051fcc1b57d4ae002"
     integrity sha512-D7iWRBvnZE8ecXiLj/9wbxH7Tk79fAh8IHaTNq1RWRixsS02W+5qS+iE9yq6RYl0asXx5tw0bLhmT5pIfbSquw==
   
-  bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.6, bn.js@^4.11.9:
+  bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.0, bn.js@^4.11.6, bn.js@^4.11.9:
     version "4.12.0"
     resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
     integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
@@ -1769,12 +1796,20 @@ Lockfile:
       jsbn "~0.1.0"
       safer-buffer "^2.1.0"
   
+  ed25519-hd-key@^1.3.0:
+    version "1.3.0"
+    resolved "https://registry.yarnpkg.com/ed25519-hd-key/-/ed25519-hd-key-1.3.0.tgz#e0bd2be4c07e15c753d5ed3aca30744e321b7c78"
+    integrity sha512-IWwAyiiuJQhgu3L8NaHb68eJxTu2pgCwxIBdgpLJdKpYZM46+AXePSVTr7fkNKaUOfOL4IrjEUaQvyVRIDP7fg==
+    dependencies:
+      create-hmac "1.1.7"
+      tweetnacl "1.0.3"
+  
   ee-first@1.1.1:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
     integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
   
-  elliptic@6.5.4, elliptic@^6.4.0, elliptic@^6.5.3, elliptic@^6.5.4:
+  elliptic@6.5.4, elliptic@^6.4.0, elliptic@^6.5.2, elliptic@^6.5.3, elliptic@^6.5.4:
     version "6.5.4"
     resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
     integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
@@ -1961,7 +1996,33 @@ Lockfile:
       secp256k1 "^4.0.1"
       setimmediate "^1.0.5"
   
-  ethereumjs-util@^7.0.10, ethereumjs-util@^7.1.0, ethereumjs-util@^7.1.5:
+  ethereumjs-common@^1.5.0:
+    version "1.5.2"
+    resolved "https://registry.yarnpkg.com/ethereumjs-common/-/ethereumjs-common-1.5.2.tgz#2065dbe9214e850f2e955a80e650cb6999066979"
+    integrity sha512-hTfZjwGX52GS2jcVO6E2sx4YuFnf0Fhp5ylo4pEPhEffNln7vS59Hr5sLnp3/QCazFLluuBZ+FZ6J5HTp0EqCA==
+  
+  ethereumjs-tx@^2.1.2:
+    version "2.1.2"
+    resolved "https://registry.yarnpkg.com/ethereumjs-tx/-/ethereumjs-tx-2.1.2.tgz#5dfe7688bf177b45c9a23f86cf9104d47ea35fed"
+    integrity sha512-zZEK1onCeiORb0wyCXUvg94Ve5It/K6GD1K+26KfFKodiBiS6d9lfCXlUKGBBdQ+bv7Day+JK0tj1K+BeNFRAw==
+    dependencies:
+      ethereumjs-common "^1.5.0"
+      ethereumjs-util "^6.0.0"
+  
+  ethereumjs-util@^6.0.0:
+    version "6.2.1"
+    resolved "https://registry.yarnpkg.com/ethereumjs-util/-/ethereumjs-util-6.2.1.tgz#fcb4e4dd5ceacb9d2305426ab1a5cd93e3163b69"
+    integrity sha512-W2Ktez4L01Vexijrm5EB6w7dg4n/TgpoYU4avuT5T3Vmnw/eCRtiBrJfQYS/DCSvDIOLn2k57GcHdeBcgVxAqw==
+    dependencies:
+      "@types/bn.js" "^4.11.3"
+      bn.js "^4.11.0"
+      create-hash "^1.1.2"
+      elliptic "^6.5.2"
+      ethereum-cryptography "^0.1.3"
+      ethjs-util "0.1.6"
+      rlp "^2.2.3"
+  
+  ethereumjs-util@^7.0.10, ethereumjs-util@^7.1.0, ethereumjs-util@^7.1.2, ethereumjs-util@^7.1.5:
     version "7.1.5"
     resolved "https://registry.yarnpkg.com/ethereumjs-util/-/ethereumjs-util-7.1.5.tgz#9ecf04861e4fbbeed7465ece5f23317ad1129181"
     integrity sha512-SDl5kKrQAudFBUe5OJM9Ac6WmMyYmXX/6sTmLZ3ffG2eY6ZIGBes3pEDxNN6V72WyOw4CPD5RomKdsa8DAAwLg==
@@ -1971,6 +2032,20 @@ Lockfile:
       create-hash "^1.1.2"
       ethereum-cryptography "^0.1.3"
       rlp "^2.2.4"
+  
+  ethereumjs-wallet@^1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/ethereumjs-wallet/-/ethereumjs-wallet-1.0.2.tgz#2c000504b4c71e8f3782dabe1113d192522e99b6"
+    integrity sha512-CCWV4RESJgRdHIvFciVQFnCHfqyhXWchTPlkfp28Qc53ufs+doi5I/cV2+xeK9+qEo25XCWfP9MiL+WEPAZfdA==
+    dependencies:
+      aes-js "^3.1.2"
+      bs58check "^2.1.2"
+      ethereum-cryptography "^0.1.3"
+      ethereumjs-util "^7.1.2"
+      randombytes "^2.1.0"
+      scrypt-js "^3.0.1"
+      utf8 "^3.0.0"
+      uuid "^8.3.2"
   
   ethers@^5.5.1, ethers@^5.6.9:
     version "5.6.9"
@@ -2015,6 +2090,14 @@ Lockfile:
     dependencies:
       bn.js "4.11.6"
       number-to-bn "1.7.0"
+  
+  ethjs-util@0.1.6:
+    version "0.1.6"
+    resolved "https://registry.yarnpkg.com/ethjs-util/-/ethjs-util-0.1.6.tgz#f308b62f185f9fe6237132fb2a9818866a5cd536"
+    integrity sha512-CUnVOQq7gSpDHZVVrQW8ExxUETWrnrvXYvYz55wOU8Uj4VCgw56XC2B/fVqQN+f7gmrnRHSLVnFAwsCuNwji8w==
+    dependencies:
+      is-hex-prefixed "1.0.0"
+      strip-hex-prefix "1.0.0"
   
   event-stream@=3.3.4:
     version "3.3.4"
@@ -2947,6 +3030,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/lazy-ass/-/lazy-ass-1.6.0.tgz#7999655e8646c17f089fdd187d150d3324d54513"
     integrity sha512-cc8oEVoctTvsFZ/Oje/kGnHbpWHYBe8IAJe4C0QNc3t8uM/0Y8+erSz/7Y1ALuXTEZTMvxXwO6YbX1ey3ujiZw==
   
+  line-by-line@^0.1.6:
+    version "0.1.6"
+    resolved "https://registry.yarnpkg.com/line-by-line/-/line-by-line-0.1.6.tgz#6236edd1db2d1695addf11f0268e74a181561c30"
+    integrity sha512-MmwVPfOyp0lWnEZ3fBA8Ah4pMFvxO6WgWovqZNu7Y4J0TNnGcsV4S1LzECHbdgqk1hoHc2mFP1Axc37YUqwafg==
+  
   lodash.clonedeep@^4.5.0:
     version "4.5.0"
     resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
@@ -3778,7 +3866,7 @@ Lockfile:
       hash-base "^3.0.0"
       inherits "^2.0.1"
   
-  rlp@^2.2.4:
+  rlp@^2.2.3, rlp@^2.2.4:
     version "2.2.7"
     resolved "https://registry.yarnpkg.com/rlp/-/rlp-2.2.7.tgz#33f31c4afac81124ac4b283e2bd4d9720b30beaf"
     integrity sha512-d5gdPmgQ0Z+AklL2NVXr/IoSjNZFfTVvQWzL/AM2AOcSzYP2xjlb0AC8YyCLc41MSNf6P6QVtjgPdmVtzb+4lQ==
@@ -4365,7 +4453,7 @@ Lockfile:
     dependencies:
       node-gyp-build "^4.3.0"
   
-  utf8@3.0.0:
+  utf8@3.0.0, utf8@^3.0.0:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
     integrity sha512-E8VjFIQ/TyQgp+TZfS6l8yp/xWppSAHzidGiRrqe4bK4XP9pTRyKFgGJpO3SN7zdX4DeomTrwaseCHovfpFcqQ==
