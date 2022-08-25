@@ -34,6 +34,18 @@ const useBSC = () => {
     current.gasPrice = web3.utils.toWei("5", "gwei");
 }
 
+const useBSCTestnet = () => {
+    const web3 = new Web3("https://data-seed-prebsc-1-s1.binance.org:8545/");
+    web3.eth.handleRevert = true;
+    current.web3 = web3;
+    current.common = Common.default.forCustomChain('ropsten', {
+        name: 'bnb testnet',
+        networkId: 97,
+        chainId: 97,
+    }, 'istanbul');
+    current.gasPrice = web3.utils.toWei("5", "gwei");
+}
+
 const useMumbai = () =>{
     const web3 = new Web3("https://still-blissful-wish.matic-testnet.discover.quiknode.pro/86e97434251f9f437c91cd989eb128ab42a2e139/");
     web3.eth.handleRevert = true;
@@ -54,4 +66,12 @@ const setGasPrice = (gwei) => {
     current.gasPrice = web3.utils.toWei("" + gwei, "gwei");
 }
 
-module.exports = { getConfig, usePolygon, useBSC, useMumbai ,setConfirmationBlocks, setGasPrice };
+module.exports = {
+    getConfig,
+    usePolygon,
+    useBSC,
+    useBSCTestnet, 
+    useMumbai,
+    setConfirmationBlocks, 
+    setGasPrice 
+};
