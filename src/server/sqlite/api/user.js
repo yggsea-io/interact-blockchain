@@ -33,6 +33,7 @@ const userApi = app => {
     app.get("/api/users", (req, res, next) => {
         var sql = "select * from user"
         var params = []
+        console.log(user)
         user.all(sql, params, (err, rows) => {
             if (err) {
               res.status(400).json({"error":err.message});
