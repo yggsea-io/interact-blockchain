@@ -1,6 +1,5 @@
 node_modules/
 .env
-src/task-ether/test.js
 src/**/test*.js
 src/old-task/
 src/server/sqlite/db/
