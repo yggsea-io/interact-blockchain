@@ -1,0 +1,2524 @@
+syntax = "proto3";
+package pb;
+message ItemInfo {
+    int32 id = 1;
+    int64 num = 2;
+    int64 delta = 3;
+}
+message ItemDeltaInfo {
+    int32 id = 1;
+    int32 delta = 2;
+}
+message Hero {
+    int32 id = 1;
+    map < int32, int64 > props = 2;
+    int32 eatLvl = 3;
+    int32 eatExp = 4;
+    int32 eatVal = 5;
+    int64 eatTime = 6;
+    repeated int32 equips = 7;
+    HeroSkin skin = 8;
+    int64 produceTime = 9;
+}
+message HeroSkin {
+    int32 tokenID = 1;
+    int32 skinID = 2;
+    int32 avatarID = 3;
+    repeated int32 eles = 4;
+    int32 level = 5;
+    int32 endTime = 6;
+}
+message StarPass {
+    int32 buy = 1;
+    repeated int32 com = 2;
+    repeated int32 pay = 3;
+    int32 boxNum = 4;
+}
+message Count {
+    int32 count = 1;
+    int64 refreshTime = 2;
+}
+message FishData {
+    map < int32, int32 > counts = 1;
+    int64 refreshTime = 2;
+}
+message SummonData {
+    map < int32, int32 > counts = 1;
+    int64 refreshTime = 2;
+}
+message SummonDamage {
+    int32 summonId = 1;
+    repeated int32 damage = 2;
+}
+message MonthCardData {
+    int64 lastTime = 1;
+    int64 endTime = 2;
+}
+message SingleBlockPublicData {
+    int32 count = 1;
+    int32 buyCount = 2;
+    int64 refreshTime = 3;
+    int32 boxCount = 4;
+    int32 talkId = 5;
+    int32 lootId = 6;
+    int32 betNum = 7;
+    repeated int32 eleIds = 8;
+}
+message SingleAdData {
+    int32 count = 1;
+    int64 lastTime = 2;
+}
+message SecurityPwdData {
+    int32 skipPwd = 1;
+    int64 lastTime = 2;
+    int64 resetPwdTime = 3;
+}
+message SingleBuyItemData {
+    int32 buyNum = 1;
+    int64 refreshTime = 2;
+}
+message SingleLockItemData {
+    int64 lastTime = 1;
+}
+message AbyssBoxData {
+    int32 itemId = 1;
+    int64 unlockTime = 2;
+    int32 state = 3;
+}
+message ExData {
+    map < int32, int32 > times = 1;
+    repeated int32 inviteAwards = 2;
+    map < int32, int64 > chatIds = 3;
+    repeated int32 ingoreChats = 4;
+    int32 isNew = 5;
+    map < int32, int64 > withDraws = 6;
+    int64 refreshTime = 7;
+    int32 vStatus = 8;
+}
+message SysMsgParam {
+    string val = 1;
+    int32 valType = 2;
+}
+message UserInfo {
+    int32 id = 1;
+    int32 accountId = 2;
+    int32 sex = 3;
+    string name = 4;    
+    int32 icon = 5;
+    int64 copper = 6;
+    int64 MCToken = 7;
+    double tapToken = 8;
+    map < int32, int64 > bag = 9;
+    repeated Hero heros = 10;
+    map < int32, HeroSkin > heroSkins = 11;
+    repeated int32 makeFoods = 12;
+    repeated int32 gotEquips = 13;
+    int32 mapId = 14;
+    repeated int32 mapPos = 15;
+    repeated int32 unLockMaps = 16;
+    repeated int32 squad = 17;
+    StarPass starPass = 18;
+    int32 vit = 19;
+    int64 vitTime = 20;
+    map < int32, Count > counts = 21;
+    int32 backCity = 22;
+    ExData exData = 23;
+    int32 bubble = 24;
+    FishData fishData = 25;
+    int64 Diamond = 26;
+    map < int32, SingleBlockPublicData > BlockPublicData = 27;
+    map < int32, SingleAdData > AdData = 28;
+    int64 LockMCToken = 29;
+    double LockTapToken = 30;
+    string SecurityPwd = 31;
+    SecurityPwdData SecurityPwdData = 32;
+    map < int32, SingleBuyItemData > BuyItemData = 33;
+    SummonData summonData = 34;
+    map < int32, Location > cityPos = 35;
+    map < int32, int64 > LockBag = 36;
+    map < int32, SingleLockItemData > LockItemData = 37;
+    int32 readSeasonResult = 38;
+    MonthCardData monthCardData = 39;
+    string wallet = 40;
+    int32 bcId = 41;
+    int32 closeFunc = 42;
+    double FantasyToken = 43;
+    double LockFantasyToken = 44;
+    repeated AbyssBoxData AbyssBoxBag = 45;
+}
+message ServerTimeInfo {
+    int64 serverTime = 1;
+    int32 serverZoneTime = 2;
+    int64 todayZeroTime = 3;
+    int64 mondayZeroTime = 4;
+    int64 seasonSettleTime = 5;
+    int64 seasonStartTime = 6;
+}
+message ArenaInfo {
+    int32 id = 1;
+    repeated int32 squad = 2;
+    int32 cupReward = 3;
+    repeated int32 matchHistory = 4;
+    map < int32, int32 > shop = 5;
+}
+message ArenaRecord {
+    int32 Id = 1;
+    int32 AId = 2;
+    int32 AIcon = 3;
+    string AName = 4;
+    int32 AMilitaryGrade = 5;
+    string AClubName = 6;
+    int32 AClubRating = 7;
+    int32 AOldCup = 8;
+    int32 ANewCup = 9;
+    int32 DId = 10;
+    int32 DIcon = 11;
+    string DName = 12;
+    int32 DMilitaryGrade = 13;
+    string DClubName = 14;
+    int32 DClubRating = 15;
+    int32 DOldCup = 16;
+    int32 DNewCup = 17;
+    bool IsWin = 18;
+    int64 AddTime = 19;
+}
+message RankUser {
+    int32 userId = 1;
+    int64 rank = 2;
+    string name = 3;
+    int32 icon = 4;
+    string clubName = 5;
+    int32 score = 6;
+    int32 militaryGrade = 7;
+    repeated int32 squad = 8;
+    int32 rankKey = 9;
+    repeated int32 rankKeys = 10;
+}
+message ArenaPersonalRank {
+    repeated RankUser rankList = 1;
+    int64 rankNum = 2;
+}
+message RankClub {
+    int32 id = 1;
+    int32 rank = 2;
+    string name = 3;
+    int32 icon = 4;
+    int32 population = 5;
+    int32 cup = 6;
+    int32 grade = 7;
+    int32 kingCnt = 8;
+}
+message ArenaClubRank {
+    repeated RankClub rankList = 1;
+}
+message Tilemap {
+    int32 id = 1;
+    int32 userId = 2;
+    int32 mapId = 3;
+    map < int32, Block > blocks = 4;
+    int64 addTime = 5;
+    int32 isSave = 6;
+}
+message Block {
+    int32 blockId = 1;
+    int32 blockSpawnId = 2;
+    int32 pointName = 3;
+    int64 nextRefreshTime = 4;
+    repeated int32 talkRewards = 5;
+    int32 favor = 6;
+    bool isOver = 7;
+    int64 finishTime = 8;
+    repeated int32 squad = 9;
+    Treasure treasure = 10;
+    WorldBoss worldBoss = 11;
+}
+message WorldBoss {
+    int32 logicId = 1;
+}
+message Treasure {
+    int32 isOpen = 1;
+    repeated int32 pointRewards = 2;
+    int32 finalReward = 3;
+}
+message Location {
+    int32 x = 1;
+    int32 y = 2;
+}
+message SkinInfo {
+    int32 id = 1;
+    HeroSkin skin = 2;
+}
+message PlayerSeasonInfo {
+    SeasonInfo seasonInfo = 1;
+    PlayerSeasonResult playerSeasonResult = 2;
+}
+message SeasonInfo {
+    int32 num = 1;
+    int64 startTime = 2;
+    int64 endTime = 3;
+}
+message PlayerSeasonResult {
+    int32 SeasonId = 1;
+    int32 Cup = 2;
+    int32 Rank = 3;
+    int32 ClubId = 4;
+    string ClubName = 5;
+    int32 Position = 6;
+    int32 MapRate = 7;
+    int32 HeroRate = 8;
+    int32 HeroSkinRate = 9;
+    int32 ClubRank = 10;
+    int32 ClubCup = 11;
+    int32 InClubRank = 12;
+    int32 CookRate = 13;
+    int32 EquipRate = 14;
+    int32 Evaluate = 15;
+    int32 Overstep = 16;
+    int32 GotCopper = 17;
+    int32 GotTapToken = 18;
+    int32 GotMcToken = 19;
+}
+message BuyAbyssBoxBagReq {
+    int32 index = 1;
+}
+message BuyAbyssBoxBagAck {
+    repeated AbyssBoxData abyssBoxBag = 1;
+    double lockTapToken = 2;
+    double tapToken = 3;
+}
+message UnlockAbyssBoxReq {
+    int32 index = 1;
+    int32 itemId = 2;
+}
+message UnlockAbyssBoxAck {
+    repeated AbyssBoxData abyssBoxBag = 1;
+}
+message OpenAbyssBoxReq {
+    int32 index = 1;
+    int32 itemId = 2;
+    int32 currencyType = 3;
+}
+message OpenAbyssBoxAck {
+    repeated AbyssBoxData abyssBoxBag = 1;
+    repeated ItemInfo items = 2;
+    map < int32, Count > counts = 3;
+    double lockTapToken = 4;
+    double tapToken = 5;
+}
+message GetAbyssGemRankReq {
+    int32 layer = 1;
+}
+message GetAbyssGemRankAck {
+    repeated RankUser rankList = 1;
+}
+message AdRewardReq {
+    int32 adId = 1;
+}
+message AdRewardAck {
+    repeated ItemInfo items = 1;
+    map < int32, SingleAdData > AdData = 2;
+}
+message GetArenaInfoReq {}
+message GetArenaInfoAck {
+    repeated int32 squad = 1;
+    int32 cup = 2;
+    int32 highCup = 3;
+    float winRate = 4;
+    int64 rank = 5;
+    int32 chestNum = 6;
+    int64 chestTime = 7;
+    int32 cupReward = 8;
+    int32 sumCup = 9;
+    int32 militaryGrade = 10;
+    int64 seasonStartTime = 11;
+    map < int32, int32 > shop = 12;
+    int32 battleCount = 13;
+    int32 buyBattleCount = 14;
+    int64 copperPool = 15;
+}
+message BuyArenaCountReq {
+    int32 currencyType = 1;
+}
+message BuyArenaCountAck {
+    repeated ItemInfo items = 1;
+    int32 battleCount = 2;
+    int32 buyBattleCount = 3;
+}
+message ArenaMatchRivalReq {}
+message ArenaMatchRivalAck {
+    RankUser rivalUser = 1;
+    int32 mapLogicId = 2;
+    repeated Hero squad = 3;
+}
+message ArenaSetSquadReq {
+    repeated int32 squad = 1;
+}
+message ArenaSetSquadAck {
+    repeated int32 squad = 1;
+}
+message ArenaEndFightReq {
+    bool isWin = 1;
+    int32 rivalId = 2;
+}
+message ArenaEndFightAck {
+    repeated ItemInfo items = 1;
+    int32 boxId = 2;
+    int32 oldCup = 3;
+    int32 newCup = 4;
+    int32 sumCup = 5;
+}
+message ArenaCupAwardReq {
+    int32 id = 1;
+}
+message ArenaCupAwardAck {
+    repeated ItemInfo items = 1;
+    int32 cupReward = 8;
+}
+message ArenaRecordReq {}
+message ArenaRecordAck {
+    repeated ArenaRecord recordList = 1;
+    int32 totolNum = 2;
+    float winRate = 3;
+}
+message ArenaUserRankReq {}
+message ArenaUserRankAck {
+    repeated RankUser rankList = 1;
+    int64 myRank = 2;
+    int64 myScore = 3;
+    int32 myMilitaryGrade = 4;
+}
+message ArenaShopBuyReq {
+    int32 id = 1;
+}
+message ArenaShopBuyAck {
+    map < int32, int32 > shop = 1;
+    repeated ItemInfo items = 2;
+}
+message ArenaPlayerInfoReq {
+    int32 userId = 1;
+}
+message ArenaPlayerInfoAck {
+    repeated Hero squad = 1;
+}
+message AllSeasonPersonalArenaRankReq {}
+message AllSeasonPersonalArenaRankAck {
+    map < int32, ArenaPersonalRank > rankLists = 1;
+}
+message SeasonPersonalArenaRankReq {
+    int32 seasonId = 1;
+}
+message SeasonPersonalArenaRankAck {
+    repeated RankUser rankList = 1;
+}
+message AllSeasonClubArenaRankReq {}
+message AllSeasonClubArenaRankAck {
+    map < int32, ArenaClubRank > rankLists = 1;
+}
+message SeasonClubArenaRankReq {
+    int32 seasonId = 1;
+}
+message SeasonClubArenaRankAck {
+    repeated RankClub rankList = 1;
+}
+message UseItemReq {
+    int32 id = 1;
+    int64 num = 2;
+}
+message UseItemAck {
+    repeated ItemInfo items = 1;
+}
+message SellItemReq {
+    int32 id = 1;
+    int64 num = 2;
+}
+message SellItemAck {
+    repeated ItemInfo items = 1;
+}
+message BuyItemReq {
+    int32 id = 1;
+    int64 num = 2;
+    int32 currencyType = 3;
+    string pwd = 4;
+}
+message BuyItemAck {
+    repeated ItemInfo items = 1;
+    map < int32, SingleBuyItemData > BuyItemData = 2;
+}
+message BuyCurrencyReq {
+    int32 id = 1;
+    int64 num = 2;
+}
+message BuyCurrencyAck {
+    repeated ItemInfo items = 1;
+    map < int32, SingleBuyItemData > BuyItemData = 2;
+    int64 lockMcToken = 3;
+    int64 addLockMcToken = 4;
+    double lockTapToken = 5;
+    double addLockTapToken = 6;
+}
+message ItemChangeNtf {
+    repeated ItemInfo items = 1;
+}
+message AbyssBoxBagChangeNtf {
+    repeated AbyssBoxData abyssBoxBag = 1;
+}
+message VitChangeNtf {
+    int32 vit = 1;
+    int64 vitTime = 2;
+}
+message EquipMergeReq {
+    int32 equipId = 1;
+}
+message EquipMergeAck {
+    int32 equipId = 1;
+    bool isNew = 2;
+    repeated ItemInfo items = 3;
+}
+message EquipForgeReq {
+    int32 equipId = 1;
+    int32 num = 2;
+}
+message EquipForgeAck {
+    repeated ItemInfo items = 1;
+}
+message EquipMergeOneKeyReq {
+    int32 series = 1;
+}
+message EquipMergeOneKeyAck {
+    repeated int32 newIds = 1;
+    repeated ItemInfo items = 2;
+}
+message MakeFoodReq {
+    map < int32, int64 > foodIds = 1;
+}
+message MakeFoodAck {
+    int32 foodId = 1;
+    bool isNew = 2;
+    repeated ItemInfo items = 3;
+}
+message EquipBookReq {}
+message EquipBookAck {
+    repeated int32 gotEquips = 1;
+}
+message CookBookReq {}
+message CookBookAck {
+    repeated int32 makeFoods = 1;
+}
+message QuickMakeCookReq {
+    map < int32, int64 > foodIds = 1;
+    int32 cookId = 2;
+    int32 num = 3;
+}
+message QuickMakeCookAck {
+    repeated ItemInfo items = 1;
+}
+message UseRandBoxReq {
+    int32 id = 1;
+}
+message UseRandBoxAck {
+    int32 logicId = 1;
+    repeated ItemInfo items = 2;
+    repeated ItemInfo showItems = 3;
+    int32 swapNum = 4;
+    map < int32, SingleLockItemData > lockItemData = 5;
+}
+message SwapRandBoxReq {
+    int32 logicId = 1;
+    int32 index = 2;
+}
+message SwapRandBoxAck {
+    ItemInfo showItem = 1;
+    int32 swapNum = 2;
+}
+message ReceiveRandBoxReq {
+    int32 logicId = 1;
+}
+message ReceiveRandBoxAck {
+    repeated ItemInfo items = 1;
+}
+message UseChooseBoxReq {
+    int32 id = 1;
+    int32 index = 2;
+}
+message UseChooseBoxAck {
+    repeated ItemInfo items = 1;
+}
+message UnlockItemReq {
+    int32 id = 1;
+}
+message UnlockItemAck {
+    map < int32, int64 > lockBag = 1;
+    map < int32, SingleLockItemData > lockItemData = 2;
+    repeated ItemInfo items = 3;
+}
+message CSMessage {
+    int32 cmdId = 1;
+    int32 transId = 2;
+    bytes body = 3;
+}
+message SignInfoReq {
+    string wallet = 1;
+}
+message SignInfoAck {
+    int32 msgId = 1;
+    string message = 2;
+}
+message BindWalletReq {
+    int32 msgId = 1;
+    string wallet = 2;
+    string sign = 3;
+}
+message BindWalletAck {}
+message DrawCoinReq {
+    int32 num = 1;
+    string pwd = 2;
+}
+message DrawCoinAck {
+    int64 copper = 1;
+    int32 drawtime = 2;
+}
+message DrawTapReq {
+    double num = 1;
+    string pwd = 2;
+}
+message DrawTapAck {
+    double tapToken = 1;
+    int64 copper = 2;
+    int32 drawtime = 3;
+}
+message DrawMCTokenReq {
+    int32 num = 1;
+    string pwd = 2;
+}
+message DrawMCTokenAck {
+    int32 mcToken = 1;
+    int64 copper = 2;
+    int32 drawtime = 3;
+}
+message DrawNFTSkinReq {
+    int32 id = 1;
+    string pwd = 2;
+}
+message DrawNFTSkinAck {
+    int32 delId = 1;
+    int64 copper = 2;
+    int32 drawtime = 3;
+}
+message DrawPvpCoinReq {
+    int32 num = 1;
+}
+message DrawPvpCoinAck {
+    repeated ItemInfo items = 1;
+    int32 drawtime = 2;
+}
+message BlockActionReq {
+    int32 blockId = 1;
+    int32 mapId = 2;
+    int32 actionType = 3;
+}
+message BlockActionAck {
+    bool isPraise = 1;
+    int32 praiseCount = 2;
+    bool isInvite = 3;
+    int32 InviteCount = 4;
+}
+message BlockAppearNtf {
+    Block block = 1;
+}
+message BlockOverNtf {
+    int32 blockSpawnId = 1;
+}
+message BlockInfoReq {
+    int32 blockId = 1;
+}
+message BlockInfoAck {
+    bool isPraise = 1;
+    int32 praiseCount = 2;
+    bool isInvite = 3;
+    int32 inviteCount = 4;
+}
+message SetSquadReq {
+    repeated int32 squad = 1;
+}
+message SetSquadAck {
+    repeated int32 squad = 1;
+}
+message TalkRewardReq {
+    int32 blockSpawnId = 1;
+    int32 talkId = 2;
+}
+message TalkRewardAck {
+    repeated ItemInfo items = 1;
+}
+message TalkHeroReq {
+    int32 blockSpawnId = 1;
+    int32 favor = 2;
+}
+message TalkHeroAck {
+    int32 heroId = 1;
+}
+message OpenGameplayReq {
+    int32 blockSpawnId = 1;
+}
+message OpenGameplayAck {
+    repeated ItemInfo items = 1;
+}
+message TalkGoddessReq {
+    int32 blockSpawnId = 1;
+}
+message TalkGoddessAck {
+    repeated ItemInfo items = 1;
+}
+message BlockNormalChestReq {
+    int32 blockSpawnId = 1;
+}
+message BlockNormalChestAck {
+    repeated ItemInfo items = 1;
+    int32 boxId = 2;
+}
+message BlockMemoryCardInfoReq {
+    int32 blockSpawnId = 1;
+}
+message BlockMemoryCardInfoAck {
+    int32 gameCount = 1;
+    int32 buyCount = 2;
+}
+message BlockMemoryCardStartReq {
+    int32 blockSpawnId = 1;
+}
+message BlockMemoryCardStartAck {}
+message BlockMemoryCardOpenReq {
+    int32 blockSpawnId = 1;
+    int32 cardIndex = 2;
+}
+message BlockMemoryCardOpenAck {
+    int32 cardId = 1;
+    int32 clearScore = 2;
+    int32 comboScore = 3;
+    int32 timeScore = 4;
+    int32 isFinish = 5;
+    int32 isNewScore = 6;
+}
+message BuyBlockMemoryCardCountReq {
+    int32 blockSpawnId = 1;
+}
+message BuyBlockMemoryCardCountAck {
+    int64 copper = 1;
+    int32 gameCount = 2;
+    int32 buyCount = 3;
+}
+message MemoryCardRankListReq {
+    int32 blockSpawnId = 1;
+}
+message MemoryCardRankListAck {
+    repeated RankUser rankList = 1;
+}
+message MemoryBoxInfoReq {}
+message MemoryBoxInfoAck {
+    int32 boxCount = 1;
+}
+message OpenMemoryBoxReq {}
+message OpenMemoryBoxAck {
+    repeated ItemInfo items = 1;
+    int32 counts = 2;
+}
+message EleMisteryLootIncrsReq {}
+message EleMisteryLootIncrsAck {
+    map < int32, int32 > incrs = 1;
+}
+message OpenTreasureReq {
+    int32 blockSpawnId = 1;
+}
+message OpenTreasureAck {
+    Block blockData = 1;
+}
+message TreasurePointRewardReq {
+    int32 blockSpawnId = 1;
+    int32 index = 2;
+}
+message TreasurePointRewardAck {
+    Block blockData = 1;
+    repeated ItemInfo items = 2;
+}
+message TreasureFinalRewardReq {
+    int32 blockSpawnId = 1;
+}
+message TreasureFinalRewardAck {
+    Block blockData = 1;
+    repeated ItemInfo items = 2;
+}
+message WorldBossInfoReq {
+    int32 blockSpawnId = 1;
+}
+message WorldBossInfoAck {
+    int32 mapLogicId = 1;
+    int32 bossHp = 2;
+    int32 playerNum = 3;
+    int32 surplusEnterCd = 4;
+}
+message AbyssBossInfoReq {
+    int32 mapLogicId = 1;
+}
+message AbyssBossInfoAck {
+    int32 playerNum = 1;
+    int32 surplusEnterCd = 2;
+}
+message AbyssChestInfoReq {
+    int32 mapLogicId = 1;
+}
+message AbyssChestInfoAck {
+    int32 playerNum = 1;
+    repeated int32 chestList = 2;
+    int32 surplusEnterCd = 3;
+}
+message ChatReq {
+    int32 ccType = 1;
+    string secpwd = 2;
+    int32 contentType = 3;
+    string content = 4;
+    ChatSysContent sysContent = 5;
+}
+message ChatAck {
+    repeated ItemInfo items = 1;
+}
+message ChatSysContent {
+    int32 msgType = 1;
+    int32 msgId = 2;
+    repeated SysMsgParam param = 9;
+}
+message ChatMsg {
+    int32 ccType = 1;
+    int32 id = 2;
+    int32 senderId = 3;
+    string name = 4;
+    int32 icon = 5;
+    int32 bubble = 6;
+    int32 grade = 7;
+    int64 sendTime = 8;
+    string title = 9;
+    int32 contentType = 10;
+    string content = 11;
+    ChatSysContent sysContent = 12;
+}
+message ChatNtf {
+    ChatMsg msg = 1;
+}
+message ChatListReq {
+    int32 ccType = 1;
+}
+message ChatListAck {
+    repeated ChatMsg msgs = 1;
+}
+message RecruitReq {
+    string content = 1;
+    string secpwd = 2;
+}
+message RecruitAck {
+    repeated ItemInfo items = 1;
+}
+message RecruitMsg {
+    int32 id = 1;
+    int32 ccType = 2;
+    int32 clubId = 3;
+    string name = 4;
+    int32 icon = 5;
+    int32 population = 6;
+    int32 cup = 7;
+    int32 userId = 8;
+    int32 userIcon = 9;
+    string userName = 10;
+    string content = 11;
+    int32 sendTime = 12;
+}
+message RecruitNtf {
+    RecruitMsg msg = 1;
+}
+message RecruitListReq {}
+message RecruitListAck {
+    repeated RecruitMsg msgs = 1;
+}
+message ChatReadReq {
+    int32 ccType = 1;
+    int64 id = 2;
+}
+message ChatReadAck {}
+message LastChatMsgsNtf {
+    RecruitMsg recruitMsg = 1;
+    ChatMsg officialMsg = 2;
+    ChatMsg clubMsg = 3;
+    ChatMsg trumpetMsg = 4;
+}
+message IngoreChatReq {
+    int32 ccType = 1;
+    int32 op = 2;
+}
+message IngoreChatAck {}
+message ReadChatsNtf {
+    map < int32, int64 > chatIds = 3;
+}
+message ApplyMemberInfo {
+    int32 id = 1;
+    string name = 2;
+    int32 icon = 3;
+    int32 lvl = 4;
+    int32 cup = 5;
+    int32 inviteId = 6;
+}
+message MemberInfo {
+    int32 id = 1;
+    int32 icon = 2;
+    string name = 3;
+    string nickName = 4;
+    int32 position = 5;
+    int32 cup = 6;
+    int32 offTime = 7;
+    int32 inviteCount = 8;
+    int64 cupWithTime = 9;
+}
+message MemberBaseInfo {
+    int32 id = 1;
+    int32 icon = 2;
+    string name = 3;
+    string nickName = 4;
+    int32 cup = 5;
+}
+message ClubInfo {
+    int32 id = 1;
+    string name = 2;
+    int32 icon = 3;
+    int32 population = 4;
+    string notice = 5;
+    int32 chairmanId = 6;
+    repeated int32 viceCharimanIds = 7;
+    int32 joinLvl = 8;
+    int32 checkJoin = 9;
+    map < int32, string > setting = 10;
+    int32 kingCnt = 11;
+    int32 gradeTop = 12;
+    int32 cup = 13;
+}
+message ClubBaseInfo {
+    int32 id = 1;
+    string name = 2;
+    int32 icon = 3;
+    int32 population = 4;
+    string notice = 5;
+    map < int32, string > setting = 6;
+    int32 kingCnt = 7;
+    int32 cup = 8;
+}
+message GetClubInfoReq {}
+message GetClubInfoAck {
+    int32 retCode = 1;
+    ClubInfo club = 2;
+    repeated MemberInfo members = 3;
+}
+message ClubInfoNtf {
+    ClubInfo club = 2;
+}
+message ClubListReq {}
+message ClubListAck {
+    repeated ClubBaseInfo clubs = 1;
+}
+message QueryClubReq {
+    int32 id = 1;
+}
+message QueryClubAck {
+    ClubBaseInfo club = 1;
+    repeated MemberBaseInfo members = 2;
+}
+message CreateClubReq {
+    string name = 1;
+    int32 currencyType = 2;
+}
+message CreateClubAck {
+    ClubInfo club = 1;
+    repeated MemberInfo members = 2;
+    repeated ItemInfo items = 3;
+}
+message JoinClubReq {
+    int32 id = 1;
+}
+message JoinClubAck {
+    int32 retCode = 1;
+    ClubInfo club = 2;
+    repeated MemberInfo members = 3;
+}
+message ExitClubReq {
+    string pwd = 1;
+}
+message ExitClubAck {}
+message ClubMemberOperReq {
+    int32 id = 1;
+    string nickName = 2;
+    int32 position = 3;
+    string pwd = 4;
+}
+message ClubMemberOperAck {}
+message ChangeClubNameReq {
+    string name = 1;
+    int32 currencyType = 2;
+}
+message ChangeClubNameAck {
+    repeated ItemInfo items = 1;
+}
+message ChangeClubIconReq {
+    int32 icon = 1;
+}
+message ChangeClubIconAck {}
+message ChangeClubJoinLvlReq {
+    int32 lvl = 1;
+}
+message ChangeClubJoinLvlAck {}
+message ChangeClubCheckJoinReq {
+    int32 checkJoin = 1;
+}
+message ChangeClubCheckJoinAck {}
+message ChangeClubSettingReq {
+    int32 id = 1;
+    string name = 2;
+}
+message ChangeClubSettingAck {}
+message ChangeClubNoticeReq {
+    string notice = 1;
+}
+message ChangeClubNoticeAck {}
+message ClubAppliedMembersReq {}
+message ClubAppliedMembersAck {
+    repeated ApplyMemberInfo members = 1;
+}
+message OperAppliedMembersReq {
+    int32 agree = 1;
+    repeated int32 appliedIds = 2;
+}
+message OperAppliedMembersAck {}
+message KickClubMemberReq {
+    int32 userId = 1;
+    string pwd = 2;
+}
+message KickClubMemberAck {}
+message ClubRankReq {}
+message ClubRankAck {
+    repeated RankClub rankList = 1;
+    int32 myRank = 2;
+    int32 myCup = 3;
+    int32 myGrade = 4;
+}
+message SeasonUser {
+    int32 id = 1;
+    string name = 2;
+    repeated int32 squad = 3;
+    int32 rank = 4;
+    int32 cup = 5;
+    int32 militaryGrade = 6;
+}
+message ClubSeason {
+    int64 startTime = 1;
+    int64 endTime = 2;
+    int32 season = 3;
+    int32 rank = 4;
+    int32 cup = 5;
+    int32 grade = 6;
+    repeated SeasonUser users = 7;
+}
+message ClubSeasonListReq {}
+message ClubSeasonListAck {
+    repeated ClubSeason seasons = 1;
+}
+message ErrorAck {
+    int32 code = 1;
+    int32 langId = 2;
+}
+message ServerStateNtf {
+    int32 serverType = 1;
+    int32 offline = 2;
+}
+message HeartBeatReq {}
+message HeartBeatAck {}
+message Player {
+    int32 id = 1;
+    string name = 2;
+    int32 showId = 3;
+    int32 maxhp = 4;
+    int32 hp = 5;
+    int32 targetId = 6;
+    map < int32, int64 > tempBag = 7;
+    int32 clubId = 8;
+    int32 eqStar = 9;
+    string clubName = 10;
+}
+message PlayerProperty {
+    int32 id = 1;
+    map < int32, int64 > tempBag = 2;
+}
+message EnterMapReq {
+    int32 logicMapType = 1;
+    int32 logicMapId = 2;
+    repeated int32 squad = 3;
+    int32 blockSpawnId = 4;
+    bool defaultLocation = 5;
+}
+message EnterMapAck {
+    int32 retCode = 1;
+    repeated EnterHeroInfo enterHeros = 2;
+    int32 tileMapId = 3;
+    repeated int32 tileMapPos = 4;
+    int64 endTime = 5;
+    map < int32, int32 > redMap = 6;
+    repeated AbyssBossInfo bossList = 7;
+}
+message BattleEndNtf {
+    bool isWin = 1;
+    repeated ItemInfo monsterLoots = 2;
+    repeated ItemInfo finalLoots = 3;
+    LootPopNtf lootPop = 4;
+}
+message LootPopNtf {
+    repeated ItemInfo items = 1;
+    repeated ItemInfo ownerLoots = 2;
+    repeated ItemInfo addAbyssitems = 3;
+    repeated ItemInfo addFailAbyssitems = 4;
+}
+message EnterHeroInfo {
+    int32 id = 1;
+    int32 showId = 2;
+    repeated int32 skillIds = 3;
+    Location location = 4;
+}
+message LeaveMapReq {}
+message LeaveMapAck {
+    int32 retCode = 1;
+}
+message MovePathReq {
+    int32 id = 1;
+    Location targetLocation = 2;
+    int32 isForce = 3;
+}
+message MovePathNtf {
+    int32 id = 1;
+    Location targetLocation = 2;
+    int32 isForce = 3;
+}
+message SyncLocationReq {
+    int32 id = 1;
+    Location currentLocation = 2;
+}
+message MoveInfo {
+    int32 id = 1;
+    Location currentLocation = 2;
+    Location targetLocation = 3;
+}
+message ReviveReq {
+    int32 type = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message ReviveAck {
+    repeated ItemInfo items = 1;
+}
+message ReviveNtf {
+    repeated EHero heros = 1;
+    repeated HeroProperty propertys = 2;
+    repeated EnterHeroInfo enterHeros = 3;
+    bool isSelf = 4;
+}
+message ClearWorldBossCDReq {
+    int32 blockSpawnId = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message ClearWorldBossCDAck {
+    repeated ItemInfo items = 1;
+}
+message ClearAbyssWorldBossCDReq {
+    int32 mapLogicId = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message ClearAbyssWorldBossCDAck {
+    repeated ItemInfo items = 1;
+}
+message ClearAbyssBossCDReq {
+    int32 mapLogicId = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message ClearAbyssBossCDAck {
+    repeated ItemInfo items = 1;
+}
+message ClearAbyssChestCDReq {
+    int32 mapLogicId = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message ClearAbyssChestCDAck {
+    repeated ItemInfo items = 1;
+}
+message HPChange {
+    int32 id = 1;
+    int32 hp = 2;
+}
+message FovPlayersEnterNtf {
+    repeated Player players = 1;
+}
+message FovPlayersLeaveNtf {
+    repeated int32 playerIds = 1;
+}
+message FovPlayersPropertyNtf {
+    repeated PlayerProperty propertys = 1;
+}
+message FovPlayersHPChangeNtf {
+    repeated HPChange hps = 1;
+}
+message NPCInfo {
+    int32 id = 1;
+    int32 userId = 2;
+    string name = 3;
+    int32 showId = 4;
+    Location location = 5;
+    int32 level = 6;
+}
+message NPCProperty {
+    int32 id = 1;
+    int32 userId = 2;
+    int32 hp = 3;
+    int32 maxHp = 4;
+    int32 atkSpeed = 5;
+    int32 skillFlag = 6;
+    int32 shieldHp = 7;
+    int32 shieldMaxHp = 8;
+    int64 shieldBeginTime = 9;
+    int32 shieldDuration = 10;
+    int64 shieldLeftTime = 11;
+    int32 moveSpeed = 12;
+}
+message BuffList {
+    int32 id = 1;
+    repeated int32 buffIds = 2;
+    map < int32, int32 > props = 3;
+}
+message FovNpcsEnterNtf {
+    repeated NPCInfo npcs = 1;
+}
+message FovNpcsLeaveNtf {
+    repeated int32 npcIds = 1;
+}
+message FovNpcsPropertyNtf {
+    repeated NPCProperty propertys = 1;
+}
+message FovNpcsMoveNtf {
+    repeated MoveInfo moves = 1;
+}
+message FovNpcsHPChangeNtf {
+    repeated HPChange hps = 1;
+}
+message FovNpcsBuffNtf {
+    repeated BuffList buffs = 1;
+}
+message EHero {
+    int32 id = 1;
+    int32 userId = 2;
+    int32 showId = 3;
+    bool isleader = 4;
+    string name = 5;
+    Location location = 6;
+    int32 level = 7;
+}
+message HeroProperty {
+    int32 id = 1;
+    int32 userId = 2;
+    int32 hp = 3;
+    int32 maxHp = 4;
+    int32 atkSpeed = 5;
+    int32 skillFlag = 6;
+    int32 shieldHp = 7;
+    int32 shieldMaxHp = 8;
+    int64 shieldBeginTime = 9;
+    int32 shieldDuration = 10;
+    int32 moveSpeed = 11;
+}
+message AbyssBossInfo {
+    int32 blockId = 1;
+    int32 logicType = 2;
+    int32 logicId = 3;
+    Location location = 4;
+}
+message AbyssLogicMapAppearNtf {
+    AbyssBossInfo logic = 1;
+}
+message AbyssLogicMapOverNtf {
+    int32 logicId = 1;
+}
+message FovHerosEnterNtf {
+    repeated EHero heros = 1;
+}
+message FovHerosLeaveNtf {
+    repeated int32 heroIds = 1;
+}
+message FovHerosPropertyNtf {
+    repeated HeroProperty propertys = 1;
+}
+message FovHerosMoveNtf {
+    repeated MoveInfo moves = 1;
+}
+message FovHerosHPChangeNtf {
+    repeated HPChange hps = 1;
+}
+message FovHerosBuffNtf {
+    repeated BuffList buffs = 1;
+}
+message FovHerosInfoChangeNtf {
+    repeated EHero heros = 1;
+}
+message SyncHeroInfoNtf {
+    int32 id = 1;
+    int32 tauntId = 2;
+    int32 scaredId = 3;
+}
+message DropItem {
+    int32 id = 1;
+    int32 num = 2;
+    Location location = 3;
+}
+message DropItemsNtf {
+    repeated DropItem items = 1;
+    int32 userId = 2;
+}
+message BattleMapInfoNtf {
+    int32 currStage = 1;
+    int32 maxStage = 2;
+    int32 endTime = 3;
+    map < int32, int32 > hpBoxs = 4;
+    repeated ChatMsg msgList = 5;
+    int32 bossOwnerId = 6;
+    int32 startTime = 7;
+}
+message AbyssCityInfoNtf {
+    repeated AbyssBossInfo bossList = 1;
+}
+message BattleUserInfoNtf {
+    int64 dmgVal = 1;
+    int64 dmgSumVal = 2;
+    int64 beDmgVal = 3;
+    int64 beDmgSumVal = 4;
+}
+message EnterMapNtf {
+    int32 mapId = 1;
+    int32 logicType = 2;
+    int32 logicId = 3;
+    int32 serverId = 4;
+}
+message JumpServerReq {
+    int32 jumpTo = 1;
+    int32 serverId = 2;
+}
+message JumpServerAck {
+    int32 serverId = 1;
+    int32 mapId = 2;
+    int32 logicType = 3;
+    int32 logicId = 4;
+}
+message EnterWorldBossReq {}
+message EnterWorldBossAck {
+    int32 mapId = 1;
+    int32 logicType = 2;
+    int32 logicId = 3;
+    int32 serverId = 4;
+}
+message LeaveWorldBossReq {}
+message LeaveWorldBossAck {}
+message EnterTeamBossReq {
+    int32 logicType = 1;
+}
+message EnterTeamBossAck {
+    int32 mapId = 1;
+    int32 logicType = 2;
+    int32 logicId = 3;
+    int32 serverId = 4;
+}
+message LockTargetReq {
+    int32 lockedUserId = 1;
+}
+message LockTargetNtf {
+    int32 userId = 1;
+    int32 lockedUserId = 2;
+}
+message ChestPicker {
+    int64 pickTime = 1;
+    Player picker = 2;
+}
+message ChestInfo {
+    int32 id = 1;
+    int32 itemId = 2;
+    Location location = 3;
+    int32 picker = 4;
+    int32 state = 5;
+    int64 pickTime = 6;
+    int64 pickDuration = 7;
+    int64 leftTime = 8;
+    repeated int32 pickedList = 9;
+    repeated int32 pickingList = 10;
+    int64 bornTime = 11;
+    int64 protectDuration = 12;
+}
+message ChestProperty {
+    int32 id = 1;
+    int32 picker = 2;
+    int32 state = 3;
+    int64 pickDuration = 4;
+    int64 leftTime = 5;
+}
+message ChestPickInfo {
+    int32 id = 1;
+    repeated int32 pickedList = 2;
+    repeated int32 pickingList = 3;
+}
+message FovChestsEnterNtf {
+    repeated ChestInfo chests = 1;
+}
+message FovChestsLeaveNtf {
+    repeated int32 ids = 1;
+}
+message FovChestsPropertyNtf {
+    repeated ChestProperty propertys = 1;
+}
+message FovChestsPickInfoNtf {
+    repeated ChestPickInfo pickInfos = 1;
+}
+message ChestChangeNtf {
+    ChestInfo chestInfo = 1;
+}
+message PickChestReq {
+    int32 id = 1;
+}
+message PickChestAck {
+    repeated ItemInfo items = 1;
+}
+message CancelPickChestReq {
+    int32 id = 1;
+}
+message CancelPickChestAck {}
+message BattleEventNtf {
+    int32 evt = 1;
+    int32 attackId = 2;
+    int32 targetId = 3;
+    map < int32, int64 > robItems = 4;
+    int32 continueKillNum = 5;
+    LootSoulStarInfo lootSoulStar = 6;
+}
+message LootSoulStarInfo {
+    int32 heroId = 3;
+    int32 part = 4;
+}
+message BattleRankListReq {
+    int32 type = 1;
+}
+message BattleRankListAck {
+    repeated BattleRankUser rankList = 1;
+}
+message BattleRankUser {
+    int32 id = 1;
+    string name = 2;
+    int32 showId = 3;
+    int32 clubId = 4;
+    string clubName = 5;
+    int64 val = 6;
+}
+message BattleResult {
+    int32 type = 1;
+    repeated BattleRankUser rankList = 2;
+    int32 champUserId = 3;
+}
+message FinalBattleRankNft {
+    map < int32, BattleResult > rankLists = 1;
+}
+message RankPlayer {
+    int32 id = 1;
+    string name = 2;
+    int64 val = 3;
+}
+message BattleRank {
+    repeated RankPlayer ranks = 1;
+    int64 sumVal = 2;
+}
+message BattleRankNft {
+    map < int32, BattleRank > rankLists = 1;
+}
+message CancelBossOwnerReq {}
+message CancelBossOwnerAck {}
+message SkillProduceReq {
+    int32 heroId = 1;
+    int32 skillId = 2;
+}
+message SkillProduceAck {
+    int64 produceTime = 1;
+    repeated ItemInfo items = 2;
+}
+message SkinTokenInfoReq {
+    int32 skinTokenID = 1;
+}
+message SkinTokenInfoAck {
+    int32 canBuyNum = 1;
+}
+message SkinBuyMcTokenReq {
+    int32 heroId = 1;
+    int32 id = 2;
+}
+message SkinBuyMcTokenAck {
+    repeated ItemInfo items = 1;
+}
+message EatFoodReq {
+    int32 heroId = 1;
+    int32 foodId = 2;
+    int32 num = 3;
+}
+message EatFoodAck {
+    int32 eatLvl = 1;
+    int32 eatExp = 2;
+    int32 eatVal = 3;
+    int64 eatTime = 4;
+    repeated ItemInfo items = 5;
+}
+message ChangeEquipOneKeyReq {
+    int32 heroId = 1;
+    int32 targetHeroId = 2;
+}
+message ChangeEquipOneKeyAck {
+    repeated int32 equips = 1;
+    repeated int32 targetEquips = 2;
+}
+message WearEquipReq {
+    int32 heroId = 1;
+    int32 equipId = 2;
+}
+message WearEquipAck {
+    repeated int32 equips = 1;
+    repeated ItemInfo items = 2;
+}
+message UnWearEquipReq {
+    int32 heroId = 1;
+    int32 equipId = 2;
+}
+message UnWearEquipAck {
+    repeated int32 equips = 1;
+    repeated ItemInfo items = 2;
+}
+message WearSkinReq {
+    int32 heroId = 1;
+    int32 id = 2;
+}
+message WearSkinAck {
+    int32 heroId = 1;
+    HeroSkin skin = 2;
+    int32 delId = 3;
+    SkinInfo addSkin = 4;
+}
+message UnWearSkinReq {
+    int32 heroId = 1;
+}
+message UnWearSkinAck {
+    int32 heroId = 1;
+    SkinInfo skin = 2;
+}
+message UpgradeSkinReq {
+    int32 heroId = 1;
+    int32 id = 2;
+    string pwd = 3;
+}
+message UpgradeSkinAck {
+    SkinInfo skin = 1;
+    int32 sp = 2;
+    int32 MCToken = 3;
+    double tapToken = 4;
+    int32 lockMCToken = 5;
+    double lockTapToken = 6;
+}
+message SkinClearReq {
+    int32 heroId = 1;
+    int32 id = 2;
+    string pwd = 3;
+}
+message SkinClearAck {
+    SkinInfo skin = 1;
+    int32 sp = 2;
+    double tapToken = 3;
+    double lockTapToken = 4;
+    repeated ItemInfo items = 5;
+    int32 retCode = 6;
+}
+message MakeSkinClearStoneReq {
+    int32 num = 1;
+    string pwd = 2;
+}
+message MakeSkinClearStoneAck {
+    int32 MCToken = 1;
+    double fantasyToken = 2;
+    int32 lockMCToken = 3;
+    double lockFantasyToken = 4;
+    repeated ItemInfo items = 5;
+}
+message UnWearSkinNtf {
+    int32 heroId = 1;
+    SkinInfo skin = 2;
+}
+message ActHeroNtf {
+    Hero hero = 1;
+}
+message SkinRentExpireReq {
+    int32 id = 1;
+}
+message SkinRentExpireAck {
+    int32 id = 1;
+}
+message SkinResolveReq {
+    repeated int32 skinIds = 1;
+    string pwd = 2;
+}
+message SkinResolveAck {
+    repeated SkinResolveInfo resolveList = 1;
+    double fantasyToken = 2;
+    double lockFantasyToken = 3;
+}
+message SkinResolveInfo {
+    SkinInfo skin = 1;
+    double fantasyToken = 2;
+}
+message InviteInfoReq {}
+message InviteInfoAck {
+    int32 num = 1;
+    repeated int32 gotAwards = 2;
+    string inviteCode = 3;
+    repeated InviteUser list = 4;
+    int32 lastMcBoxTime = 5;
+    int32 mcBoxCount = 6;
+}
+message InviteUser {
+    int32 userId = 1;
+    string name = 2;
+    int32 icon = 3;
+    bool haveNft = 4;
+    int64 costMc = 5;
+}
+message InviteAwardReq {
+    int32 id = 1;
+}
+message InviteAwardAck {
+    repeated ItemInfo items = 1;
+    repeated int32 gotAwards = 2;
+} /*	 * @Author: WuPeng	 * @Date: 2022-03-02 14:16:04	 * @LastEditors: WuPeng	 * @LastEditTime: 2022-04-29 22:22:01	 * @FilePath: /server/src/proto/cs/teamBoss.cs.proto	 */
+message GetLabaInfoReq {
+    int32 blockSpawnId = 1;
+    int32 blockId = 2;
+}
+message GetLabaInfoAck {
+    SingleBlockPublicData labaData = 1;
+}
+message LabaReq {
+    int32 blockSpawnId = 1;
+    int32 blockId = 2;
+    int32 currencyType = 3;
+    int32 betNum = 4;
+}
+message LabaAck {
+    int32 lootId = 1;
+    repeated int32 eleIds = 2;
+    SingleBlockPublicData labaData = 3;
+    repeated ItemInfo items = 4;
+}
+message LabaTalkReq {
+    int32 blockSpawnId = 1;
+    int32 blockId = 2;
+}
+message LabaTalkAck {
+    SingleBlockPublicData labaData = 1;
+}
+message GetLabaTalkRewardReq {
+    int32 blockSpawnId = 1;
+    int32 blockId = 2;
+    int32 talkId = 3;
+}
+message GetLabaTalkRewardAck {
+    repeated ItemInfo items = 1;
+    SingleBlockPublicData labaData = 2;
+}
+message EnterGameReq {
+    int32 accountId = 1;
+    int32 serverId = 2;
+    string token = 3;
+    string name = 4;
+    int32 time = 5;
+    int32 sex = 6;
+    string nickName = 7;
+    int32 relogin = 8;
+    string inviteCode = 9;
+    int32 userId = 10;
+    int32 bcId = 11;
+}
+message EnterGameAck {
+    int32 code = 1;
+    int32 serverId = 2;
+    UserInfo userInfo = 3;
+    ServerTimeInfo serverTimeInfo = 4;
+    int32 season = 5;
+    int32 bcId = 6;
+}
+message CreateRoleReq {
+    int32 sex = 1;
+    string nickName = 2;
+}
+message CreateRoleAck {
+    UserInfo userInfo = 1;
+    ServerTimeInfo serverTimeInfo = 2;
+}
+message CommandReq {
+    string command = 1;
+}
+message CommandAck {
+    string extra = 1;
+}
+message GetCommentTokenReq {}
+message GetCommentTokenAck {
+    string token = 1;
+    int64 ts = 2;
+    int32 militaryGrade = 3;
+}
+message UserInfoNtf {
+    UserInfo userInfo = 1;
+}
+message GetMailListReq {}
+message GetMailListAck {
+    repeated Mail mails = 1;
+}
+message ReadMailReq {
+    int32 id = 1;
+}
+message ReadMailAck {
+    int32 id = 1;
+    int32 isRead = 2;
+}
+message PickMailItemsReq {
+    int32 id = 1;
+}
+message PickMailItemsAck {
+    int32 id = 1;
+    int32 isPicked = 2;
+    repeated ItemInfo items = 3;
+    double tapToken = 4;
+    double addTapToken = 5;
+    int64 copper = 6;
+    int64 addCopper = 7;
+    SkinInfo addSkin = 8;
+}
+message NewMailNtf {
+    Mail mail = 1;
+}
+message Mail {
+    int32 id = 1;
+    int32 userId = 2;
+    int32 type = 3;
+    int32 sysMailId = 4;
+    string fromName = 5;
+    string title = 6;
+    string content = 7;
+    repeated string replaceArgs = 8;
+    map < int32, int32 > items = 9;
+    int32 IsPicked = 10;
+    int32 IsRead = 11;
+    int32 DelHours = 12;
+    int64 DelTime = 13;
+    int64 ExpireTime = 14;
+    int64 AddTime = 15;
+    int32 IsDelete = 16;
+}
+message RequestPayReq {
+    int32 id = 1;
+}
+message RequestPayAck {
+    PayData payData = 1;
+}
+message CheckPayReq {
+    string checkData = 1;
+    PayData payData = 2;
+}
+message CheckPayAck {
+    int32 isSucc = 1;
+}
+message PayData {
+    int32 rechargeId = 1;
+    string productID = 2;
+    float price = 3;
+    string orderNo = 4;
+    string payload = 5;
+}
+message ReportBlockReq {
+    int32 blockId = 1;
+    int64 openTime = 2;
+    int64 enterTime = 3;
+    int64 doneTime = 4;
+    int64 closeTime = 5;
+    int32 doneType = 6;
+    int32 praise = 7;
+    int32 share = 8;
+}
+message ReportBlockAck {}
+message SetSecurityPwdReq {
+    string pwd = 1;
+    string sign = 2;
+}
+message SetSecurityPwdAck {
+    string securityPwd = 1;
+}
+message UpdSecurityPwdReq {
+    string pwd = 1;
+    string newPwd = 2;
+}
+message UpdSecurityPwdAck {
+    string securityPwd = 1;
+    SecurityPwdData securityPwdData = 2;
+}
+message OpenSkipPwdReq {
+    string pwd = 1;
+}
+message OpenSkipPwdAck {
+    SecurityPwdData securityPwdData = 1;
+}
+message CloseSkipPwdReq {}
+message CloseSkipPwdAck {
+    SecurityPwdData securityPwdData = 1;
+}
+message ResetSecurityPwdReq {
+    int32 isForce = 1;
+    string pwd = 2;
+}
+message ResetSecurityPwdAck {
+    string securityPwd = 1;
+    SecurityPwdData securityPwdData = 2;
+}
+message CancelResetSecurityPwdReq {}
+message CancelResetSecurityPwdAck {
+    SecurityPwdData securityPwdData = 1;
+}
+message GetSecurityPwdInfoReq {}
+message GetSecurityPwdInfoAck {
+    string securityPwd = 1;
+    SecurityPwdData securityPwdData = 2;
+}
+message ExecuteSkillReq {
+    int32 srcID = 1;
+    int32 skillID = 2;
+    int32 targetID = 3;
+}
+message ExecuteSkillAck {
+    int32 retCode = 1;
+    int32 srcID = 2;
+    int32 skillID = 3;
+    int32 targetID = 4;
+    int32 cdTime = 5;
+}
+message ExecuteSkillNtf {
+    int32 skillID = 1;
+    int32 srcID = 2;
+    int32 targetID = 3;
+    Location currentLocation = 4;
+    float moveTime = 5;
+}
+message SkillDamageNtf {
+    int32 skillID = 1;
+    int32 srcID = 2;
+    int32 targetID = 3;
+    int32 damageType = 4;
+    int32 damage = 5;
+    int32 mainTargetID = 6;
+    int32 bRepulsed = 7;
+    int32 repulsedX = 8;
+    int32 repulsedY = 9;
+    int32 bPunchFly = 10;
+    int32 bHp70 = 11;
+}
+message SkillRecoverNtf {
+    int32 skillID = 1;
+    int32 srcID = 2;
+    int32 targetID = 3;
+    int32 value = 4;
+}
+message SkillEventNtf {
+    int32 skillID = 1;
+    int32 srcID = 2;
+    int32 targetID = 3;
+    int32 evt = 4;
+    int32 evtPara1 = 5;
+    int32 evtPara2 = 6;
+    int32 evtPara3 = 7;
+    int32 evtPara4 = 8;
+    repeated int32 evtParas1 = 9;
+}
+message StateChainBreakNtf {
+    int32 id = 1;
+    int32 chainMainId = 2;
+}
+message SkillBeInterruptNtf {
+    int32 skillID = 1;
+    int32 srcID = 2;
+    int32 targetID = 3;
+    int32 interruptType = 4;
+}
+message HeroDieNtf {
+    int32 id = 1;
+}
+message NPCDieNtf {
+    int32 id = 1;
+}
+message BuyStarPassReq {
+    int32 currencyType = 1;
+}
+message BuyStarPassAck {
+    repeated ItemInfo items = 1;
+}
+message StarPassRewardReq {
+    int32 id = 1;
+    int32 type = 2;
+}
+message StarPassRewardAck {
+    repeated ItemInfo items = 1;
+}
+message StarPassBoxRewardReq {}
+message StarPassBoxRewardAck {
+    int32 boxNum = 1;
+    repeated ItemInfo items = 2;
+} /*	 * @Author: WuPeng	 * @Date: 2022-03-02 14:16:04	 * @LastEditors: WuPeng	 * @LastEditTime: 2022-04-29 22:22:01	 * @FilePath: /server/src/proto/cs/teamBoss.cs.proto	 */
+message SummonMonsterReq {}
+message SummonMonsterAck {
+    repeated ItemInfo items = 1;
+    repeated SummonDamage damages = 2;
+    int32 myOldMax = 3;
+    int32 myNewMax = 4;
+    int32 oldMax = 5;
+    int32 newMax = 6;
+}
+message GetSummonInfoReq {}
+message GetSummonInfoAck {
+    int32 bossId = 1;
+    int64 myRank = 2;
+    int32 myScore = 3;
+    repeated int32 myMonsters = 4;
+}
+message SummonRankListReq {}
+message SummonRankListAck {
+    repeated RankUser rankList = 1;
+}
+message GetSummonMonsterInfoReq {
+    int32 id = 1;
+}
+message GetSummonMonsterInfoAck {
+    int32 maxDamage = 1;
+    string name = 2;
+}
+message SummonMonsterSellInfoReq {}
+message SummonMonsterSellInfoAck {
+    map < int32, int32 > sellCounts = 1;
+}
+message SellSummonMonsterReq {
+    int32 id = 1;
+    int32 num = 2;
+}
+message SellSummonMonsterAck {
+    repeated ItemInfo items = 1;
+    int32 count = 2;
+}
+message SummonRewardPoolReq {}
+message SummonRewardPoolAck {
+    int64 count = 1;
+}
+message SysMsgNtf {
+    SysMsg msg = 1;
+}
+message SysMsg {
+    int32 msgType = 1;
+    int32 msgId = 2;
+    repeated SysMsgParam param = 3;
+    string msg = 4;
+}
+message TradeStatisticalReq {
+    int32 currencyType = 1;
+}
+message TradeStatisticalAck {
+    TradeTotal Hour24 = 1;
+    TradeTotal Day7 = 2;
+    TradeTotal Day30 = 3;
+    int32 currencyType = 4;
+}
+message TradeStatisticalNtf {
+    TradeTotal Hour24 = 1;
+    TradeTotal Day7 = 2;
+    TradeTotal Day30 = 3;
+    int32 currencyType = 4;
+}
+message TradeTotal {
+    int64 tradeCount = 1;
+    int64 tradeMoney = 2;
+}
+message TradeHistoryReq {
+    int32 currencyType = 1;
+}
+message TradeHistoryAck {
+    repeated SysMsg list = 1;
+    int32 currencyType = 2;
+}
+message FishHistoryReq {}
+message FishHistoryAck {
+    repeated SysMsg list = 1;
+}
+message WatchMsgReq {
+    int32 watchType = 1;
+    int32 extParam = 2;
+}
+message WatchMsgAck {}
+message UnWatchMsgReq {
+    int32 watchType = 1;
+}
+message UnWatchMsgAck {} /*	 * @Author: WuPeng	 * @Date: 2022-03-02 14:16:04	 * @LastEditors: WuPeng	 * @LastEditTime: 2022-05-20 20:45:45	 * @FilePath: /server/src/proto/cs/teamBoss.cs.proto	 */
+message TeamBaseInfo {
+    int64 id = 1;
+    int32 type = 2;
+    int32 bossId = 3;
+    int32 state = 4;
+    TeamMember leader = 5;
+    int32 MemberSize = 6;
+    int32 MemberMaxSize = 7;
+    int32 MultiCount = 8;
+}
+message TeamInfo {
+    int64 id = 1;
+    int32 type = 2;
+    int32 bossId = 3;
+    int32 state = 4;
+    TeamMember leader = 5;
+    repeated TeamMember memberList = 6;
+    int32 mapLogicId = 7;
+    int32 personal = 8;
+    string personalKey = 9;
+    int32 MultiCount = 10;
+}
+message TeamMember {
+    int32 userId = 1;
+    string name = 2;
+    string clubName = 3;
+    int32 icon = 4;
+    repeated TeamHero squadHeros = 5;
+}
+message TeamHero {
+    int32 id = 1;
+    int32 showId = 2;
+    repeated int32 equips = 3;
+}
+message TeamListReq {
+    int32 teamType = 1;
+    int32 bossId = 2;
+}
+message TeamListAck {
+    repeated TeamBaseInfo teamList = 1;
+}
+message TeamBaseInfoNtf {
+    TeamBaseInfo team = 1;
+}
+message CreateTeamReq {
+    int32 teamType = 1;
+    int32 bossId = 2;
+    repeated int32 squad = 3;
+    int32 personal = 4;
+    int32 multiCount = 5;
+}
+message CreateTeamAck {
+    TeamInfo team = 1;
+}
+message CreateTeamNtf {
+    TeamBaseInfo team = 1;
+}
+message JoinTeamReq {
+    int64 teamId = 1;
+    repeated int32 squad = 2;
+}
+message JoinTeamAck {
+    TeamInfo team = 1;
+}
+message TeamInsideNtf {
+    int32 userId = 1;
+    TeamMember teamMember = 2;
+    int32 mapLogicId = 3;
+    int32 op = 4;
+}
+message ChangeTeamSquadReq {
+    repeated int32 squad = 1;
+}
+message ChangeTeamSquadAck {}
+message ExitTeamReq {}
+message ExitTeamAck {}
+message KickTeamReq {
+    int32 userId = 1;
+}
+message KickTeamAck {}
+message DelTeamReq {}
+message DelTeamAck {}
+message DelTeamNtf {
+    TeamBaseInfo team = 1;
+}
+message GetMyTeamInfoReq {
+    int32 logicType = 1;
+}
+message GetMyTeamInfoAck {
+    TeamInfo team = 1;
+    int32 surplusEnterCd = 2;
+    int32 gameCount = 3;
+}
+message GetTeamInfoReq {
+    int64 id = 1;
+}
+message GetTeamInfoAck {
+    TeamInfo team = 1;
+}
+message StartTeamBattleReq {
+    int32 logicType = 1;
+}
+message StartTeamBattleAck {}
+message GetTeamBossRankReq {}
+message GetTeamBossRankAck {
+    repeated RankUser rankList = 1;
+}
+message GetTeamBossRankDetailReq {
+    int32 userId = 1;
+}
+message GetTeamBossRankDetailAck {
+    repeated TeamMember memberList = 1;
+}
+message RollItemStartNtf {
+    int64 startTime = 1;
+    int64 endTime = 2;
+    repeated RollItem rollItems = 3;
+}
+message RollItemOverNtf {
+    repeated RollItem rollItems = 1;
+}
+message RollItemChangeNtf {
+    int32 index = 1;
+    RollItem rollItem = 2;
+}
+message RollItemReq {
+    int32 index = 1;
+    bool isChoose = 2;
+}
+message RollItemAck {
+    int32 retCode = 1;
+}
+message RollItem {
+    int32 index = 1;
+    ItemInfo item = 2;
+    map < int32, int32 > rollData = 3;
+    RankUser winUser = 4;
+    bool isRollOver = 5;
+}
+message SearchTeamReq {
+    string personalKey = 1;
+    int32 type = 2;
+}
+message SearchTeamAck {
+    int64 teamId = 1;
+    int32 type = 2;
+    int32 bossId = 3;
+    int32 MultiCount = 4;
+}
+message GetTileMapReq {}
+message GetTileMapAck {
+    int32 mapId = 1;
+    repeated int32 pos = 2;
+    repeated Block blocks = 3;
+    repeated int32 unLockMaps = 4;
+}
+message GetOtherTileMapReq {
+    int32 mapId = 1;
+    int32 playType = 2;
+}
+message GetOtherTileMapAck {
+    int32 mapId = 1;
+    repeated Block blocks = 2;
+}
+message TileMapMoveReq {
+    repeated int32 pos = 1;
+}
+message TileMapMoveAck {
+    int32 newMapId = 1;
+}
+message TileMapSwitchReq {
+    int32 switchId = 1;
+}
+message TileMapSwitchAck {
+    int32 retCode = 1;
+    int32 mapId = 2;
+    repeated int32 pos = 3;
+    repeated Block blocks = 4;
+}
+message TileMapConveyReq {
+    int32 mapId = 1;
+}
+message TileMapConveyAck {
+    int32 retCode = 1;
+    int32 mapId = 2;
+    repeated int32 pos = 3;
+    repeated Block blocks = 4;
+}
+message TileMapUnlockReq {
+    int32 mapId = 1;
+}
+message TileMapUnlockAck {
+    repeated int32 unLockMaps = 1;
+}
+message EnterEleMisteryReq {
+    int32 id = 1;
+}
+message EnterEleMisteryAck {
+    int32 mapId = 1;
+    repeated int32 pos = 2;
+    repeated Block blocks = 3;
+    repeated ItemInfo items = 4;
+    int32 backCity = 5;
+}
+message ReEnterEleMisteryReq {
+    int32 mapId = 1;
+}
+message ReEnterEleMisteryAck {
+    int32 mapId = 1;
+    repeated int32 pos = 2;
+    repeated Block blocks = 3;
+    repeated ItemInfo items = 4;
+    int32 backCity = 5;
+}
+message QuitEleMisteryReq {
+    int32 mapId = 1;
+    int32 isSave = 2;
+}
+message QuitEleMisteryAck {}
+message GetEleMisteryInfoReq {
+    int32 eleType = 1;
+}
+message GetEleMisteryInfoAck {
+    int32 mapId = 1;
+}
+message GoodsInfo {
+    int32 tradeId = 1;
+    int32 userId = 2;
+    int32 itemId = 3;
+    int64 itemNum = 4;
+    int64 price = 5;
+    int64 endTime = 6;
+    int32 personal = 7;
+    string personalKey = 8;
+    int32 currencyType = 9;
+}
+message TradeRewardInfo {
+    int32 id = 1;
+    int32 itemId = 2;
+    int64 itemNum = 3;
+    int32 state = 4;
+}
+message tradeHistory {
+    string buyerName = 1;
+    int32 itemId = 2;
+    int64 itemNum = 3;
+    int32 currencyType = 4;
+    int64 currency = 5;
+    int64 rtime = 6;
+    string sellerName = 7;
+    int32 tradeRate = 8;
+    int32 personal = 9;
+    int32 gemPass = 10;
+}
+message SellGoodsReq {
+    int32 itemId = 1;
+    int64 itemNum = 2;
+    int64 price = 3;
+    int32 personal = 4;
+    int32 currencyType = 5;
+    string pwd = 6;
+}
+message SellGoodsAck {
+    repeated ItemInfo items = 2;
+    GoodsInfo goods = 3;
+}
+message BuyGoodsReq {
+    int32 tradeId = 1;
+    int32 currencyType = 2;
+    string pwd = 3;
+}
+message BuyGoodsAck {
+    int32 tradeId = 1;
+    repeated ItemInfo items = 2;
+}
+message CancelGoodsReq {
+    int32 tradeId = 1;
+    int32 currencyType = 2;
+}
+message CancelGoodsAck {
+    int32 tradeId = 1;
+    repeated ItemInfo items = 2;
+}
+message QuerySelfGoodsListReq {
+    int32 currencyType = 1;
+}
+message QuerySelfGoodsListAck {
+    repeated GoodsInfo goodsList = 1;
+    repeated TradeRewardInfo rewardList = 2;
+}
+message QueryGoodsByIdReq {
+    int32 tradeId = 1;
+    int32 currencyType = 2;
+}
+message QueryGoodsByIdAck {
+    GoodsInfo goods = 1;
+}
+message QueryGoodsByKeyReq {
+    string key = 1;
+    int32 currencyType = 2;
+}
+message QueryGoodsByKeyAck {
+    GoodsInfo goods = 1;
+}
+message QueryGoodsListReq {
+    int32 itemId = 1;
+    int32 currencyType = 2;
+}
+message QueryGoodsListAck {
+    repeated GoodsInfo goodsList = 1;
+}
+message QueryGoodsCataNumReq {
+    int32 cataId = 1;
+    int32 currencyType = 2;
+}
+message GoodsCataNum {
+    int32 lv = 1;
+    int32 num = 2;
+}
+message QueryGoodsCataNumAck {
+    repeated GoodsCataNum nums = 1;
+}
+message QueryGoodsNumByLvReq {
+    int32 cataId = 1;
+    int32 minLv = 2;
+    int32 maxLv = 3;
+    int32 currencyType = 4;
+}
+message GoodsLvNum {
+    int32 itemId = 1;
+    int32 itemNum = 2;
+}
+message QueryGoodsNumByLvAck {
+    repeated GoodsLvNum nums = 1;
+}
+message RecvTradeRewardReq {
+    int32 id = 1;
+    int32 currencyType = 2;
+}
+message RecvTradeRewardAck {
+    int32 id = 1;
+    repeated ItemInfo items = 2;
+}
+message ItemTradeHistoryReq {
+    int32 itemId = 1;
+    int32 currencyType = 2;
+}
+message ItemTradeHistoryAck {
+    repeated tradeHistory tradeList = 1;
+}
+message ReNameReq {
+    string name = 1;
+}
+message ReNameAck {
+    string name = 1;
+    repeated ItemInfo items = 2;
+}
+message ChangeAvatarReq {
+    int32 icon = 1;
+}
+message ChangeAvatarAck {
+    int32 icon = 1;
+}
+message BuyVitReq {
+    int32 type = 1;
+    int32 currencyType = 2;
+}
+message BuyVitAck {
+    int32 addVit = 1;
+    repeated ItemInfo items = 2;
+    map < int32, Count > counts = 3;
+}
+message UseCouponReq {
+    string code = 1;
+}
+message UseCouponAck {
+    repeated ItemInfo items = 1;
+}
+message OpenBlindBoxReq {
+    int32 type = 1;
+    int32 blockSpawnId = 2;
+}
+message OpenBlindBoxAck {
+    repeated ItemInfo items = 1;
+    SkinInfo addSkin = 2;
+    int32 counts = 3;
+    repeated int32 boxIds = 4;
+}
+message GetBlindBoxInfoReq {
+    int32 type = 1;
+    int32 blockSpawnId = 2;
+}
+message GetBlindBoxInfoAck {
+    int32 counts = 1;
+    repeated int32 boxIds = 2;
+}
+message GetBlindBoxListReq {
+    repeated int32 types = 1;
+}
+message BlindBoxCount {
+    int32 counts = 1;
+    repeated int32 boxIds = 2;
+}
+message GetBlindBoxListAck {
+    map < int32, BlindBoxCount > BlindBoxs = 1;
+}
+message BlindBoxListNtf {
+    map < int32, BlindBoxCount > BlindBoxs = 1;
+}
+message DrawCardReq {
+    int32 id = 1;
+}
+message DrawCardAck {
+    repeated ItemInfo items = 1;
+    SkinInfo addSkin = 2;
+}
+message FishingReq {
+    int32 color = 1;
+}
+message FishingAck {
+    repeated ItemInfo items = 1;
+    int32 weight = 2;
+    int32 myOldMax = 3;
+    int32 myNewMax = 4;
+    int32 oldMax = 5;
+    int32 newMax = 6;
+}
+message MyFishInfoReq {}
+message MyFishInfoAck {
+    int64 myRank = 1;
+    int32 myScore = 2;
+    int32 myRankKey = 3;
+}
+message FishRankListReq {}
+message FishRankListAck {
+    repeated RankUser rankList = 1;
+}
+message FishInfoReq {
+    int32 id = 1;
+}
+message FishInfoAck {
+    int32 maxWeight = 1;
+    string name = 2;
+}
+message FishSellInfoReq {}
+message FishSellInfoAck {
+    map < int32, int32 > fishCounts = 1;
+}
+message FishSellReq {
+    int32 id = 1;
+    int32 num = 2;
+}
+message FishSellAck {
+    repeated ItemInfo items = 1;
+    int32 count = 2;
+}
+message FishRewardPoolReq {}
+message FishRewardPoolAck {
+    int64 count = 1;
+}
+message SyncRechargeNtf {
+    repeated int32 ids = 1;
+}
+message ReceiveRechargeReq {
+    int32 id = 1;
+}
+message ReceiveRechargeAck {
+    int64 addCopper = 1;
+    int64 copper = 2;
+    int64 addMCToken = 3;
+    int64 MCToken = 4;
+    double addTapToken = 5;
+    double tapToken = 6;
+    SkinInfo skin = 7;
+    int64 addDiamond = 8;
+    int64 diamond = 9;
+    SkinInfo upHeroSkin = 10;
+    int32 GoodsId = 11;
+    MonthCardData monthCardData = 12;
+}
+message GetMonthCardRewardReq {}
+message GetMonthCardRewardAck {
+    MonthCardData monthCardData = 1;
+    repeated ItemInfo items = 2;
+}
+message PricesReq {}
+message PricesAck {
+    double mcTokenPrice = 1;
+    double tapTokenPrice = 2;
+}
+message PriceInfo {
+    double mcTokenPrice = 1;
+    double tapTokenPrice = 2;
+}
+message PricesNtf {
+    map < int32, PriceInfo > prices = 3;
+}
+message ChangeBubbleReq {
+    int32 bubbleId = 1;
+}
+message ChangeBubbleAck {
+    int32 bubble = 1;
+}
+message GetMailCodeReq {
+    string mail = 1;
+}
+message GetMailCodeAck {}
+message BindMailReq {
+    string mail = 1;
+    string code = 2;
+}
+message BindMailAck {
+    int32 retCode = 1;
+    string boundAccount = 2;
+}
+message BindWebAccountReq {
+    string mail = 1;
+    string account = 2;
+}
+message BindWebAccountAck {
+    int32 retCode = 1;
+}
+message UserInfoChangeNtf {
+    int32 vit = 1;
+}
+message AccountInfoChangeNtf {
+    int32 status = 1;
+    string wallet = 2;
+    int64 accountStatusEndTime = 3;
+}
+message AllPlayerSeasonResultReq {}
+message AllPlayerSeasonResultAck {
+    repeated PlayerSeasonInfo seasons = 1;
+}
+message PlayerSeasonResultReq {
+    int32 seasonId = 1;
+    bool isPop = 2;
+}
+message PlayerSeasonResultAck {
+    PlayerSeasonInfo info = 1;
+}
+message HeroInfoNtf {
+    repeated Hero heros = 10;
+    map < int32, HeroSkin > heroSkins = 11;
+}

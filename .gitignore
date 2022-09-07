@@ -5,3 +5,4 @@ src/old-task/
 src/server/sqlite/db/
 src/task-ether/test/
 .DS_Store
+.index.js
