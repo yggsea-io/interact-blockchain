@@ -20,14 +20,11 @@ console.log("body", body);
 const createSignature = (jwtB64Header, jwtB64Payload, secret) => {
   // create a HMAC(hash based message authentication code) using sha256 hashing alg
   let signature = crypto.createHmac("sha256", secret);
-
   // use the update method to hash a string formed from our jwtB64Header a period and
   //jwtB64Payload
   signature.update(jwtB64Header + "." + jwtB64Payload);
-
   //signature needs to be converted to base64 to make it usable
   signature = signature.digest("base64");
-
   //of course we need to clean the base64 string of URL special characters
   signature = replaceSpecialChars(signature);
   return signature;

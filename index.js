@@ -1,12 +1,6 @@
-const { LAMPORTS_PER_SOL } = require("@solana/web3.js");
-const { transferSplToken } = require("./src/common/solana/token")
-const bs58 = require("bs58");
+const axios = require('axios');
 
-(async()=>{
-    await transferSplToken(
-      "4a5gQjCLrUnS5MTGH6427RXWanTWGytRoT7WYHhj7d3Z9XVFmTreW81pXC3v1mzwPZkFvqJ4MXsasLwThQRbYXHD",
-      "HbUfzDvVH3r5Y28i7U3XRCFfsud1ZwizaGKP5cAVgn9",
-      "6ULxRpk6t4EYTfZnwKVste2hzQ8BQzF9KPdcwiu3ha2a",
-      1
-    )
+(async() =>{
+    const result  = await axios.get('https://www.tapfantasy.io/game/bsc?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7IndlYkFjY291bnRJZCI6MTI1MjI3LCJ3ZWJBY2NvdW50TmFtZSI6ImtpZXVkYWl0aGllbjEifSwiZXhwIjoxNjYzMzAwMzMwLCJpYXQiOjE2NjI2OTU1MzB9.3xMJJfGF-Vv590lw5jvvn5osMqAVlvMqqmidompO3Sg&bcid=56&lang=en')
+    console.log(result.request.path)
 })()
