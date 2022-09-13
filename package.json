@@ -7,7 +7,7 @@
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/providers": "^5.7.0",
     "@ethersproject/wallet": "^5.7.0",
-    "@metaplex-foundation/js": "^0.14.0",
+    "@metaplex-foundation/js": "^0.15.0",
     "@openzeppelin/contracts": "^4.7.0",
     "@renft/sdk": "^5.0.4",
     "@solana/web3.js": "^1.53.0",

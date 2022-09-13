@@ -1,4 +1,4 @@
-const { Metaplex , keypairIdentity, bundlrStorage} = require("@metaplex-foundation/js");
+const { Metaplex } = require("@metaplex-foundation/js");
 const { Connection, clusterApiUrl, Keypair } = require("@solana/web3.js");
 const connection = new Connection(clusterApiUrl("mainnet-beta"));
 const axios = require("axios");
@@ -7,24 +7,23 @@ const { AppendDataToFile } = require("../utils");
 
 
 async function getAllNftByOwner(owner){
-    const wallet = Keypair.generate();
-     const metaplex = new Metaplex(connection)
-        .use(keypairIdentity(wallet))
-        .use(bundlrStorage());
-    const nft = await metaplex.nfts().findAllByOwner(owner).run();
+    const metaplex = new Metaplex(connection)
+    const nft = await metaplex.nfts().findAllByOwner({owner}).run();
     return nft
     
 }
 async function getMetadataFromAllNft(owner, symbol){
     const nft = await getAllNftByOwner(owner)
+    console.log('nfts length', nft.length())
     const result = []
     for (let item of nft) {
-        if (item.symbol == symbol) continue;
+        if (item.symbol != symbol) continue;
         var metadata = item.uri
         do{
             try {
                 const { data } = await axios.get(item.uri)
                 metadata = data
+                console.log(metadata)
             } catch (error) {
                 metadata = undefined
             }
@@ -34,24 +33,13 @@ async function getMetadataFromAllNft(owner, symbol){
         // const tokenId = metadata.attributes[1].value
         // const level = metadata.attributes[2].value
         // const infoItem = tokenId + "," + level + "\n"
-        AppendDataToFile("HABITAT.txt", infoItem)
-        result.push(metadata)
-    }
-    return result
-}
-
-async function getMetadataFromAllNft2(owner, symbol){
-    const nft = await getAllNftByOwner(owner)
-    const result = []
-    for (let item of nft) {
-        if (item.symbol != symbol) continue;
-        console.log(`${item.name},${item.uri}`)
+        AppendDataToFile("Microworld.txt", JSON.stringify(metadata) + "\n")
+       result.push(metadata)
     }
     return result
 }
 
 module.exports = {
   getAllNftByOwner,
-  getMetadataFromAllNft,
-  getMetadataFromAllNft2
+  getMetadataFromAllNft
 }
