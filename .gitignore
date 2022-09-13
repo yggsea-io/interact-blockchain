@@ -6,3 +6,4 @@ src/server/sqlite/db/
 src/task-ether/test/
 .DS_Store
 .index.js
+test
