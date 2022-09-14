@@ -10,17 +10,27 @@ const { AppendDataToFile } = require("../../common/utils");
   var content = "";
   for (var key in dataHandle) {
     if (dataHandle.hasOwnProperty(key)) {
-      if (key == "skills") {
+      if(key == 'grade_icon' || key == 'next_grade_icon'){
+
+      } else if (key == "skills") {
         for (let i = 0; i < dataHandle[key].length; i++) {
-          title += "skill" + i + ",";
-          content += JSON.stringify(dataHandle[key][i]) + ",";
+          title += "skill" + i + ":";
+          for(let key2 in dataHandle[key][i]){
+            if(key2 == 'image_path') continue
+            title += key2.replace("skill_", "") + "/"
+            content += dataHandle[key][i][key2] + "/";
+          }
+          title.slice(0, -1)
+          title += ","
+          content.slice(0, -1)
+          content += ','
         }
         continue;
       } else if (key == "status") {
         for (let i = 0; i < dataHandle[key].length; i++) {
           title += dataHandle[key][i].trait_type + ",";
           content +=
-            dataHandle[key][i].value + "/" + dataHandle[key][i].icon + ",";
+            dataHandle[key][i].value + ",";
         }
         continue;
       } else if (key == "honor") {
@@ -37,5 +47,5 @@ const { AppendDataToFile } = require("../../common/utils");
   }
   title += "trace_id" + "\n";
   content += data.trace_id + "\n";
-  AppendDataToFile("token-123.txt", title + content);
+  AppendDataToFile("nft-123.txt", title + content);
 })();
