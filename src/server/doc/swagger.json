@@ -20,7 +20,6 @@
     "/api/products": {
       "x-swagger-router-controller": "products",
       "get": {
-        "description": "Returns list of all Products",
         "responses": {
           "200": {
             "description": "Success",
