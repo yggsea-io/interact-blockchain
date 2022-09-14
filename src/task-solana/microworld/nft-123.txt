@@ -1,2 +1,0 @@
-token_id,nft_rarity,game_id,grade,attack_kind,next_grade,level,max_level,skill0:id/name/type/desc/locked/,skill1:id/name/type/desc/locked/,skill2:id/name/type/desc/locked/,skill3:id/name/type/desc/locked/,attack,defences,blood,mainline,playtime,riftscore,rank,trace_id
-123,elite,MRM,3,Ranged,4,1,150,56/Hail of Bullets/supporting skill/To Be Continued/false/,57/Energy Laser/supporting skill/To Be Continued/false/,70/Lock Target/supporting skill/To Be Continued/false/,88/Massive Mine/supporting skill/To Be Continued/false/,,,,,0,0,0,5934f805-f317-4cc7-8f4e-0868ae7cba21

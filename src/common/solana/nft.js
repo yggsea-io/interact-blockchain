@@ -33,7 +33,7 @@ async function getMetadataFromAllNft(owner, symbol){
         // const tokenId = metadata.attributes[1].value
         // const level = metadata.attributes[2].value
         // const infoItem = tokenId + "," + level + "\n"
-        AppendDataToFile("Microworld.txt", JSON.stringify(metadata) + "\n")
+        AppendDataToFile("microworld-metadata-uris.txt", JSON.stringify(metadata) + "\n")
        result.push(metadata)
     }
     return result

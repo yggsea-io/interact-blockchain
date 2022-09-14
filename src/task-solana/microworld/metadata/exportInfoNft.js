@@ -12,6 +12,6 @@ const { getDataFromFileTxt } = require("../../common/utils");
             txtAppend += ',' + JSON.stringify(ab)
         }
         txtAppend += "\n"
-        AppendDataToFile("info-nft.txt", txtAppend)
+        AppendDataToFile("info-metadata-list.txt", txtAppend)
     }
 })()
