@@ -1,10 +1,9 @@
-const { readData } = require("./src/common/excel/csv");
-const { AppendDataToFile } = require("./src/common/utils");
+const { readData } = require("../../../src/common/excel/csv");
+const { AppendDataToFile } = require("../../../src/common/utils");
 const axios = require("axios");
 require("../../common/ether/network").useBSC()
 const { web3 } = require("../../common/ether/network").getConfig();
-const tokenContract = "0xb8726809f9a9c059b8454cdf6b37dc20dd52e982"
-const contract = new web3.eth.Contract(tokenURIABI, tokenContract)
+const tokenContract = "0xb5039cf6099770e47de760c9a0dc1c75c489e519"
 
 const tokenURIABI = [
     {
@@ -27,15 +26,16 @@ const tokenURIABI = [
         "type": "function"
     }
 ];
+const contract = new web3.eth.Contract(tokenURIABI, tokenContract)
+
 
 async function getNFTMetadata() {
-
     const data = await readData('export-address-token-nft.csv')
 
     for(let item of data){
         if(data.To != '0xadd96A9B6afd85639e1FAcFeDD8C7836064f14Cd'){
             continue;
-        }
+        }   
         var metadata = await contract.methods.tokenURI(item.TokenId).call()
         do{
             try {
