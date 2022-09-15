@@ -9,7 +9,7 @@ module.exports = async function(uri){
   for (var key in dataHandle) {
     if (dataHandle.hasOwnProperty(key)) {
       if(key == 'grade_icon' || key == 'next_grade_icon'){
-
+          continue
       } else if (key == "skills") {
         for (let i = 0; i < dataHandle[key].length; i++) {
           //title += "skill" + i + ":";

@@ -1,6 +1,5 @@
 const fs = require("fs");
 const fastcsv = require('fast-csv');
-const { parse } = require("csv-parse");
 const csv = require('csv-parser');
 
 async function readData(file) {

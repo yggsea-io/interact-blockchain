@@ -1,8 +1,10 @@
-const { AppendDataToFile } = require("../../common/utils")
+const { getMetadataFromAllNft, getAllNftByOwner } = require("../../../common/solana/nft")
 
-const { getDataFromFileTxt } = require("../../common/utils");
+const { AppendDataToFile, getDataFromFileTxt } = require("../../../common/utils");
 
 (async()=>{
+    await getMetadataFromAllNft('hc5YHg5a1nDpSEi6iwio5cHS8T2Zi1YWX8VqxmsG9b3','MIRROR')
+    
     var data = await getDataFromFileTxt('Microworld.txt')
     //data = JSON.parse(data)
     for(let item of data){
