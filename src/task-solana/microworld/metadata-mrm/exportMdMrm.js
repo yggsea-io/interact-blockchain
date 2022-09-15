@@ -1,11 +1,14 @@
 const { default: axios } = require("axios");
-const { waitFor } = require("../../../common/utils");
+const { AppendDataToFile } = require("../../../common/utils");
+const formatContent  = require('./formatContentMrm')
+const formatTitle  = require('./formatTitleMrm')
 
-const appendDataMrm = require("./format-nft-mrm");
 
-(async () => {
+main().catch( err => console.log(err))
+async function main(){
   var dataHandle = [];
   var offset = 0
+  let title = undefined
   do {
     const { data } = await axios.get(
         "https://api.solscan.io/account/v2/tokenaccounts",
@@ -18,14 +21,18 @@ const appendDataMrm = require("./format-nft-mrm");
         }
       );
       dataHandle = data.data
-      console.log(dataHandle.length)
+      if(title == undefined) {
+        title = await formatTitle(`https://mirror-api.mirrorwrld.io/api/v1/nft/property/FU1tDd78JKyLqDT6jRUhgLkxdnuYu1Z9nJL2QfwjtWuv/${dataHandle[0].tokenName.replace("Mirrors #", "")}/MRM`)
+        AppendDataToFile('nft-mrm.txt', title)
+      }
       for (let item of dataHandle) {
         const tokenid = item.tokenName.replace("Mirrors #", "");
         const uriMedata = `https://mirror-api.mirrorwrld.io/api/v1/nft/property/FU1tDd78JKyLqDT6jRUhgLkxdnuYu1Z9nJL2QfwjtWuv/${tokenid}/MRM`;
-        appendDataMrm(uriMedata);
+        const content = await formatContent(uriMedata);
+        AppendDataToFile('nft-mrm.txt', content)
       }
       offset += 50
       console.log(offset)
   } while (dataHandle != "[]");
   console.log('end')
-})();
+}
