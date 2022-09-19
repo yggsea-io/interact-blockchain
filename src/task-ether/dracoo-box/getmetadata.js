@@ -31,24 +31,28 @@ const contract = new web3.eth.Contract(tokenURIABI, tokenContract)
 
 async function getNFTMetadata() {
     const data = await readData('export-address-token-nft.csv')
+    console.log(data)
+    var promises = []
 
     for(let item of data){
-        if(data.To != '0xadd96A9B6afd85639e1FAcFeDD8C7836064f14Cd'){
+        if(item.To.toLowerCase() != '0xadd96A9B6afd85639e1FAcFeDD8C7836064f14Cd'.toLowerCase()){
             continue;
         }   
-        var metadata = await contract.methods.tokenURI(item.TokenId).call()
-        do{
-            try {
-                const { data } = await axios.get(metadata)
-                metadata = data
-            } catch (error) {
-                metadata = undefined
-            }
-        }while(metadata == undefined)
-        const result = item.TokenId + "," + metadata.name + "," + JSON.stringify(metadata) + "\n"
-        AppendDataToFile("result.txt", result)
-
+        try {
+            var uriMedata = await contract.methods.tokenURI(item.TokenId).call()
+            console.log(uriMedata)
+            promises.push(appendData(uriMedata))
+        } catch (error) {
+            AppendDataToFile("tokenIdErr.txt", item.TokenId + "\n")
+        }
     }
+    console.log("length", promises.length)
+    await Promise.all(promises)
 }
+ async function appendData(uri){
+    metadata = await axios.get(uri)
+    const result = item.TokenId + "," + metadata.name + "," + JSON.stringify(metadata) + "\n"
+    AppendDataToFile("result.txt", result)
+ }
 
 getNFTMetadata()
