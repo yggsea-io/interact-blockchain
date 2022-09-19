@@ -36,11 +36,6 @@ async function getMetaDataFromUri(nfts, fromId, toId, symbol){
         if (nfts[i].symbol != symbol) continue;
         const { data } = await axios.get(nfts[i].uri)
         metadata = data
-
-        //------Task for apeen file
-        // const tokenId = metadata.attributes[1].value
-        // const level = metadata.attributes[2].value
-        // const infoItem = tokenId + "," + level + "\n"
         AppendDataToFile(RESULT_PATH, JSON.stringify(metadata) + "\n")
        result.push(metadata)
     }
