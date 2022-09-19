@@ -46,7 +46,6 @@ async function getNFTMetadata() {
             AppendDataToFile("tokenIdErr.txt", item.TokenId + "\n")
         }
     }
-    console.log("length", promises.length)
     await Promise.all(promises)
 }
  async function appendData(uri){
