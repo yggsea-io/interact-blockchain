@@ -1,23 +1,24 @@
 const { getAllNftByOwner } = require("../../common/solana/nft")
 
-const { AppendDataToFile } = require("../../common/utils");
+const { AppendDataToFile, runMutiThreadForLoop } = require("../../common/utils");
 const getFormatTileMD = require("./formatTitleMD")
-const getContentTileMD = require("./formatContentMD")
-main().catch( err => console.log(err) )
-async function main(){
-    const nft = await getAllNftByOwner('2jAq7j7L8hPPXwVoY4GfbNxuQLN2kpxxQr2ZyerXaZ8o')
-    console.log('nft',nft)
-    let title = undefined
-    const result = []
-    for (let item of nft) {
-        if (item.symbol != 'ML') continue;
-        if(title == undefined){
-            title = await getFormatTileMD(item.uri)
-            AppendDataToFile('monkey.txt', title)
+const getContentTileMD = require("./formatContentMD");
+let isExistTitle = false
+main().catch(err => console.log(err))
+async function exportMd(start, end, nfts){
+    for (let i = start ; i < end; i ++) {
+        if (nfts[i].symbol != 'ML') continue;
+        if(isExistTitle == false){
+            isExistTitle = true
+            title = await getFormatTileMD(nfts[i].uri)
+            AppendDataToFile('monkey1.txt', title)
         }
-        const content = await getContentTileMD(item.uri)
-        console.log(content)
-        //AppendDataToFile('monkey.txt', content)
+        const content = await getContentTileMD(nfts[i].uri)
+        AppendDataToFile('monkey1.txt', content)
     }
-    return result
+}
+
+async function main(){
+    const nfts = await getAllNftByOwner('2jAq7j7L8hPPXwVoY4GfbNxuQLN2kpxxQr2ZyerXaZ8o')
+    runMutiThreadForLoop(nfts.length, 0, exportMd, nfts)
 }

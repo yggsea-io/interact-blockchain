@@ -31,7 +31,6 @@ const contract = new web3.eth.Contract(tokenURIABI, tokenContract)
 
 async function getNFTMetadata() {
     const data = await readData('export-address-token-nft.csv')
-    console.log(data)
     var promises = []
 
     for(let item of data){

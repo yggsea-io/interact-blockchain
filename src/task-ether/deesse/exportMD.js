@@ -1,7 +1,7 @@
 const { default: axios } = require('axios');
-const { AppendDataToFile } = require('../../common/utils');
+const { AppendDataToFile, runMutiThreadForLoop } = require('../../common/utils');
 const formatContent = require('./formatContentMD')
-main(60).catch( err => console.log(err))
+runMutiThreadForLoop(60, 1, exportmd).catch( err => console.log(err))
 async function exportmd(startPage, endPage){
     var dataHandle = [];
     var page = startPage
@@ -20,20 +20,8 @@ async function exportmd(startPage, endPage){
         for (let item of dataHandle) {
           const uriMedata = item.tokenUrl;
           const content = await formatContent(uriMedata);
-          AppendDataToFile('deesse.txt', item.tokenId + ',' + content)
+          AppendDataToFile('deesse1.txt', item.tokenId + ',' + content)
         }
         page += 1
     } while (dataHandle != "[]" && page < endPage);
-}
-
-async function main(totalPage){
-    var heighStartEnd = parseInt(totalPage /10 + 1)
-    const promises = [];
-    var start = 1, end = heighStartEnd
-    for(let i = 0 ; i < 10 ; i++){
-        promises.push(exportmd(start, end))
-        start = end;
-        end += heighStartEnd
-    }
-    await Promise.all(promises)
 }

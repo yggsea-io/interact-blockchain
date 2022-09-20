@@ -16,7 +16,6 @@ async function getAllNftByOwner(owner){
 }
 async function getMetadataByOwner(owner, symbol){
     const nfts = await getAllNftByOwner(owner)
-    console.log('length',nfts.length)
     const heighStartEnd = parseInt(nfts.length / 10) + 1
     var promises = [];
     var start = 0, end = heighStartEnd
@@ -30,9 +29,9 @@ async function getMetadataByOwner(owner, symbol){
     fs.unlinkSync(RESULT_PATH)
     return result
 }
-async function getMetaDataFromUri(nfts, fromId, toId, symbol){
+async function getMetaDataFromUri(nfts, fromIdx, toIdx, symbol){
     const result = []
-    for (let i = fromId ; i< toId ; i++) {
+    for (let i = fromIdx ; i< toIdx ; i++) {
         if (nfts[i].symbol != symbol) continue;
         const { data } = await axios.get(nfts[i].uri)
         metadata = data
