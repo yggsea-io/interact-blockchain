@@ -16,7 +16,7 @@ function AppendDataToFile(filePath, data) {
   fs.appendFile(filePath, data, 'utf8',
     function (err) {
       if (err) throw err;
-      console.log("Data appended to file successfully.")
+      //console.log("Data appended to file successfully.")
     }
   )
 }
