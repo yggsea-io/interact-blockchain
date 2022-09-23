@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require("body-parser");
 const routerSqlite = require("./sqlite/routes/routes")
 const routerWS = require("./websocket/routes/routes")
-const routerMongo = require("./mongoose/routes/turorial.routes")
+const routerMongo = require("./mongoose/routes")
 
 const swaggerUi = require("swagger-ui-express");
 const swaggerDocument = require('./doc/swagger.json')
