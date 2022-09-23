@@ -5,7 +5,7 @@ const credentials = require("./credentials.json");
 const { default: axios } = require("axios");
 const SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"];
 
-function getCode() {
+async function getCode() {
   const { client_secret, client_id, redirect_uris } = credentials.web;
 
   const oAuth2Client = new google.auth.OAuth2(
@@ -39,7 +39,7 @@ async function getRefreshToken(code) {
   let { data } = axios(options).catch(err => console.log(err))
   console.log('data', data);
 }
-getRefreshToken(
-  "4/0ARtbsJr15h7qtOvMbzTE_3_SeHgodscWWjJO5jlI2r0w8jcrW-Kpqvl9A13SL8MpDhdUeQ&scope=https://www.googleapis.com/auth/gmail.readonly"
-).catch(err => console.log(err));
-//getCode().catch(err => console.log(err));
+// getRefreshToken(
+//   "4/0ARtbsJr15h7qtOvMbzTE_3_SeHgodscWWjJO5jlI2r0w8jcrW-Kpqvl9A13SL8MpDhdUeQ&scope=https://www.googleapis.com/auth/gmail.readonly"
+// ).catch(err => console.log(err));
+getCode().catch(err => console.log(err));
