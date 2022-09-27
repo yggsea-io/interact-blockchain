@@ -20,7 +20,7 @@ async function exportmd(startPage, endPage){
         for (let item of dataHandle) {
           const uriMedata = item.tokenUrl;
           const content = await formatContent(uriMedata);
-          AppendDataToFile('deesse1.txt', item.tokenId + ',' + content)
+          AppendDataToFile('deesse.txt', item.tokenId + ',' + content)
         }
         page += 1
     } while (dataHandle != "[]" && page < endPage);
