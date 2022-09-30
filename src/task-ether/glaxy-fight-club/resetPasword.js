@@ -1,6 +1,5 @@
 const { default: axios } = require("axios");
 var GmailAPI = require("../../common/gmail/GmailApi");
-const credentials = require('./credentials.json')
 const refreshToken = "1//0eKuWyCp3ZS6LCgYIARAAGA4SNwF-L9Irjtz6uLzD-savhr6YmBjvLEzQDnkFN323vFeEvUcUbyeCcBlobbGOe0o8xEIikMgfxVI"
 const qs = require('qs');
 const { AppendDataToFile } = require('../../../src/common/utils.js')
