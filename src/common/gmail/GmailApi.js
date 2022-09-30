@@ -4,40 +4,23 @@ var qs = require("qs");
 class GmailAPI {
   accessToken = "";
   refresh_token = undefined
-  constructor(credentials, refresh_token) {
+  constructor(refresh_token, accessToken) {
     this.refresh_token = refresh_token;
-    this.accessToken = this.getAcceToken(credentials);
+    this.accessToken = (accessToken != undefined) ? accessToken : this.getAcceToken();
   }
 
-  getAcceToken = async (credentials) => {
-    var data = qs.stringify({
-      client_id: credentials.web != undefined ?  credentials.web.client_id :  credentials.installed.client_id,
-      client_secret: credentials.web != undefined ?  credentials.web.client_secret :  credentials.installed.client_secret,
-      // refresh_token: (this.refresh_token != undefined && this.refresh_token != '') ? this.refresh_token 
-      //                           : get,
-      refresh_token: this.refresh_token, 
-      grant_type: "refresh_token",
-    });
-    var config = {
-      method: "post",
-      url: "https://accounts.google.com/o/oauth2/token",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      data: data,
+  setAccessToken = async () => {
+    var req = {
+      'token_uri' : "https://oauth2.googleapis.com/token",
+      'refresh_token': this.refresh_token
     };
 
-    let accessToken = "";
-
-    await axios(config)
-      .then(async function (response) {
-        accessToken = await response.data.access_token;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-
-    return accessToken;
+    const { data } = await axios.post("https://developers.google.com/oauthplayground/refreshAccessToken", req)
+    if(data.error != undefined){
+        console.log(`Err: ${error}`)
+        return this.accessToken
+    }
+    return data.access_token; 
   };
 
   searchGmail = async (searchItem) => {
@@ -56,7 +39,6 @@ class GmailAPI {
         idMess = await response.data["messages"];
       })
       .catch(function (error) {
-        console.log(error);
       });
 
     return idMess;
