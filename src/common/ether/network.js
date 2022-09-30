@@ -58,6 +58,18 @@ const useMumbai = () =>{
     current.gasPrice = web3.utils.toWei("70", "gwei");
 }
 
+const useEther = () =>{
+    const web3 = new Web3("https://mainnet.infura.io/v3/");
+    web3.eth.handleRevert = true;
+    current.web3 = web3;
+    current.common = Common.default.forCustomChain('mainnet', {
+        name: 'ether-mumbai',
+        networkId: 1,
+        chainId: 1,
+    }, "spuriousDragon");
+    current.gasPrice = web3.utils.toWei("70", "gwei");
+}
+
 const setConfirmationBlocks = (block) => {
     current.web3.eth.transactionConfirmationBlocks = block;
 }
@@ -73,5 +85,6 @@ module.exports = {
     useBSCTestnet, 
     useMumbai,
     setConfirmationBlocks, 
-    setGasPrice 
+    setGasPrice ,
+    useEther
 };
