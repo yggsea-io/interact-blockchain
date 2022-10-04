@@ -43,7 +43,7 @@ const useBSCTestnet = () => {
         networkId: 97,
         chainId: 97,
     }, 'istanbul');
-    current.gasPrice = web3.utils.toWei("5", "gwei");
+    current.gasPrice = web3.utils.toWei("10", "gwei");
 }
 
 const useMumbai = () =>{

@@ -1,6 +1,7 @@
 const fs = require("fs");
 const { BigNumber } = require("ethers");
 const LineByLine = require("line-by-line");
+const crypto = require('crypto')
 
 function expandTo18Decimals(n) {
   return BigNumber.from(n).mul(BigNumber.from(10).pow(18));
@@ -44,11 +45,17 @@ async function runMutiThreadForLoop(totalItem, startNum, actionFunc, data) {
   await Promise.all(promises);
 }
 
+const generatePassword = (
+  length = 20,
+  wishlist = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-'
+) => Array.from(crypto.randomFillSync(new Uint32Array(length))).map((x) => wishlist[x % wishlist.length]).join('')
+
 module.exports = {
   waitFor,
   AppendDataToFile,
   expandTo18Decimals,
   convert18DecimalsToNomal,
   getDataFromFileTxt,
-  runMutiThreadForLoop
+  runMutiThreadForLoop,
+  generatePassword
 };
