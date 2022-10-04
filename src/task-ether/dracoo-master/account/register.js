@@ -17,7 +17,6 @@ async function main(){
 
 async function register(start, end, data){
     for(let i = start; i< end; i++){
-        let id = data[i].id.match(/: [^\s]+/g, "")[0].replace(": ", "")
         let api = new Api(data[i].address, gmailApi)
         const regiter = await api.registerGame(`yggsea${id}`, `dracoobinding+${id}@yggsea.io`)
     }

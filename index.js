@@ -1,42 +1,9 @@
-require("./src/common/ether/network").usePolygon()
-const { web3 } = require("./src/common/ether/network").getConfig();
-const tokenContract = "0xa2a13ce1824f3916fc84c65e559391fc6674e6e8"
-const WebSocket = require('ws')
-
-
-const tokenURIABI = [
-    {
-        "inputs": [
-            {
-                "internalType": "uint256",  
-                "name": "tokenId",
-                "type": "uint256"
-            }
-        ],
-        "name": "tokenURI",
-        "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
-    }
-];
-const contract = new web3.eth.Contract(tokenURIABI, tokenContract)
-
-
-async function getNFTMetadata() {
-  const ages = [3, 10, 28, 20];
-
-   
-  let age = ages.find(age => checkAge(parseInt(age)));
-  console.log(age);
+require('./src/common/ether/network.js').usePolygon()
+const { web3 } = require('./src/common/ether/network.js').getConfig()
+const Erc20Abi  = require('./src/common/ether/abis/Erc20.json')
+main().catch(err => console.log(err))
+async function main(){
+    const contract = new  web3.eth.Contract(Erc20Abi, "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0")
+    const total = await contract.methods.totalSupply().call()
+    console.log('total', total)
 }
- 
-function checkAge(age) {
-  return age > 100;
-}
-getNFTMetadata()
