@@ -1,0 +1,1 @@
+address for managing bas token: 0xb145201cfc8d8b643afa6c352f6ae079f3f1c606
