@@ -50,6 +50,18 @@ const generatePassword = (
   wishlist = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-'
 ) => Array.from(crypto.randomFillSync(new Uint32Array(length))).map((x) => wishlist[x % wishlist.length]).join('')
 
+const sortIncrease = (data, filterName) => {
+  let dataFilter = data
+  if (!dataFilter[0].hasOwnProperty(filterName)) {
+      console.log('no filtername')
+      return false
+  }
+  dataFilter.sort(function(a, b) {
+      return (a[filterName] - b[filterName]);
+  });
+  return dataFilter
+}
+
 module.exports = {
   waitFor,
   AppendDataToFile,
@@ -57,5 +69,6 @@ module.exports = {
   convert18DecimalsToNomal,
   getDataFromFileTxt,
   runMutiThreadForLoop,
-  generatePassword
+  generatePassword,
+  sortIncrease
 };
