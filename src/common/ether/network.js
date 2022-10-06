@@ -48,8 +48,10 @@ const useBSCTestnet = () => {
 
 const useMumbai = () =>{
     const web3 = new Web3("https://still-blissful-wish.matic-testnet.discover.quiknode.pro/86e97434251f9f437c91cd989eb128ab42a2e139/");
+    const web3wss = new Web3(Web3.WebsocketProvider("https://still-blissful-wish.matic-testnet.discover.quiknode.pro/86e97434251f9f437c91cd989eb128ab42a2e139/"));
     web3.eth.handleRevert = true;
     current.web3 = web3;
+    current.web3Wss = web3wss;
     current.common = Common.default.forCustomChain('goerli', {
         name: 'matic-mumbai',
         networkId: 80001,

@@ -18,6 +18,6 @@ async function main(){
 async function register(start, end, data){
     for(let i = start; i< end; i++){
         let api = new Api(data[i].address, gmailApi)
-        const regiter = await api.registerGame(`yggsea${id}`, `dracoobinding+${id}@yggsea.io`)
+        const regiter = await api.registerGame(id,`yggsea${id}`, `dracoobinding+${id}@yggsea.io`)
     }
 }

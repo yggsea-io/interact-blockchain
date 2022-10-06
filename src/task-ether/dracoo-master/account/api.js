@@ -14,6 +14,7 @@ class Api {
   constructor(addWallet, gmailApi) {
     this.address = addWallet;
     this.gmailApi = gmailApi;
+    this.id = undefined;
     this.mail = undefined;
     this.name = undefined;
     this.token = undefined;
@@ -44,7 +45,8 @@ class Api {
     return data;
   }
 
-  async registerGame(name, mail) {
+  async registerGame(id, name, mail) {
+    this.id = id
     this.mail = mail;
     this.name = name;
     const loginData = await this.login();
@@ -68,7 +70,7 @@ class Api {
     if (code == false || code == undefined) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.address},${this.mail},Error: Cannot get verify code.Please get token to read mail again\n`
+        `${this.id},${this.address},${this.mail},Error: Cannot get verify code.Please get token to read mail again\n`
       );
     }
 
@@ -93,7 +95,7 @@ class Api {
       if (data.code != "OK") {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error set name: ${this.name}\n`
+          `${this.id},${this.address},${this.mail},Error set name: ${this.name}\n`
         );
         return false;
       }
@@ -102,7 +104,7 @@ class Api {
       console.log(
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error set name: ${this.name}: ${error}\n`
+          `${this.id},${this.address},${this.mail},Error set name: ${this.name}: ${error}\n`
         )
       );
       return false;
@@ -123,13 +125,13 @@ class Api {
       if (data.code != 200) {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error: Check mail be wrong \n`
+          `${this.id},${this.address},${this.mail},Error: Check mail be wrong \n`
         );
         return false;
       } else if (data.code == 200 && data.msg == "existence") {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error: Mail is existence \n`
+          `${this.id},${this.address},${this.mail},Error: Mail is existence \n`
         );
         return false;
       }
@@ -137,7 +139,7 @@ class Api {
     } catch (error) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.address},${this.mail},Error: Check mail be wrong: ${error} \n`
+        `${this.id},${this.address},${this.mail},Error: Check mail be wrong: ${error} \n`
       );
       return false;
     }
@@ -157,7 +159,7 @@ class Api {
       if (data.code != "OK") {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error: Cannot send mail to get code \n`
+          `${this.id},${this.address},${this.mail},Error: Cannot send mail to get code \n`
         );
         return false;
       }
@@ -165,7 +167,7 @@ class Api {
     } catch (error) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.address},${this.mail},Error: Cannot send mail to get code \n`
+        `${this.id},${this.address},${this.mail},Error: Cannot send mail to get code \n`
       );
       return false;
     }
@@ -206,19 +208,19 @@ class Api {
       } else if (data.code == "OK" && data.data == '"Repeat Binding"') {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error: Mail is registed \n`
+          `${this.id},${this.address},${this.mail},Error: Mail is registed \n`
         );
       } else {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},Error: Cannot verify mail, maybe error code \n`
+          `${this.id},${this.address},${this.mail},Error: Cannot verify mail, maybe error code \n`
         );
         return false;
       }
     } catch (error) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.address},${this.mail},Error: Cannot verify mail : ${error} \n`
+        `${this.id},${this.address},${this.mail},Error: Cannot verify mail : ${error} \n`
       );
       return false;
     }
@@ -250,26 +252,27 @@ class Api {
       if (data.code != "OK") {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.address},${this.mail},${pass},Error: Cannot bind Mail \n`
+          `${this.id},${this.address},${this.mail},${pass},Error: Cannot bind Mail \n`
         );
         return false;
       } else if (data.code == "OK") {
         AppendDataToFile(
           SUCCESS_REGISTER_PATH,
-          `${this.address},${this.mail},${pass} \n`
+          `${this.id},${this.id},${this.address},${this.mail},${pass} \n`
         );
       }
       return true;
     } catch (error) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.address},${this.mail},${pass},Error: Cannot bind Mail : ${error}\n`
+        `${this.id},${this.address},${this.mail},${pass},Error: Cannot bind Mail : ${error}\n`
       );
       return false;
     }
   }
 
-  async resetPass(mail, oldPass) {
+  async resetPass(id ,mail, oldPass) {
+    this.id = id
     this.mail = mail;
     const loginData = await this.login();
     this.token = loginData.message.token;
@@ -301,20 +304,20 @@ class Api {
       if (data.code == "OK" && data.data == true) {
         AppendDataToFile(
           SUCCESS_RESET_PASS_PATH,
-          `${this.address},${this.mail},${newPass}\n`
+          `${this.id},${this.address},${this.mail},${newPass}\n`
         );
         return false;
       } else {
         AppendDataToFile(
           FAIL_RESET_PASS_PATH,
-          `${this.address},${this.mail},${oldPass},${newPass}\n`
+          `${this.id},${this.address},${this.mail},${oldPass},${newPass}\n`
         );
       }
       return true;
     } catch (error) {
       AppendDataToFile(
         FAIL_RESET_PASS_PATH,
-        `${this.address},${this.mail},${oldPass},${newPass}\n`
+        `${this.id},${this.address},${this.mail},${oldPass},${newPass}\n`
       );
       return false;
     }
