@@ -1,5 +1,6 @@
+const { clusterApiUrl, Connection, Keypair, LAMPORTS_PER_SOL, PublicKey } = require('@solana/web3.js');
+const { createMint, getOrCreateAssociatedTokenAccount, mintTo, transfer } = require('@solana/spl-token');
 const { Metaplex } = require("@metaplex-foundation/js");
-const { Connection, clusterApiUrl } = require("@solana/web3.js");
 const connection = new Connection(clusterApiUrl("mainnet-beta"));
 const axios = require("axios");
 const { AppendDataToFile, getDataFromFileTxt } = require("../utils");
@@ -41,7 +42,45 @@ async function getMetaDataFromUri(nfts, fromIdx, toIdx, symbol){
     return result
 }
 
+
+async function transferNFT(connection, fromWallet, mint, toWallet) {
+    const toWalletPublicKey = new PublicKey(toWallet)
+    // Get the token account of the fromWallet address, and if it does not exist, create it
+    const fromTokenAccount = await getOrCreateAssociatedTokenAccount(
+        connection,
+        fromWallet,
+        mint,
+        fromWallet.publicKey
+    );
+    console.log('fromTokenAccount', fromTokenAccount.address.toString())
+
+    // Get the token account of the toWallet address, and if it does not exist, create it
+    const toTokenAccount = await getOrCreateAssociatedTokenAccount(
+        connection,
+        fromWallet,
+        mint,
+        toWalletPublicKey
+    );
+    console.log('toTokenAccount', toTokenAccount.address.toString())
+
+    // Transfer the new token to the "toTokenAccount" we just created
+    signature = await transfer(
+        connection,
+        fromWallet,
+        fromTokenAccount.address,
+        toTokenAccount.address,
+        fromWallet,
+        1,
+        [],
+        { skipPreflight: true, commitment: 'processed' }
+    );
+    return signature;
+}
+
+module.exports = { transferNFT };
+
 module.exports = {
   getAllNftByOwner,
-  getMetadataByOwner
+  getMetadataByOwner,
+  transferNFT
 }
