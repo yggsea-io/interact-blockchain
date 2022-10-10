@@ -1,9 +1,12 @@
 const { web3, common, gasPrice, collectorAddress } = require("./network").getConfig();
 const Tx = require('ethereumjs-tx').Transaction;
 const Erc20Abi = require('./abis/Erc20.json');
+const Erc721Abi = require('./abis/Erc721.json')
 
 const APPROVE_AMOUNT = web3.utils.toBN('1000000000000000000').muln(1000000);
 const Erc20Token = new web3.eth.Contract(Erc20Abi);
+const Erc721Nft = new web3.eth.Contract(Erc721Abi);
+
 
 class Account {
     constructor(address, key) {
@@ -33,6 +36,15 @@ class Account {
             web3.utils.toHex(amount),
         ).encodeABI();
         return this.sendTx(tokenAddress, data);
+    }
+
+    async sendTokenId(Address721, from ,to, tokenId) {
+        const data = Erc721Nft.methods.safeTransferFrom(
+            web3.utils.toChecksumAddress(from),
+            web3.utils.toChecksumAddress(to),
+            tokenId,
+        ).encodeABI();
+        return this.sendTx(Address721, data);
     }
 
     async approveCollector(tokenAddress) {
