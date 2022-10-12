@@ -1,35 +1,28 @@
 const {
-  clusterApiUrl,
-  Connection,
-  Keypair,
-  LAMPORTS_PER_SOL,
   PublicKey,
 } = require("@solana/web3.js");
 const {
-  createMint,
   getOrCreateAssociatedTokenAccount,
-  mintTo,
   transfer,
 } = require("@solana/spl-token");
 const { Metaplex, keypairIdentity } = require("@metaplex-foundation/js");
-const connection = new Connection(clusterApiUrl("devnet"));
 const axios = require("axios");
 const {
   AppendDataToFile,
   getDataFromFileTxt,
-  runMutiThreadForLoop,
+  waitFor,
 } = require("../utils");
 const fs = require("fs");
 const path = require("path");
 const RESULT_PATH = path.join(__dirname, "./result.txt");
 
-async function getAllNftByOwner(owner) {
+async function getAllNftByOwner(connection, owner) {
   const metaplex = new Metaplex(connection);
   const nft = await metaplex.nfts().findAllByOwner({ owner }).run();
   return nft;
 }
-async function getMetadataByOwner(owner, symbol) {
-  const nfts = await getAllNftByOwner(owner);
+async function getMetadataByOwner(connection, owner, symbol) {
+  const nfts = await getAllNftByOwner(connection, owner);
   const heighStartEnd = parseInt(nfts.length / 10) + 1;
   var promises = [];
   var start = 0,
@@ -57,53 +50,79 @@ async function getMetaDataFromUri(nfts, fromIdx, toIdx, symbol) {
 }
 
 async function transferNFT(connection, fromWallet, mint, toWallet) {
-  const toWalletPublicKey = new PublicKey(toWallet);
-  // Get the token account of the fromWallet address, and if it does not exist, create it
-  const fromTokenAccount = await getOrCreateAssociatedTokenAccount(
-    connection,
-    fromWallet,
-    mint,
-    fromWallet.publicKey
-  );
-  console.log("fromTokenAccount", fromTokenAccount.address.toString());
+    const toWalletPublicKey = new PublicKey(toWallet);
+    // Get the token account of the fromWallet address, and if it does not exist, create it
+    const fromTokenAccount = await getOrCreateAssociatedTokenAccount(
+      connection,
+      fromWallet,
+      mint,
+      fromWallet.publicKey
+    );
+    console.log("fromTokenAccount", fromTokenAccount.address.toString());
 
-  // Get the token account of the toWallet address, and if it does not exist, create it
-  const toTokenAccount = await getOrCreateAssociatedTokenAccount(
-    connection,
-    fromWallet,
-    mint,
-    toWalletPublicKey
-  );
-  console.log("toTokenAccount", toTokenAccount.address.toString());
+    // Get the token account of the toWallet address, and if it does not exist, create it
+    const toTokenAccount = await getOrCreateAssociatedTokenAccount(
+      connection,
+      fromWallet,
+      mint,
+      toWalletPublicKey
+    );
 
-  // Transfer the new token to the "toTokenAccount" we just created
-  signature = await transfer(
-    connection,
-    fromWallet,
-    fromTokenAccount.address,
-    toTokenAccount.address,
-    fromWallet,
-    1,
-    [],
-    { skipPreflight: true, commitment: "processed" }
-  );
-  
-  return signature;
+    console.log("toTokenAccount", toTokenAccount.address.toString());
+
+    // Transfer the new token to the "toTokenAccount" we just created
+    signature = await transfer(
+      connection,
+      fromWallet,
+      fromTokenAccount.address,
+      toTokenAccount.address,
+      fromWallet,
+      1,
+      [],
+      { skipPreflight: true, commitment: "processed" }
+    );
+    return signature;
 }
 async function createListNftTest(connection, owner, uriBase, symbol, total) {
   const metaplex = new Metaplex(connection);
   metaplex.use(keypairIdentity(owner));
-  for (let i = 0; i < 100; i++) {
-    const mintNFTResponse = await metaplex
-      .nfts()
-      .create({
-        uri: uriBase,
-        name: symbol + i,
-        symbol: symbol,
-        maxSupply: 1,
-      })
-      .run();
-    console.log(mintNFTResponse);
+  var heigh = parseInt(total / 10) + 1;
+  const promises = [];
+  var start = 0,
+    end = heigh;
+  for (let i = 0; i < 10; i++) {
+    promises.push(createNft(start, end, metaplex, uriBase, symbol));
+    start = end;
+    end = heigh + end > total ? total : heigh + end;
+  }
+  await Promise.all(promises);
+}
+
+async function createNft(start, end, metaplex ,uriBase, symbol){
+  for (let j = start; j < end; j++) {
+    console.log('run: ', j)
+    let mintNFTResponse = undefined;
+    let runback = 0
+    while (mintNFTResponse == undefined && runback < 3) {
+      try {
+        mintNFTResponse = await metaplex
+          .nfts()
+          .create({
+            uri: uriBase,
+            name: symbol + j,
+            symbol: symbol,
+            maxSupply: 1,
+          })
+          .run();
+      } catch (error) {
+        await waitFor(1000)
+        runback ++
+        if(runback == 3){
+          console.log(`error:${j} : ${error}`);
+        }
+        mintNFTResponse = undefined;
+      }
+    }
   }
 }
 

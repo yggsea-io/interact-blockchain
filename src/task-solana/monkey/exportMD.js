@@ -4,6 +4,7 @@ const { AppendDataToFile, runMutiThreadForLoop } = require("../../common/utils")
 const getFormatTileMD = require("./formatTitleMD")
 const getContentTileMD = require("./formatContentMD");
 let isExistTitle = false
+const connection = new Connection(clusterApiUrl("mainnet-beta"));
 main().catch(err => console.log(err))
 async function exportMd(start, end, nfts){
     for (let i = start ; i < end; i ++) {
@@ -19,6 +20,6 @@ async function exportMd(start, end, nfts){
 }
 
 async function main(){
-    const nfts = await getAllNftByOwner('2jAq7j7L8hPPXwVoY4GfbNxuQLN2kpxxQr2ZyerXaZ8o')
+    const nfts = await getAllNftByOwner(connection, '2jAq7j7L8hPPXwVoY4GfbNxuQLN2kpxxQr2ZyerXaZ8o')
     runMutiThreadForLoop(nfts.length, 0, exportMd, nfts)
 }

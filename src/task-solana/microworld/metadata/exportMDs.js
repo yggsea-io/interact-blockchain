@@ -1,11 +1,13 @@
+const { Connection } = require("@solana/web3.js");
 const { getMetadataByOwner } = require("../../../common/solana/nft")
 
 const { AppendDataToFile, runMutiThreadForLoop } = require("../../../common/utils");
+const connection = new Connection(clusterApiUrl("mainnet-beta"));
 
 main().catch(err => console.log(err)) 
 
 async function main(){
-    let data = await getMetadataByOwner('hc5YHg5a1nDpSEi6iwio5cHS8T2Zi1YWX8VqxmsG9b3','MIRROR')
+    let data = await getMetadataByOwner(connection, 'hc5YHg5a1nDpSEi6iwio5cHS8T2Zi1YWX8VqxmsG9b3','MIRROR')
     runMutiThreadForLoop(data.length, 0, readMdToFile, data)
 }
 

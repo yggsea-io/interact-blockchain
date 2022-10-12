@@ -4,14 +4,13 @@ const path = require('path')
 require('dotenv').config({ path: path.join(__dirname, '../../../.env') });
 const { default: axios } = require("axios");
 const { transferNFT, getAllNftByOwner } = require("../../common/solana/nft");
-const {runMutiThreadForLoop } = require("../../common/utils");
+const {runMutiThreadForLoop, waitFor, AppendDataToFile } = require("../../common/utils");
 const ownerKeyPair = Keypair.fromSecretKey(bs58.decode(process.env.ACCOUNT1_PRIVATE_KEY));
 
-//const connection = new Connection(clusterApiUrl("devnet"));
+//const connection = new Connection(clusterApiUrl("mainnet-beta"));
 
 //TEST
 const connection = new Connection(clusterApiUrl("devnet"));
-
 
 main().catch(err => console.log(err))
 let nfts = []
@@ -25,8 +24,8 @@ async function main(){
 
     //test
     nfts = await getAllNftByOwner(ownerKeyPair.publicKey)
+    console.log('test', nfts.length)
     await runMutiThreadForLoop(nfts.length, 0, transferAllNft)
-
 }
 
 async function getNfts(start, end) {
@@ -60,14 +59,47 @@ async function transferAllNft(start, end){
     for(let i = start; i < end; i++){
         // if(nfts[i].tokenSymbol != 'MXM')
         //     continue
-        //await transferNFT(connection, fromWallet, nfts[i].tokenAddress, 'ACPpwoSRF4B4Ftsjj9TAGxBmJwkHZNb13jnYdEiRshmA')
-
+        // let tx = undefined
+        // let callback = 0
+        // while(tx == undefined && callback < 3){
+        //   try {
+        //     tx = await transferNFT(connection, ownerKeyPair, nfts[i].tokenAddress, 'ACPpwoSRF4B4Ftsjj9TAGxBmJwkHZNb13jnYdEiRshmA')
+        //     console.log('tx', tx)
+        //   } catch (error) {
+        //     tx = undefined
+        //     callback++
+        //     await waitFor(1000)
+        //     if(callback == 3){
+        //       AppendDataToFile("error-transfer.txt", `${nfts[i].mintAddress.toBase58()}: ${error}  \n`);
+        //     }
+        //   }
+        // }
 
         //TEST
-        if(!nfts[i].name.includes('MXM')){
+        try {
+          if(!nfts[i].name.includes('MXM')){
             continue
         }
-        await transferNFT(connection, ownerKeyPair, nfts[i].mintAddress, 'HbUfzDvVH3r5Y28i7U3XRCFfsud1ZwizaGKP5cAVgn9')
-
+        let tx = undefined
+        let callback = 0
+        while(tx == undefined && callback < 3){
+          try {
+            tx = await transferNFT(connection, ownerKeyPair, nfts[i].mintAddress, 'HbUfzDvVH3r5Y28i7U3XRCFfsud1ZwizaGKP5cAVgn9')
+            console.log('tx', tx)
+          } catch (error) {
+            tx = undefined
+            callback++
+            console.log('callback', callback)
+            await waitFor(1000)
+            if(callback == 3){
+              AppendDataToFile("error-transfer.txt", `${nfts[i].mintAddress.toBase58()}: ${error}  \n`);
+            }
+          }
+        }
+        } catch (error) {
+          
+        }
+        
     }
+
 }
