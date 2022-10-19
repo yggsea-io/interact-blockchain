@@ -1,4 +1,4 @@
-const getDataEvent = async (contract, options, eventName) => {
+const getDataEvent = async (contract, eventName, options) => {
     const data = await contract.getPastEvents(eventName, options)
     .then(result => {
         return result
