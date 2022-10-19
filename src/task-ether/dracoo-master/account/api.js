@@ -1,9 +1,8 @@
 const { default: axios } = require("axios");
 const { generatePassword, AppendDataToFile } = require("../../../common/utils");
 const { waitFor } = require("../../../common/utils.js");
-const { dracooMasterSign } = require("../cybavo-api");
-
 const path = require("path");
+const { post } = require("../../../../../tasks/src/common/clientutils");
 
 const FAIL_REGISTER_PATH = path.join(__dirname, "./resgister-fail.txt");
 const SUCCESS_REGISTER_PATH = path.join(__dirname, "./resgister-success.txt");
@@ -324,4 +323,9 @@ class Api {
   }
 }
 
+const dracooMasterSign = (account, message) => {
+  const path = `/dracoo-master/sign/${account}`;
+  const body = { message };
+  return post(path, body);
+}
 module.exports = Api;
