@@ -58,15 +58,15 @@ class Api {
       return false;
 
     //Start get code
-    await waitFor(2000);
+    await waitFor(3000);
     let code;
-    for (let i = 0; i < 5; i++) {
-      await waitFor(1000);
+    for (let i = 0; i < 10; i++) {
+      await waitFor(100);
       code = await this.getVerifyCode();
-      if (code == false || code == undefined) continue;
+      if (!code) continue;
       break;
     }
-    if (code == false || code == undefined) {
+    if (!code) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
         `${this.id},${this.address},${this.mail},Error: Cannot get verify code.Please get token to read mail again\n`
@@ -166,7 +166,7 @@ class Api {
     } catch (error) {
       AppendDataToFile(
         FAIL_REGISTER_PATH,
-        `${this.id},${this.address},${this.mail},Error: Cannot send mail to get code \n`
+        `${this.id},${this.address},${this.mail}, ${data},Error: Cannot send mail to get code \n`
       );
       return false;
     }
@@ -183,7 +183,9 @@ class Api {
         )
       );
       const code = mess.snippet.match(/Code [^\s]+/g)[0].replace("Code ", "");
-      console.log(`${this.mail}code:`, code);
+      if(code){
+          await this.gmailApi.deleteGmailFromId(mess.id)
+      }
       return code;
     } catch (error) {
       return false;
@@ -201,7 +203,7 @@ class Api {
           },
         }
       );
-      console.log(`verify mail ${this.mail} with ${code}: ${data}`);
+      console.log(`verify mail ${this.mail} with ${code}: ${data.code} and ${data.data}`);
       if (data.code == "OK" && data.data == true) {
         return true;
       } else if (data.code == "OK" && data.data == '"Repeat Binding"') {
@@ -212,7 +214,7 @@ class Api {
       } else {
         AppendDataToFile(
           FAIL_REGISTER_PATH,
-          `${this.id},${this.address},${this.mail},Error: Cannot verify mail, maybe error code \n`
+          `${this.id},${this.address},${this.mail},${this.code},Error: Cannot verify mail, maybe error code \n`
         );
         return false;
       }
@@ -227,7 +229,6 @@ class Api {
 
   async bindMail() {
     const pass = generatePassword(8);
-    console.log("pass", pass);
     try {
       let params = {
         email: this.mail,
@@ -298,7 +299,6 @@ class Api {
           },
         }
       );
-      console.log("reset pass", data, this.mail);
 
       if (data.code == "OK" && data.data == true) {
         AppendDataToFile(
