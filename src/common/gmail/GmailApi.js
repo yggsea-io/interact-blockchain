@@ -46,6 +46,19 @@ class GmailAPI {
 
     return idMess;
   };
+  deleteGmailFromId = async (id) => {
+    const req = {
+      method: "delete",
+      url: `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}`,
+      headers: {
+        Authorization: `Bearer ${await this.accessToken} `,
+      },
+    };
+    return await axios(req).catch((err) => {
+      return false;
+    });
+  };
+
   deleteGmailFrom = async (searchText) => {
     try {
       const messIds = await this.searchGmail(searchText);
@@ -54,20 +67,8 @@ class GmailAPI {
         return true
       }
 
-      var config1 = async (id) => {
-        return {
-          method: "delete",
-          url: `https://gmail.googleapis.com/gmail/v1/users/me/messages/${id}`,
-          headers: {
-            Authorization: `Bearer ${await this.accessToken} `,
-          },
-        };
-      };
       for (let item of messIds) {
-        const req = await config1(item.id);
-        await axios(req).catch((err) => {
-          return false;
-        });
+        await this.deleteGmailFromId(item.id)
       }
       return true;
     } catch (error) {
