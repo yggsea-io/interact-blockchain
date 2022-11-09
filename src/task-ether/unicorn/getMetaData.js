@@ -6,7 +6,7 @@ const { default: axios } = require("axios")
 const { AppendDataToFile, runMutiThreadForLoop, waitFor } = require("../../common/utils")
 
 
-//main().catch(error => console.log(error))
+main().catch(error => console.log(error))
 
 let attributesUnicorn = []
 let attributesUniF = []
@@ -16,7 +16,7 @@ async function addUnicorns(tokenId){
     while(metadata == undefined){
         try {
             const tokenUri = await getTokenUri721('0xdc0479cc5bba033b3e7de9f178607150b3abce1f', tokenId)
-            console.log('tokenUri:', tokenUri)
+            console.log(tokenId, tokenUri)
             metadata = await axios.get(tokenUri)
             metadata = metadata.data
         } catch (error) {
@@ -33,7 +33,7 @@ async function addUnicorns(tokenId){
             result += ","
         }
     }
-    AppendDataToFile('Unicorns.txt', result.substring(0, result.length - 1) + "\n")
+    //AppendDataToFile('Unicorns.txt', result.substring(0, result.length - 1) + "\n")
     waitFor(100)
 
 }
@@ -43,7 +43,7 @@ async function addUnif(tokenId){
     while(metadata == undefined){
         try {
             const tokenUri = await getTokenUri721('0xa2a13ce1824f3916fc84c65e559391fc6674e6e8', tokenId)
-            console.log('tokenUri:', tokenUri)
+            console.log(tokenId, tokenUri)
             metadata = await axios.get(tokenUri)
             metadata = metadata.data
         } catch (error) {
@@ -61,7 +61,7 @@ async function addUnif(tokenId){
         }
     }
 
-    AppendDataToFile('Unif.txt', result.substring(0, result.length - 1) + "\n")
+    //AppendDataToFile('Unif.txt', result.substring(0, result.length - 1) + "\n")
 
 }
 async function exportMetadata(start, end, nfts){
@@ -95,23 +95,22 @@ async function getTransactionNfts(to){
     return result
 }
 async function main(){
-    // const uri = await getTokenUri721('0xdc0479cc5bba033b3e7de9f178607150b3abce1f', 5849)    
-    // const metadataUnicorn  = await axios.get(uri)
-    // let titleUnicorn = "Token Id,"   
-    // for(let item of metadataUnicorn.data.attributes){
-    //     attributesUnicorn.push(item.trait_type)
-    //     titleUnicorn += item.trait_type + ","
-    // }
-    // AppendDataToFile('Unicorns.txt', titleUnicorn.substring(0, titleUnicorn.length - 1) + "\n")
-    // const uri2 = await getTokenUri721('0xa2a13ce1824f3916fc84c65e559391fc6674e6e8', 18175)
-    // const metadataUnif   = await axios.get(uri2)
-    // let titleUniF = "Token Id,"    
-    // for(let item of metadataUnif.data.attributes){
-    //     attributesUniF.push(item.trait_type)
-    //     titleUniF += item.trait_type + ","
-    // }
+    const uri = await getTokenUri721('0xdc0479cc5bba033b3e7de9f178607150b3abce1f', 5849)    
+    const metadataUnicorn  = await axios.get(uri)
+    let titleUnicorn = "Token Id,"   
+    for(let item of metadataUnicorn.data.attributes){
+        attributesUnicorn.push(item.trait_type)
+        titleUnicorn += item.trait_type + ","
+    }
+    //AppendDataToFile('Unicorns.txt', titleUnicorn.substring(0, titleUnicorn.length - 1) + "\n")
+    const uri2 = await getTokenUri721('0xa2a13ce1824f3916fc84c65e559391fc6674e6e8', 18175)
+    const metadataUnif   = await axios.get(uri2)
+    let titleUniF = "Token Id,"    
+    for(let item of metadataUnif.data.attributes){
+        attributesUniF.push(item.trait_type)
+        titleUniF += item.trait_type + ","
+    }
     // AppendDataToFile('Unif.txt', titleUniF.substring(0, titleUnicorn.length - 1) + "\n")
     const nfts = await getTransactionNfts('0xbedc1a821adbbfd76133d3aa7f0a9ae8a4a9edf7')    
-    console.log('nfts:', nfts.length)
-    // await runMutiThreadForLoop(nfts.length, 0 , exportMetadata, nfts)
+    await runMutiThreadForLoop(nfts.length, 0 , exportMetadata, nfts)
 }
