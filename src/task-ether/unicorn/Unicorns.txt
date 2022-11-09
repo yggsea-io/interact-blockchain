@@ -1,0 +1,770 @@
+Token Id,Game Lock,Lifecycle,Class,Origin,Birthday,Breeding Points,Attack,Accuracy,Movement Speed,Attack Speed,Defense,Vitality,Resistance,Magic,Mythic,Body,Face,Horn,Hooves,Mane,Tail
+5857,Unlocked,Adult,Cloud,1,1638704378,8,186,175,128,204,128,128,136,123,,Fluffy Snow,Stormy Horizon,Snowman Carrot,Ground Storm,Blue Cloud,Golden Sun
+5699,Unlocked,Adult,Candy,1,1638703352,8,148,112,217,145,151,235,178,112,Single Mythic,Caramel Nougat,Sweet Smugness,Mint Chocolate,Caramel Nougat,Graham Cracker,Gummy Bear
+5796,Unlocked,Adult,Heart,1,1638703430,8,136,151,140,182,144,112,188,140,,Pink Stripe,Haughty Huff,Violet Rune,Pink Smooth,Violet Braid,Purple Wizard
+5878,Unlocked,Adult,Candy,1,1638703858,8,142,134,180,112,151,213,151,112,,Blueberry Swirl,Sweet Smugness,Strawberry Icecream,Pink Sprinkles,Strawberry Chocolate,Strawberry Chocolate
+6048,Unlocked,Adult,Candy,1,1638703476,8,136,117,169,134,112,189,150,123,,Blueberry Swirl,Sweet Smugness,Strawberry Chocolate,Blueberry Swirl,Strawberry Chocolate,Mint Chocolate
+6035,Unlocked,Adult,Moon,1,1638703754,8,128,128,236,134,191,136,112,198,,Blue Moonspot,Blasting Boldness,Purple Alien,Red Laser,Gray Crater,Green Moonrock
+6000,Unlocked,Adult,Moon,1,1638703520,8,112,151,149,112,151,148,112,179,,Green Laser,Vexed Voltage,Bronze Antenna,Blue Moonrock,Yellow Moonrock,Yellow Crater
+5820,Unlocked,Adult,Flower,1,1638703446,8,155,123,209,158,123,162,140,133,,Autumn Leaf,Shady Sad,Red Oak,Spring Leaf,Brown Bark,Red Bloom
+5930,Unlocked,Adult,Cloud,1,1638703414,8,207,134,151,208,128,145,154,128,,Bright Lightning,Stormy Horizon,Snowman Carrot,Thunder Storm,Blue Cloud,Golden Sun
+5999,Unlocked,Adult,Crystal,1,1638703516,8,123,123,171,123,195,208,128,136,,Pink Shatter,Stony Indifference,Turquoise Node,Turquoise Pattern,Turquoise Shale,Purple Node
+5895,Unlocked,Adult,Moon,1,1638703278,8,128,112,182,123,201,136,117,181,,Green Laser,Blasting Boldness,Green Alien,Gray Laser,Gray Crater,Blue Tentacle
+5972,Unlocked,Adult,Flower,1,1638703938,8,209,112,297,171,145,209,112,141,,Autumn Leaf,Fragrant Suave,Yellow Thorn,Spring Leaf,Red Bark,Green Bush
+5938,Unlocked,Adult,Candy,1,1638703332,8,184,123,205,112,112,234,165,123,,Pink Nougat,Sweet Beaming,Chocolate Icecream,Caramel Chocolate,Mint Chocolate,Graham Cracker
+6023,Unlocked,Adult,Moon,1,1638703506,8,123,123,178,123,187,183,134,164,,Turquoise Moonspot,Cosmic Cheer,Purple Alien,Blue Moonrock,Green Tentacle,Silver Antenna
+5816,Unlocked,Adult,Crystal,1,1638703382,8,123,134,202,123,151,199,117,155,,Blue Shatter,Stony Indifference,Turquoise Node,Purple Stone,Turquoise Shale,Turquoise Geode
+5660,Unlocked,Adult,Cloud,1,1638703954,8,216,165,134,182,134,134,149,112,,Night Ice,Dumping Raincloud,Solid Ice,Ground Storm,White Cloud,Dark Cloud
+5828,Unlocked,Adult,Flower,1,1638703592,8,123,117,305,227,112,117,112,177,,Green Meadow,Stout Determined,Brown Thorn,Orange Blossom,Green Blade,Green Bush
+5906,Unlocked,Adult,Heart,1,1638703304,8,136,128,134,174,217,112,193,123,Single Mythic,Pink Bow,Ultimate Princess,Yellow Whisp,Pink Bow,Orange Cowlick,Purple Wizard
+5905,Unlocked,Adult,Heart,1,1638703300,8,176,112,140,212,194,128,185,117,,Pink Bow,Jazzy Vibes,Red Fossil,Pink Spot,Sunny Braid,Pink Braid
+5934,Unlocked,Adult,Cloud,1,1638704670,7,261,205,112,189,123,123,168,123,Single Mythic,Day Ice,Stormy Horizon,Dark Lightning,Day Ice,Thunder God,Golden Sun
+5768,Unlocked,Adult,Heart,1,1638703488,8,170,134,112,186,180,145,193,112,,Pink Bow,Jazzy Vibes,Yellow Whisp,Lavender Smooth,Orange Cowlick,Pink Puff
+5994,Unlocked,Adult,Cloud,1,1638704064,8,197,181,134,206,112,112,156,128,,Night Ice,Fluffy Smile,Snowman Carrot,Night Rain,Dark Cloud,Shatter Ice
+5893,Unlocked,Adult,Flower,1,1638703272,8,147,151,158,158,112,123,134,131,,Green Oak,Fragrant Suave,Pink Poppy,Autumn Leaf,Green Frond,Red Bloom
+5698,Unlocked,Adult,Flower,1,1638703348,8,184,140,261,138,117,184,123,148,,Autumn Leaf,Blossoming Smile,Green Oak,Spring Leaf,Yellow Blade,Yellow Needle
+5880,Unlocked,Adult,Candy,1,1638703864,8,143,112,200,128,112,244,210,112,,Caramel Nougat,Sweet Beaming,Chocolate Icecream,Caramel Chocolate,Strawberry Chocolate,Yellow Whip
+5794,Unlocked,Adult,Moon,1,1638703424,8,112,128,218,123,158,224,117,196,,Green Laser,Blasting Boldness,Bronze Antenna,Red Laser,Red Flame,Gray Crater
+5918,Unlocked,Adult,Heart,1,1638703638,8,195,117,112,196,163,117,261,112,,Green Bow,Radiant Joy,Red Fossil,Orange Spot,Pink Frame,Violet Braid
+5785,Unlocked,Adult,Flower,1,1638703720,8,155,123,235,170,140,155,117,181,Single Mythic,Green Oak,Blossoming Smile,Red Oak,Fairy Flower,Red Frond,Green Bush
+5759,Unlocked,Adult,Candy,1,1638703846,8,207,128,183,134,128,202,126,112,,Blueberry Swirl,Glazed Smooth,Strawberry Icecream,Mint Chocolate,Caramel Chocolate,Pink Whip
+5894,Unlocked,Adult,Heart,1,1638703276,8,142,134,117,213,225,128,177,112,,Pink Smooth,Jazzy Vibes,Violet Fossil,Pink Bow,Pink Frame,Orange Puff
+5917,Unlocked,Adult,Crystal,1,1638703638,8,117,117,171,112,180,210,134,129,,Pink Shatter,Pearly Whites,Pink Spiral,Turquoise Pattern,Turquoise Shine,Purple Node
+5954,Unlocked,Adult,Candy,1,1638703922,8,136,117,178,140,123,194,178,145,,Pink Sprinkles,Sugary Slyness,Caramel Chocolate,Caramel Chocolate,Caramel Chocolate,Pink Whip
+5415,Unlocked,Adult,Flower,1,1638699843,7,148,134,278,156,128,170,117,169,,Green Meadow,Stout Determined,Green Poppy,Autumn Leaf,Red Bark,Red Leaf
+6057,Unlocked,Adult,Moon,1,1638703654,8,123,123,202,134,163,118,134,183,,Green Laser,Cosmic Cheer,Bronze Antenna,Green Moonspot,Yellow Moonrock,Green Moonrock
+5695,Unlocked,Adult,Candy,1,1638703774,8,169,134,208,134,112,189,145,123,,Pink Sprinkles,Sugary Slyness,Caramel Chocolate,Mint Chocolate,Mint Chocolate,Mint Chocolate
+5697,Unlocked,Adult,Flower,1,1638703776,8,112,112,203,200,134,134,123,191,,Brown Oak,Stout Determined,Pink Pollen,Green Oak,Green Blade,Green Leaf
+5826,Unlocked,Adult,Heart,1,1638703460,8,118,112,123,201,165,123,176,134,,Lavender Smooth,Haughty Huff,Yellow Rune,Turquoise Stripe,Purple Cowlick,Violet Braid
+5531,Unlocked,Adult,Cloud,1,1638700403,8,271,211,123,224,134,123,161,112,,Bright Lightning,Dumping Raincloud,Golden Sun,Fluffy Snow,Spikey Ice,Shatter Ice
+6018,Unlocked,Adult,Cloud,1,1638703550,8,184,161,123,198,112,128,170,117,,Day Rain,Dumping Raincloud,Dark Lightning,Thunder Storm,White Cloud,Shatter Ice
+5744,Unlocked,Adult,Crystal,1,1638703710,8,145,140,179,112,189,249,134,118,Single Mythic,Pink Pattern,Crystal Anger,Purple Node,Dark Crystal,Pink Spikes,Turquoise Geode
+6050,Unlocked,Adult,Candy,1,1638703876,8,169,123,183,117,112,215,187,112,,Blueberry Swirl,Sweet Beaming,Strawberry Icecream,Mint Chocolate,Sweet Treat,Chocolate Bar
+5981,Unlocked,Adult,Flower,1,1638703198,8,169,134,171,165,112,143,123,168,,Orange Blossom,Stout Determined,Green Poppy,Orange Blossom,Yellow Blade,Green Leaf
+5757,Unlocked,Adult,Moon,1,1638703580,8,117,128,197,112,158,135,134,155,,Green Laser,Other-Worldly Charm,Purple Alien,Blue Laser,Yellow Crater,Orange Moonrock
+5711,Unlocked,Adult,Cloud,1,1638704842,7,171,174,128,164,117,128,175,128,,Fluffy Snow,Dumping Raincloud,Solid Ice,Ground Storm,Gray Cloud,Gray Cloud
+5512,Unlocked,Adult,Crystal,1,1638700037,7,117,112,164,123,151,218,123,169,,Pink Pattern,Crystal Anger,Pink Tower,Purple Stone,Purple Cascade,Purple Node
+5696,Unlocked,Adult,Cloud,1,1638703776,8,200,158,134,179,117,123,149,134,,Day Ice,Dumping Raincloud,Dark Lightning,Ground Storm,Blue Cloud,Shatter Ice
+5791,Unlocked,Adult,Crystal,1,1638703528,8,112,134,182,134,200,240,123,129,,Turquoise Pattern,Crystal Anger,Purple Needle,Pink Stone,Turquoise Shine,Pink Pearl
+5935,Unlocked,Adult,Flower,1,1638703662,8,184,140,210,138,117,211,134,150,,Brown Meadow,Blossoming Smile,Yellow Thorn,Calming Meadow,Red Bark,Yellow Needle
+6043,Unlocked,Adult,Cloud,1,1638703604,8,214,182,128,177,134,140,130,145,,Day Ice,Stormy Horizon,Fragmented Ice,Thunder Storm,Gray Cloud,Dark Cloud
+5822,Unlocked,Adult,Flower,1,1638703260,8,149,123,195,172,117,183,112,150,,Spring Leaf,Shady Sad,Red Pollen,Autumn Leaf,Red Frond,Yellow Needle
+5995,Unlocked,Adult,Flower,1,1638704010,7,170,128,182,165,112,177,117,150,,Brown Meadow,Blossoming Smile,Green Poppy,Red Oak,Green Frond,Pink Bloom
+5653,Unlocked,Adult,Heart,1,1638704286,7,166,112,134,248,157,128,200,117,,Pink Bow,Placid Mask,Violet Rune,Turquoise Stripe,Sunny Braid,Red Plushy
+5859,Unlocked,Adult,Heart,1,1638704382,7,130,134,117,197,172,117,183,112,,Turquoise Stripe,Placid Mask,Yellow Whisp,Pink Stripe,Pink Frame,Pink Braid
+15769,Unlocked,Baby,Heart,0,0,0,148,98,98,180,143,103,177,94,,Pink Bow,Radiant Joy,Pink Whisp,Pink Spot,Purple Frame,Pink Puff
+5528,Unlocked,Adult,Flower,1,1638700087,7,170,112,270,156,112,142,123,169,,Green Blossom,Stout Determined,Pink Pollen,Green Blossom,Green Blade,Yellow Needle
+14756,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+20193,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5440,Unlocked,Adult,Moon,1,1638700965,7,112,128,257,112,191,124,128,198,,Blue Moonspot,Cosmic Cheer,Bronze Antenna,Gray Laser,Blue Flame,Orange Moonrock
+5701,Unlocked,Adult,Heart,1,1638704146,7,142,123,112,226,150,128,163,128,,Pink Spot,Radiant Joy,Violet Fossil,Green Bow,Pink Braid,Purple Plushy
+5746,Unlocked,Adult,Heart,1,1638704222,7,143,134,140,180,195,123,170,128,,Pink Bow,Jazzy Vibes,Green Mop,Lavender Smooth,Adorbs Braid,Purple Wizard
+5582,Unlocked,Adult,Moon,1,1638700863,8,112,128,187,145,145,148,128,178,,Red Laser,Vexed Voltage,Silver Orbital,Gray Laser,Gray Crater,Bronze Antenna
+5925,Unlocked,Adult,Flower,1,1638704906,7,200,112,250,156,151,160,112,183,,Green Meadow,Stout Determined,Brown Thorn,Calming Meadow,Red Bark,Red Bush
+5817,Unlocked,Adult,Flower,1,1638703386,8,172,134,207,165,112,189,140,156,,Green Blossom,Stout Determined,Yellow Thorn,Green Oak,Brown Bark,Red Bush
+5873,Unlocked,Adult,Crystal,1,1638704270,7,140,128,210,112,138,169,128,156,,Turquoise Pattern,Pearly Whites,Turquoise Spiral,Night Gem,Turquoise Shine,Pink Pearl
+5526,Unlocked,Adult,Moon,1,1638700079,7,117,123,222,123,176,177,112,231,,Orange Moonrock,Blasting Boldness,Blue Eye,Blue Moonspot,Blue Tentacle,Gray Crater
+5789,Unlocked,Adult,Crystal,1,1638704436,7,140,123,224,123,162,242,123,184,,Pink Shatter,Pearly Whites,Pink Tower,Purple Shatter,Turquoise Shine,Purple Node
+5552,Unlocked,Adult,Heart,1,1638700149,7,142,123,117,235,208,117,219,123,Single Mythic,Green Bow,Radiant Joy,Violet Fossil,Pink Bow,Ultimate Princess,Pink Braid
+5551,Unlocked,Adult,Moon,1,1638700145,7,145,112,164,112,179,149,140,176,,Blue Moonspot,Cosmic Cheer,Bronze Antenna,Blue Moonrock,Green Tentacle,Yellow Crater
+20235,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5510,Unlocked,Adult,Flower,1,1638700549,7,148,117,222,176,140,148,128,171,,Green Meadow,Stout Determined,Yellow Thorn,Red Oak,Brown Bark,Green Needle
+16957,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5960,Unlocked,Adult,Moon,1,1638704758,7,123,123,299,123,156,172,123,231,,Turquoise Moonspot,Vexed Voltage,Green Alien,Blue Laser,Blue Flame,Green Tentacle
+5529,Unlocked,Adult,Cloud,1,1638700399,7,225,167,128,218,117,112,161,117,,Night Rain,Dumping Raincloud,Blue Umbrella,Night Ice,Dark Cloud,White Cloud
+5783,Unlocked,Adult,Heart,1,1638703138,7,156,134,128,169,157,112,181,128,,Orange Spot,Placid Mask,Yellow Rune,Pink Smooth,Purple Frame,Violet Braid
+5603,Unlocked,Adult,Flower,1,1638700177,7,136,123,252,171,140,163,117,141,,Brown Meadow,Fragrant Suave,Green Oak,Green Blossom,Red Bark,Pink Bloom
+20095,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5682,Unlocked,Adult,Heart,1,1638704570,7,129,112,123,176,218,112,191,123,Single Mythic,Pink Stripe,Radiant Joy,Yellow Rune,Lavender Smooth,Purple Cowlick,Ultimate Princess
+5858,Unlocked,Adult,Candy,1,1638704382,7,160,123,221,112,128,302,182,112,,Pink Nougat,Sweet Beaming,Chocolate Bar,Mint Chocolate,Graham Cracker,Pink Whip
+5502,Unlocked,Adult,Crystal,1,1638700383,7,112,112,227,112,178,249,117,170,Double Mythic,Pink Pattern,Pearly Whites,Dark Crystal,Purple Stone,Dark Crystal,Turquoise Node
+5668,Unlocked,Adult,Crystal,1,1638704928,7,112,123,214,117,151,192,134,182,,Pink Shatter,Pearly Whites,Purple Node,Pink Pattern,Purple Cascade,Purple Geode
+6009,Unlocked,Adult,Crystal,1,1638702948,7,128,112,166,128,200,210,134,135,,Purple Stone,Stony Indifference,Purple Node,Pink Pattern,Turquoise Cascade,Purple Node
+5686,Unlocked,Adult,Crystal,1,1638703166,7,112,123,179,128,234,235,112,130,,Turquoise Pattern,Crystal Anger,Turquoise Tower,Blue Shatter,Turquoise Shale,Turquoise Geode
+5752,Unlocked,Adult,Flower,1,1638702956,7,160,112,312,207,112,176,123,180,,Green Blossom,Shady Sad,Green Poppy,Spring Leaf,Brown Bark,Yellow Needle
+5932,Unlocked,Adult,Cloud,1,1638704666,7,194,140,134,216,117,117,142,117,,Day Rain,Sunny Skies,Yellow Umbrella,Night Ice,Gray Cloud,White Cloud
+5978,Unlocked,Adult,Moon,1,1638703998,8,134,112,243,112,151,185,112,201,,Green Moonrock,Cosmic Cheer,Silver Antenna,Blue Moonrock,Yellow Crater,Orange Moonrock
+6011,Unlocked,Adult,Moon,1,1638704962,7,117,128,184,140,187,170,112,179,,Turquoise Moonspot,Vexed Voltage,Silver Antenna,Turquoise Laser,Green Tentacle,Gray Crater
+5977,Unlocked,Adult,Candy,1,1638703994,8,170,123,171,117,140,220,179,123,Single Mythic,Gummy Bear,Glazed Smooth,Strawberry Icecream,Blue Licorice,Graham Cracker,Mint Chocolate
+6024,Unlocked,Adult,Cloud,1,1638703506,8,266,216,140,173,112,134,124,140,,Day Rain,Sunny Skies,Bright Lightning,Ground Storm,Shatter Ice,Golden Sun
+19834,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+5443,Unlocked,Adult,Candy,1,1638700235,8,177,134,228,117,112,275,156,128,,Pink Nougat,Glazed Smooth,Chocolate Bar,Mint Chocolate,Graham Cracker,Strawberry Chocolate
+19673,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+19924,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+20116,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5904,Unlocked,Adult,Heart,1,1638704820,7,136,162,112,295,192,117,183,112,,Pink Bow,Radiant Joy,Violet Fossil,Orange Spot,Adorbs Braid,Pink Braid
+19609,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+17347,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5451,Unlocked,Adult,Cloud,1,1638701023,7,217,204,128,177,123,123,136,123,,Thunder Storm,Stormy Horizon,Fragmented Ice,Ground Storm,White Cloud,Shatter Ice
+6047,Unlocked,Adult,Candy,1,1638703472,8,143,128,187,123,123,215,226,123,,Red Sprinkles,Sugary Slyness,Chocolate Bar,Pink Sprinkles,Colorful Marshmallow,Yellow Whip
+5983,Unlocked,Adult,Candy,1,1638704738,7,142,112,202,134,134,275,207,123,,Caramel Chocolate,Sweet Beaming,Graham Cracker,Yellow Sprinkles,Strawberry Whip,Graham Cracker
+5968,Unlocked,Adult,Moon,1,1638704866,7,117,128,192,117,165,149,156,208,Single Mythic,Green Laser,Blasting Boldness,Bronze Orbital,Turquoise Laser,Dark Comet,Bronze Antenna
+5738,Unlocked,Adult,Cloud,1,1638704976,7,186,167,128,196,123,117,163,123,,Fluffy Snow,Stormy Horizon,Solid Ice,Night Ice,Shatter Ice,White Cloud
+16685,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5809,Unlocked,Adult,Crystal,1,1638704826,7,117,134,162,112,158,173,117,161,,Pink Shatter,Pearly Whites,Pink Spiral,Purple Gem,Turquoise Shine,Turquoise Node
+5487,Unlocked,Adult,Candy,1,1638700049,7,136,140,181,112,112,283,193,145,,Caramel Nougat,Sweet Beaming,Chocolate Bar,Blueberry Swirl,Graham Cracker,Caramel Chocolate
+5601,Unlocked,Adult,Moon,1,1638700171,7,128,145,165,112,178,124,128,171,,Red Laser,Cosmic Cheer,Purple Alien,Blue Laser,Green Moonrock,Orange Moonrock
+5446,Unlocked,Adult,Flower,1,1638700749,7,124,128,226,180,128,148,112,157,,Autumn Leaf,Stout Determined,Green Poppy,Green Blossom,Brown Bark,Red Leaf
+5640,Unlocked,Adult,Cloud,1,1638703568,8,200,140,134,209,117,112,162,123,,Day Ice,Fluffy Smile,Dark Lightning,Thunder Storm,Gray Cloud,Gray Cloud
+5464,Unlocked,Adult,Crystal,1,1638700951,7,134,140,171,134,170,225,112,149,,Blue Shatter,Crystal Anger,Purple Node,Purple Gem,Pink Shale,Pink Pearl
+17257,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16607,Unlocked,Baby,Crystal,0,0,0,108,103,151,112,121,147,108,124,,Pink Shatter,Crystal Anger,Purple Node,Purple Stone,Turquoise Cascade,Purple Geode
+5498,Unlocked,Adult,Cloud,1,1638700361,7,228,140,112,190,117,123,197,140,,Bright Lightning,Sunny Skies,Solid Ice,Night Ice,Small Cloud,Golden Sun
+5940,Unlocked,Adult,Cloud,1,1638703340,8,252,189,123,165,134,134,170,112,Single Mythic,Day Ice,Stormy Horizon,Thunder God,Night Ice,Blue Cloud,Gray Cloud
+5892,Unlocked,Adult,Moon,1,1638704362,7,112,123,259,117,193,142,123,187,Single Mythic,Red Laser,Vexed Voltage,Bronze Antenna,Gray Laser,Dark Comet,Silver Antenna
+5591,Unlocked,Adult,Heart,1,1638700475,7,177,112,123,227,150,117,207,128,,Pink Stripe,Placid Mask,Yellow Rune,Orange Spot,Purple Frame,Pink Braid
+17337,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5813,Unlocked,Adult,Cloud,1,1638704046,8,238,164,117,215,151,112,189,117,,Day Ice,Stormy Horizon,Fragmented Ice,Night Ice,Golden Sun,White Cloud
+5535,Unlocked,Adult,Moon,1,1638700497,7,123,134,198,117,165,172,128,185,,Red Laser,Blasting Boldness,Bronze Antenna,Blue Moonrock,Green Moonrock,Green Tentacle
+17233,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+16670,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+6016,Unlocked,Adult,Crystal,1,1638703544,8,112,140,188,123,172,213,134,142,,Pink Stone,Crystal Anger,Purple Needle,Blue Shatter,Turquoise Shine,Purple Shatter
+19616,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+6040,Unlocked,Adult,Flower,1,1638704606,7,190,112,235,163,123,207,117,148,,Autumn Leaf,Stout Determined,Red Pollen,Calming Meadow,Green Blade,Green Leaf
+16667,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5656,Unlocked,Adult,Candy,1,1638704822,7,129,128,178,123,134,230,184,123,,Caramel Nougat,Glazed Smooth,Chocolate Icecream,Blue Licorice,Chocolate Bar,Chocolate Bar
+17295,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5980,Unlocked,Adult,Cloud,1,1638703190,7,202,140,162,188,112,123,190,117,,Night Rain,Fluffy Smile,Solid Ice,Bright Lightning,White Cloud,Gray Cloud
+5725,Unlocked,Adult,Candy,1,1638704988,7,184,112,221,112,134,226,178,123,,Pink Nougat,Sweet Smugness,Chocolate Bar,Caramel Nougat,Colorful Marshmallow,Caramel Chocolate
+5751,Unlocked,Adult,Crystal,1,1638704828,7,112,117,203,112,187,309,123,148,,Blue Shatter,Crystal Anger,Turquoise Node,Purple Stone,Purple Cascade,Turquoise Geode
+5671,Unlocked,Adult,Cloud,1,1638703218,8,200,160,117,185,123,123,185,112,,Night Rain,Stormy Horizon,Yellow Umbrella,Day Ice,Golden Sun,Golden Sun
+5676,Unlocked,Adult,Crystal,1,1638704350,7,117,134,203,128,174,250,128,156,Single Mythic,Blue Shatter,Crystal Anger,Dark Crystal,Pink Stone,Turquoise Shine,Turquoise Geode
+5587,Unlocked,Adult,Moon,1,1638700265,7,117,112,192,123,157,163,117,195,,Green Laser,Other-Worldly Charm,Green Alien,Blue Moonrock,Red Flame,Green Moonrock
+20516,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5524,Unlocked,Adult,Moon,1,1638700769,7,112,123,225,117,202,130,117,206,,Green Moonrock,Other-Worldly Charm,Green Eye,Turquoise Laser,Blue Tentacle,Blue Tentacle
+5732,Unlocked,Adult,Candy,1,1638703366,8,149,112,169,123,128,222,194,128,,Caramel Nougat,Sugary Slyness,Chocolate Bar,Pink Nougat,Graham Cracker,Caramel Chocolate
+5891,Unlocked,Adult,Flower,1,1638704362,7,161,140,235,172,112,154,112,161,,Brown Oak,Stout Determined,Pink Poppy,Red Oak,Green Frond,Green Needle
+17278,Unlocked,Egg,Rainbow,0,,,,,,,,,,,,,,,,,
+5462,Unlocked,Adult,Heart,1,1638700133,7,209,140,123,280,138,128,223,117,,Green Bow,Haughty Huff,Yellow Whisp,Lavender Smooth,Sunny Braid,Orange Puff
+6041,Unlocked,Adult,Cloud,1,1638704606,7,170,153,117,201,151,112,130,112,,Night Ice,Dumping Raincloud,Snowman Carrot,Night Rain,Spikey Ice,Snowman
+5760,Unlocked,Adult,Moon,1,1638703850,8,112,134,189,140,144,136,123,196,,Green Laser,Vexed Voltage,Silver Orbital,Red Laser,Yellow Moonrock,Green Moonrock
+5976,Unlocked,Adult,Cloud,1,1638702994,7,239,164,123,181,134,123,129,112,,Night Ice,Dumping Raincloud,Blue Umbrella,Thunder Storm,Shatter Ice,Gray Cloud
+5825,Unlocked,Adult,Moon,1,1638703456,8,117,112,262,117,176,149,117,198,,Orange Moonrock,Vexed Voltage,Bronze Orbital,Green Moonspot,Yellow Crater,Bronze Antenna
+5457,Unlocked,Adult,Heart,1,1638700065,7,149,117,128,205,158,117,154,140,,Lavender Smooth,Jazzy Vibes,Violet Rune,Turquoise Stripe,Purple Frame,Pink Braid
+5584,Unlocked,Adult,Heart,1,1638700815,7,135,134,151,193,163,112,169,123,,Pink Bow,Placid Mask,Pink Mop,Pink Smooth,Violet Braid,Pink Braid
+20075,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16761,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5742,Unlocked,Adult,Cloud,1,1638704820,7,209,153,112,236,123,123,148,140,,Thunder Storm,Dumping Raincloud,Bright Lightning,Night Rain,Dark Cloud,White Cloud
+16762,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+16663,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5450,Unlocked,Adult,Candy,1,1638700791,7,162,112,155,151,112,234,225,123,Single Mythic,Caramel Nougat,Sugary Slyness,Graham Cracker,Pink Sprinkles,Strawberry Chocolate,Gummy Bear
+15704,Unlocked,Baby,Crystal,0,0,0,108,117,119,117,105,145,103,100,,Turquoise Pattern,Stony Indifference,Turquoise Tower,Blue Shatter,Purple Spikes,Pink Pearl
+5533,Unlocked,Adult,Flower,1,1638700007,7,118,112,208,165,156,135,117,172,,Green Blossom,Stout Determined,Green Poppy,Brown Meadow,Green Frond,Green Leaf
+5685,Unlocked,Adult,Heart,1,1638704078,7,170,128,112,237,218,117,179,128,,Pink Spot,Radiant Joy,Red Fossil,Pink Bow,Violet Braid,Violet Braid
+17931,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5888,Unlocked,Adult,Flower,1,1638704528,7,155,134,216,179,128,148,123,162,,Green Oak,Stout Determined,Green Poppy,Brown Meadow,Yellow Blade,Green Needle
+16766,Unlocked,Egg,Rainbow,0,,,,,,,,,,,,,,,,,
+5590,Unlocked,Adult,Cloud,1,1638700473,7,253,193,128,189,112,123,148,128,,Bright Lightning,Dumping Raincloud,Blue Umbrella,Fluffy Snow,Shatter Ice,Shatter Ice
+5470,Unlocked,Adult,Crystal,1,1638700573,7,123,123,212,156,186,245,112,163,,Blue Shatter,Crystal Anger,Turquoise Tower,Purple Stone,Pink Shale,Turquoise Geode
+20084,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+6008,Unlocked,Adult,Candy,1,1638702946,8,148,117,173,117,123,216,226,128,Single Mythic,Caramel Nougat,Gummy Bear,Graham Cracker,Blueberry Swirl,Chocolate Bar,Caramel Chocolate
+5958,Unlocked,Adult,Flower,1,1638703210,8,149,112,243,191,123,143,123,206,,Green Meadow,Stout Determined,Red Oak,Green Blossom,Red Bark,Green Needle
+5967,Unlocked,Adult,Candy,1,1638703324,8,118,117,171,112,128,210,180,128,,Mint Chocolate,Sugary Slyness,Graham Cracker,Yellow Sprinkles,Strawberry Chocolate,Colorful Marshmallow
+5730,Unlocked,Adult,Crystal,1,1638705026,7,112,112,240,123,180,252,117,192,,Pink Stone,Stony Indifference,Pink Tower,Pink Stone,Purple Spikes,Turqoise Pearl
+6034,Unlocked,Adult,Cloud,1,1638703750,8,232,158,134,181,151,112,149,128,,Thunder Storm,Stormy Horizon,Solid Ice,Ground Storm,Spikey Ice,Shatter Ice
+17294,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+17339,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+17790,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5921,Unlocked,Adult,Flower,1,1638703816,7,174,117,220,158,112,199,140,150,,Brown Meadow,Fragrant Suave,Brown Thorn,Green Oak,Yellow Blade,Pink Bloom
+17919,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5689,Unlocked,Adult,Candy,1,1638704102,7,162,123,190,123,123,198,180,140,,Red Sprinkles,Sweet Beaming,Mint Chocolate,Pink Sprinkles,Strawberry Whip,Graham Cracker
+5540,Unlocked,Adult,Candy,1,1638700375,7,169,123,166,123,112,206,210,128,Single Mythic,Pink Chocolate,Gummy Bear,Graham Cracker,Caramel Chocolate,Chocolate Bar,Caramel Chocolate
+5574,Unlocked,Adult,Heart,1,1638700483,7,136,117,162,226,174,112,206,123,Single Mythic,Ultimate Princess,Radiant Joy,Violet Rune,Pink Stripe,Violet Braid,Purple Plushy
+19704,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+19523,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5718,Unlocked,Adult,Flower,1,1638704516,7,143,128,205,172,134,130,140,129,,Green Oak,Stout Determined,Pink Poppy,Calming Meadow,Green Frond,Red Leaf
+5973,Unlocked,Adult,Flower,1,1638703942,8,170,112,231,210,123,142,112,156,Single Mythic,Orange Blossom,Blossoming Smile,Pink Poppy,Brown Meadow,Green Frond,Fairy Flower
+5657,Unlocked,Adult,Flower,1,1638704822,7,118,117,230,186,128,129,128,195,,Spring Leaf,Stout Determined,Pink Pollen,Green Blossom,Green Frond,Green Bush
+5908,Unlocked,Adult,Crystal,1,1638704822,7,123,112,193,123,165,210,123,149,,Pink Shatter,Stony Indifference,Purple Node,Blue Shatter,Turquoise Shine,Turquoise Node
+5573,Unlocked,Adult,Moon,1,1638700209,7,128,134,264,123,144,118,140,152,,Green Laser,Vexed Voltage,Green Alien,Red Laser,Yellow Crater,Orange Moonrock
+19277,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+16764,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5754,Unlocked,Adult,Heart,1,1638702964,8,162,117,112,182,163,140,172,123,,Green Bow,Haughty Huff,Green Mop,Lavender Smooth,Purple Cowlick,Violet Braid
+19565,Unlocked,Baby,Moon,0,0,0,98,108,140,103,106,123,117,151,,Orange Moonrock,Vexed Voltage,Bronze Orbital,Gray Laser,Green Moonrock,Silver Antenna
+17310,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5586,Unlocked,Adult,Crystal,1,1638700263,7,112,145,188,117,126,190,112,214,,Pink Pattern,Crystal Anger,Pink Spiral,Purple Stone,Pink Spikes,Turquoise Node
+19844,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5992,Unlocked,Adult,Cloud,1,1638704056,8,243,154,151,200,112,112,154,123,,Night Rain,Dumping Raincloud,Blue Umbrella,Day Ice,Spikey Ice,Gray Cloud
+5890,Unlocked,Adult,Candy,1,1638704354,7,190,128,187,112,112,249,180,134,,Pink Chocolate,Glazed Smooth,Strawberry Icecream,Caramel Chocolate,Chocolate Bar,Caramel Chocolate
+5948,Unlocked,Adult,Moon,1,1638704428,7,134,134,213,123,182,123,173,160,Double Mythic,Dark Comet,Dark Comet,Silver Orbital,Turquoise Laser,Green Moonrock,Orange Moonrock
+5611,Unlocked,Adult,Crystal,1,1638700777,7,128,117,186,128,201,230,112,153,,Pink Shatter,Polished Grin,Purple Node,Purple Shatter,Turquoise Shale,Purple Node
+17856,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16780,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+19540,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+20090,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16830,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5856,Unlocked,Adult,Flower,1,1638703162,7,177,123,202,172,123,142,145,133,,Orange Blossom,Fragrant Suave,Red Oak,Spring Leaf,Brown Bark,Red Bloom
+16786,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5989,Unlocked,Adult,Moon,1,1638703828,8,117,112,301,112,162,166,151,228,,Red Laser,Vexed Voltage,Bronze Antenna,Red Laser,Yellow Crater,Silver Antenna
+5843,Unlocked,Adult,Cloud,1,1638704482,7,157,194,112,150,117,145,148,128,,Night Rain,Sunny Skies,Yellow Umbrella,Day Ice,White Cloud,White Cloud
+6038,Unlocked,Adult,Candy,1,1638704134,7,156,123,233,112,117,231,201,117,,Red Sprinkles,Sweet Beaming,Chocolate Bar,Blueberry Swirl,Colorful Marshmallow,Chocolate Bar
+5596,Unlocked,Adult,Heart,1,1638700905,7,149,123,123,195,165,117,171,112,,Pink Bow,Haughty Huff,Red Fossil,Pink Stripe,Sunny Braid,Violet Braid
+5555,Unlocked,Adult,Cloud,1,1638700163,7,199,167,140,169,112,117,177,123,,Ground Storm,Stormy Horizon,Blue Umbrella,Bright Lightning,Shatter Ice,Spikey Ice
+5607,Unlocked,Adult,Flower,1,1638700871,7,130,117,189,172,145,130,140,148,,Green Meadow,Stout Determined,Pink Poppy,Orange Blossom,Green Frond,Yellow Needle
+5557,Unlocked,Adult,Flower,1,1638701011,7,202,123,250,170,112,202,112,166,,Autumn Leaf,Stout Determined,Brown Thorn,Calming Meadow,Yellow Blade,Red Bush
+5846,Unlocked,Adult,Crystal,1,1638703022,7,145,112,163,145,180,239,112,149,,Purple Stone,Polished Grin,Purple Node,Purple Gem,Purple Spikes,Turquoise Node
+19590,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5831,Unlocked,Adult,Crystal,1,1638703248,7,112,123,166,123,195,225,128,156,,Purple Stone,Pearly Whites,Red Needle,Purple Shatter,Turquoise Shine,Purple Shatter
+20207,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5837,Unlocked,Adult,Crystal,1,1638703398,8,117,128,168,128,174,261,123,134,,Pink Pattern,Polished Grin,Pink Tower,Pink Stone,Purple Shine,Turquoise Node
+5727,Unlocked,Adult,Candy,1,1638704996,7,178,134,228,145,117,231,172,112,,Caramel Nougat,Sweet Smugness,Graham Cracker,Blueberry Swirl,Sweet Treat,Colorful Marshmallow
+5919,Unlocked,Adult,Cloud,1,1638703638,7,278,176,123,165,112,156,124,128,,Night Ice,Stormy Horizon,Solid Ice,Day Ice,Blue Cloud,Dark Cloud
+5665,Unlocked,Adult,Cloud,1,1638703122,7,232,173,134,189,112,123,142,123,,Night Ice,Dumping Raincloud,Blue Umbrella,Day Ice,Spikey Ice,Shatter Ice
+19298,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5848,Unlocked,Adult,Crystal,1,1638704246,7,123,140,231,123,150,210,134,192,,Pink Gem,Pearly Whites,Turquoise Node,Pink Pattern,Pink Spikes,Turqoise Pearl
+5704,Unlocked,Adult,Heart,1,1638704448,7,149,151,123,255,198,112,205,112,,Orange Spot,Radiant Joy,Yellow Rune,Pink Bow,Pink Frame,Pink Braid
+5811,Unlocked,Adult,Flower,1,1638704826,7,134,117,161,187,128,117,145,146,,Orange Blossom,Blossoming Smile,Pink Pollen,Orange Blossom,Brown Bark,Green Bush
+5672,Unlocked,Adult,Candy,1,1638703222,7,130,117,196,112,112,237,186,128,,Pink Nougat,Sugary Slyness,Chocolate Marshmallow,Caramel Chocolate,Mint Chocolate,Yellow Whip
+19211,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5902,Unlocked,Adult,Crystal,1,1638704820,7,123,140,220,112,126,197,123,161,,Night Gem,Polished Grin,Turquoise Node,Pink Pattern,Turquoise Shine,Turquoise Node
+13459,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+16816,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5847,Unlocked,Adult,Crystal,1,1638703022,7,128,112,172,123,189,292,112,134,,Purple Stone,Polished Grin,Turquoise Tower,Pink Stone,Pink Shale,Turquoise Geode
+16740,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16941,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5508,Unlocked,Adult,Candy,1,1638700541,7,124,140,181,123,145,182,180,128,,Caramel Chocolate,Sweet Beaming,Strawberry Icecream,Caramel Chocolate,Strawberry Whip,Strawberry Chocolate
+16756,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5563,Unlocked,Adult,Flower,1,1638700515,7,177,117,218,202,123,163,123,145,,Orange Blossom,Fragrant Suave,Red Pollen,Autumn Leaf,Brown Bark,Pink Bloom
+5556,Unlocked,Adult,Crystal,1,1638701009,7,128,117,228,112,207,268,123,161,,Night Gem,Pearly Whites,Turquoise Tower,Purple Gem,Turquoise Shale,Turquoise Node
+5583,Unlocked,Adult,Cloud,1,1638700811,7,211,172,123,166,117,117,135,145,,Ground Storm,Fluffy Smile,Fragmented Ice,Fluffy Snow,Small Cloud,Dark Cloud
+16741,Unlocked,Egg,Rainbow,0,,,,,,,,,,,,,,,,,
+5806,Unlocked,Adult,Heart,1,1638703094,7,206,123,112,333,162,112,235,112,,Lavender Smooth,Placid Mask,Pink Whisp,Green Bow,Violet Braid,Pink Braid
+5714,Unlocked,Adult,Candy,1,1638703082,7,215,123,221,128,112,295,150,128,,Blueberry Swirl,Glazed Smooth,Chocolate Bar,Pink Sprinkles,Chocolate Bar,Pink Whip
+19622,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5840,Unlocked,Adult,Heart,1,1638703970,8,154,123,123,220,186,112,261,128,,Pink Stripe,Radiant Joy,Red Fossil,Lavender Smooth,Adorbs Braid,Purple Plushy
+19245,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5851,Unlocked,Adult,Cloud,1,1638704464,7,260,164,112,210,123,112,149,123,,Night Ice,Stormy Horizon,Snowman Carrot,Ground Storm,Shatter Ice,Spikey Ice
+5928,Unlocked,Adult,Heart,1,1638704310,7,118,151,128,153,150,112,153,117,,Pink Smooth,Haughty Huff,Green Mop,Lavender Smooth,Pink Frame,Purple Plushy
+20234,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5547,Unlocked,Adult,Crystal,1,1638700933,7,123,117,193,112,218,217,128,155,,Turquoise Pattern,Crystal Anger,Purple Node,Turquoise Pattern,Purple Shine,Turquoise Node
+20157,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5998,Unlocked,Adult,Candy,1,1638703512,8,148,112,206,112,117,209,163,140,,Mint Chocolate,Sweet Beaming,Caramel Chocolate,Caramel Nougat,Chocolate Bar,Strawberry Chocolate
+6021,Unlocked,Adult,Candy,1,1638703684,8,163,128,198,112,117,220,235,128,,Pink Nougat,Sugary Slyness,Chocolate Icecream,Caramel Chocolate,Chocolate Bar,Yellow Whip
+5763,Unlocked,Adult,Candy,1,1638704950,7,143,134,170,134,134,180,172,117,,Caramel Nougat,Glazed Smooth,Chocolate Icecream,Pink Nougat,Strawberry Whip,Caramel Chocolate
+6052,Unlocked,Adult,Crystal,1,1638704914,7,112,123,277,117,207,342,123,184,Single Mythic,Pink Gem,Dark Crystal,Turquoise Spiral,Purple Stone,Turquoise Shale,Turqoise Pearl
+5445,Unlocked,Adult,Cloud,1,1638700741,7,307,202,112,171,123,112,149,112,,Night Ice,Stormy Horizon,Blue Umbrella,Day Ice,Dark Cloud,Gray Cloud
+20098,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5863,Unlocked,Adult,Crystal,1,1638703618,8,112,128,213,117,182,243,112,143,,Pink Shatter,Crystal Anger,Pink Spiral,Purple Shatter,Purple Shine,Turqoise Pearl
+16649,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+6014,Unlocked,Adult,Cloud,1,1638705006,7,193,182,128,150,145,123,118,117,,Fluffy Snow,Stormy Horizon,Fragmented Ice,Day Rain,Small Cloud,Gray Cloud
+5474,Unlocked,Adult,Heart,1,1638700317,7,168,134,145,241,180,112,222,117,,Lavender Smooth,Jazzy Vibes,Yellow Rune,Pink Smooth,Pink Frame,Orange Puff
+19572,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5645,Unlocked,Adult,Crystal,1,1638704498,7,123,123,153,134,165,204,134,136,,Pink Gem,Crystal Anger,Red Needle,Purple Shatter,Turquoise Shine,Pink Shatter
+5710,Unlocked,Adult,Flower,1,1638704838,7,162,117,254,191,123,130,128,191,,Green Meadow,Stout Determined,Pink Pollen,Spring Leaf,Red Frond,Yellow Needle
+5651,Unlocked,Adult,Flower,1,1638704032,8,177,128,237,165,117,148,128,133,,Orange Blossom,Fragrant Suave,Red Oak,Spring Leaf,Pink Vine,Red Bloom
+5522,Unlocked,Adult,Moon,1,1638700445,7,140,112,240,112,172,156,112,233,,Green Moonrock,Cosmic Cheer,Green Eye,Blue Laser,Blue Tentacle,Green Moonrock
+5886,Unlocked,Adult,Cloud,1,1638703070,7,246,218,117,194,123,128,124,134,,Night Ice,Stormy Horizon,Fragmented Ice,Day Ice,White Cloud,Dark Cloud
+17300,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+19667,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+6026,Unlocked,Adult,Candy,1,1638704258,7,136,140,198,112,117,194,218,112,,Red Sprinkles,Sugary Slyness,Chocolate Bar,Blue Licorice,Sweet Treat,Caramel Chocolate
+5664,Unlocked,Adult,Flower,1,1638703292,7,136,112,197,156,134,214,112,169,,Spring Leaf,Blossoming Smile,Green Oak,Orange Blossom,Brown Bark,Green Bush
+5460,Unlocked,Adult,Heart,1,1638700125,7,143,112,162,217,120,117,135,128,,Lavender Smooth,Haughty Huff,Pink Mop,Pink Stripe,Violet Braid,Purple Wizard
+6056,Unlocked,Adult,Candy,1,1638703650,7,156,117,188,117,117,195,180,117,,Pink Nougat,Sugary Slyness,Caramel Chocolate,Mint Chocolate,Strawberry Whip,Chocolate Bar
+5477,Unlocked,Adult,Crystal,1,1638701001,7,123,123,166,145,158,174,134,161,,Purple Stone,Polished Grin,Red Needle,Purple Gem,Turquoise Shale,Turquoise Geode
+5803,Unlocked,Adult,Crystal,1,1638704540,7,112,128,162,112,144,190,168,123,,Turquoise Pattern,Pearly Whites,Turquoise Node,Turquoise Pattern,Turquoise Shine,Purple Node
+17922,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5911,Unlocked,Adult,Crystal,1,1638703106,7,112,134,208,128,201,244,117,130,,Purple Stone,Pearly Whites,Pink Spiral,Pink Pattern,Turquoise Shine,Purple Shatter
+5957,Unlocked,Adult,Heart,1,1638703210,7,149,112,112,195,165,128,243,128,,Pink Stripe,Radiant Joy,Red Fossil,Green Bow,Purple Cowlick,Violet Braid
+19281,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5539,Unlocked,Adult,Cloud,1,1638700371,7,202,175,134,187,123,117,163,112,,Thunder Storm,Fluffy Smile,Fragmented Ice,Day Rain,Gray Cloud,Shatter Ice
+5756,Unlocked,Adult,Crystal,1,1638703576,8,140,117,190,117,151,202,112,163,,Night Gem,Stony Indifference,Turquoise Spiral,Night Gem,Purple Shine,Pink Pearl
+5877,Unlocked,Adult,Crystal,1,1638703698,8,112,134,250,117,165,249,123,156,Single Mythic,Pink Stone,Crystal Anger,Pink Tower,Dark Crystal,Turquoise Shale,Pink Pearl
+20120,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+5554,Unlocked,Adult,Cloud,1,1638700159,7,279,222,128,217,123,117,124,134,,Ground Storm,Stormy Horizon,Bright Lightning,Ground Storm,Blue Cloud,Shatter Ice
+5741,Unlocked,Adult,Crystal,1,1638704820,7,123,117,181,128,158,180,140,175,,Pink Stone,Crystal Anger,Pink Spiral,Night Gem,Purple Cascade,Purple Shatter
+5842,Unlocked,Adult,Moon,1,1638704478,7,112,123,235,117,186,156,123,187,,Green Laser,Vexed Voltage,Green Alien,Blue Laser,Blue Flame,Bronze Antenna
+5712,Unlocked,Adult,Cloud,1,1638704846,7,237,205,134,188,123,134,124,117,,Night Rain,Fluffy Smile,Blue Umbrella,Day Ice,Gray Cloud,Shatter Ice
+6002,Unlocked,Adult,Cloud,1,1638704278,7,190,175,145,174,123,128,136,145,,Fluffy Snow,Stormy Horizon,Yellow Umbrella,Ground Storm,Gray Cloud,White Cloud
+5644,Unlocked,Adult,Crystal,1,1638704494,7,128,117,198,112,218,188,123,162,,Night Gem,Crystal Anger,Turquoise Node,Pink Pattern,Purple Shine,Purple Shatter
+5455,Unlocked,Adult,Candy,1,1638700113,7,142,112,172,117,112,218,178,123,,Pink Nougat,Sugary Slyness,Chocolate Bar,Caramel Chocolate,Chocolate Bar,Chocolate Bar
+5963,Unlocked,Adult,Flower,1,1638704318,8,142,117,230,194,112,149,145,133,,Green Oak,Stout Determined,Red Oak,Green Oak,Pink Vine,Red Bloom
+5962,Unlocked,Adult,Cloud,1,1638704314,7,224,195,112,208,117,128,169,117,,Day Rain,Sunny Skies,Bright Lightning,Night Rain,Spikey Ice,Snowman
+20514,Unlocked,Egg,Omnom,0,,,,,,,,,,,,,,,,,
+5881,Unlocked,Adult,Moon,1,1638704086,8,145,134,228,134,162,149,112,210,,Turquoise Laser,Blasting Boldness,Silver Antenna,Red Laser,Blue Tentacle,Silver Antenna
+19696,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+18474,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5941,Unlocked,Adult,Candy,1,1638704598,7,148,140,155,128,123,181,151,112,,Pink Nougat,Sweet Beaming,Caramel Chocolate,Caramel Chocolate,Colorful Marshmallow,Graham Cracker
+5717,Unlocked,Adult,Flower,1,1638704512,7,185,112,266,144,117,162,112,152,,Spring Leaf,Fragrant Suave,Pink Pollen,Autumn Leaf,Red Bark,Red Leaf
+5782,Unlocked,Adult,Moon,1,1638703138,7,134,117,180,123,145,148,145,143,,Turquoise Laser,Vexed Voltage,Green Alien,Turquoise Laser,Blue Flame,Gray Crater
+5849,Unlocked,Adult,Flower,1,1638704250,7,161,128,276,214,123,161,112,190,Single Mythic,Fairy Flower,Stout Determined,Green Oak,Red Oak,Green Blade,Green Bush
+6017,Unlocked,Adult,Flower,1,1638703546,8,136,117,224,193,117,136,151,178,,Orange Blossom,Shady Sad,Pink Poppy,Spring Leaf,Red Vine,Green Needle
+5827,Unlocked,Adult,Flower,1,1638703588,8,160,112,292,210,117,208,123,149,,Spring Leaf,Shady Sad,Brown Thorn,Spring Leaf,Pink Vine,Red Bloom
+5903,Unlocked,Adult,Flower,1,1638704820,7,130,134,208,157,112,142,117,191,,Autumn Leaf,Fragrant Suave,Pink Pollen,Green Blossom,Red Bark,Green Needle
+5297,Unlocked,Adult,Crystal,1,1638699380,7,112,117,221,117,187,288,117,170,,Turquoise Pattern,Crystal Anger,Turquoise Spiral,Pink Pattern,Pink Spikes,Pink Pearl
+20240,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5659,Unlocked,Adult,Heart,1,1638703950,8,135,128,117,200,158,117,173,123,,Turquoise Stripe,Haughty Huff,Yellow Rune,Pink Stripe,Pink Braid,Red Plushy
+5855,Unlocked,Adult,Heart,1,1638703158,7,136,112,128,134,168,123,161,134,,Turquoise Stripe,Placid Mask,Yellow Whisp,Lavender Smooth,Purple Cowlick,Purple Wizard
+20119,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+20490,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+6004,Unlocked,Adult,Crystal,1,1638703030,7,123,140,150,117,171,165,123,142,,Pink Pattern,Crystal Anger,Purple Node,Purple Gem,Turquoise Shine,Purple Shatter
+5652,Unlocked,Adult,Moon,1,1638704034,8,145,112,238,128,198,185,140,202,Single Mythic,Turquoise Moonspot,Cosmic Cheer,Dark Comet,Red Laser,Green Tentacle,Green Tentacle
+20080,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+17282,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+16717,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5490,Unlocked,Adult,Crystal,1,1638700533,7,128,123,147,117,179,196,140,130,,Pink Pattern,Polished Grin,Red Needle,Purple Shatter,Pink Shale,Pink Shatter
+5449,Unlocked,Adult,Flower,1,1638700791,7,129,117,211,156,123,147,134,162,,Green Blossom,Stout Determined,Green Poppy,Green Blossom,Red Bark,Green Bush
+20177,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5564,Unlocked,Adult,Candy,1,1638700519,7,149,140,211,117,117,215,170,134,Single Mythic,Caramel Chocolate,Sugary Slyness,Gummy Bear,Pink Nougat,Chocolate Bar,Colorful Marshmallow
+5884,Unlocked,Adult,Flower,1,1638703062,7,135,112,197,126,128,147,117,157,,Spring Leaf,Blossoming Smile,Red Pollen,Green Blossom,Red Frond,Green Leaf
+5486,Unlocked,Adult,Cloud,1,1638700417,7,209,205,123,188,128,123,136,123,Single Mythic,Thunder Storm,Stormy Horizon,Snowman Carrot,Ground Storm,White Cloud,Thunder God
+20110,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5864,Unlocked,Adult,Candy,1,1638703620,8,149,128,200,128,134,201,180,112,,Pink Sprinkles,Sweet Smugness,Caramel Chocolate,Yellow Sprinkles,Sweet Treat,Caramel Chocolate
+5527,Unlocked,Adult,Heart,1,1638700083,7,155,123,151,182,132,123,185,128,,Pink Bow,Haughty Huff,Violet Rune,Pink Smooth,Sunny Braid,Purple Plushy
+5969,Unlocked,Adult,Candy,1,1638704870,8,155,112,198,134,123,227,158,123,,Caramel Nougat,Sweet Beaming,Strawberry Icecream,Caramel Nougat,Graham Cracker,Mint Chocolate
+5499,Unlocked,Adult,Crystal,1,1638700921,7,112,128,171,156,158,230,117,163,,Turquoise Pattern,Polished Grin,Turquoise Spiral,Blue Shatter,Turquoise Cascade,Pink Pearl
+5501,Unlocked,Adult,Flower,1,1638700923,7,162,123,182,138,117,162,123,180,,Orange Blossom,Shady Sad,Green Oak,Spring Leaf,Yellow Blade,Green Bush
+5854,Unlocked,Adult,Moon,1,1638703150,7,117,151,216,128,150,143,134,155,,Red Laser,Vexed Voltage,Green Eye,Gray Moonrock,Yellow Crater,Orange Moonrock
+5780,Unlocked,Adult,Candy,1,1638703050,7,162,145,189,112,112,227,179,112,,Pink Nougat,Sugary Slyness,Strawberry Icecream,Blue Licorice,Chocolate Bar,Mint Chocolate
+5875,Unlocked,Adult,Moon,1,1638703692,8,112,140,272,117,132,149,123,158,,Green Moonrock,Blasting Boldness,Green Eye,Gray Moonrock,Green Moonrock,Silver Antenna
+18160,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+20079,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5901,Unlocked,Adult,Crystal,1,1638702990,7,123,168,198,123,176,220,112,156,,Pink Shatter,Crystal Anger,Turquoise Node,Turquoise Pattern,Turquoise Cascade,Turqoise Pearl
+5937,Unlocked,Adult,Heart,1,1638703670,8,136,117,140,252,176,128,224,112,,Pink Smooth,Radiant Joy,Violet Rune,Pink Spot,Pink Frame,Pink Braid
+5869,Unlocked,Adult,Moon,1,1638704182,7,123,117,195,123,165,149,140,164,,Green Moonrock,Vexed Voltage,Silver Orbital,Gray Laser,Gray Crater,Silver Antenna
+5545,Unlocked,Adult,Moon,1,1638700297,7,128,123,210,145,184,136,156,216,,Orange Moonrock,Cosmic Cheer,Silver Orbital,Green Moonspot,Green Tentacle,Blue Tentacle
+5484,Unlocked,Adult,Flower,1,1638700411,7,176,112,220,172,117,200,140,150,,Brown Meadow,Blossoming Smile,Green Poppy,Brown Meadow,Red Vine,Red Bush
+19297,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+20648,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5786,Unlocked,Adult,Flower,1,1638703726,8,130,156,225,179,128,130,112,176,,Brown Oak,Shady Sad,Pink Pollen,Brown Meadow,Red Bark,Red Bush
+5807,Unlocked,Adult,Candy,1,1638703098,7,162,128,181,151,128,182,158,128,,Caramel Nougat,Glazed Smooth,Caramel Chocolate,Pink Sprinkles,Colorful Marshmallow,Caramel Chocolate
+5830,Unlocked,Adult,Cloud,1,1638703248,7,168,147,123,186,117,145,163,123,,Fluffy Snow,Stormy Horizon,Snowman Carrot,Night Rain,Golden Sun,Blue Cloud
+5599,Unlocked,Adult,Candy,1,1638700427,7,149,128,167,145,117,211,187,128,,Pink Chocolate,Sweet Beaming,Graham Cracker,Caramel Nougat,Sweet Treat,Colorful Marshmallow
+5771,Unlocked,Adult,Heart,1,1638704390,7,136,134,117,204,201,112,200,156,,Pink Spot,Radiant Joy,Pink Mop,Pink Bow,Orange Cowlick,Orange Puff
+6006,Unlocked,Adult,Cloud,1,1638703042,7,218,153,128,202,112,151,148,112,,Day Ice,Fluffy Smile,Fragmented Ice,Bright Lightning,Shatter Ice,Gray Cloud
+5959,Unlocked,Adult,Cloud,1,1638704754,7,266,180,117,173,145,117,118,117,,Day Rain,Stormy Horizon,Blue Umbrella,Night Ice,White Cloud,Spikey Ice
+20107,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5492,Unlocked,Adult,Cloud,1,1638700537,7,240,202,134,190,112,117,129,117,,Ground Storm,Stormy Horizon,Dark Lightning,Night Ice,Gray Cloud,White Cloud
+5692,Unlocked,Adult,Cloud,1,1638704402,7,251,154,112,173,123,128,208,123,,Bright Lightning,Sunny Skies,Dark Lightning,Day Rain,Small Cloud,Golden Sun
+16645,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+15873,Unlocked,Baby,Rainbow,0,0,0,103,112,108,94,130,109,121,136,,Magenta Beadtie,Beaming Confidence,Bedazzled Beadhorn,Morning Misters,Greenish Swirlbob,Striped Swirlpuff
+5779,Unlocked,Adult,Crystal,1,1638703050,7,117,112,182,134,156,253,128,130,,Pink Pattern,Crystal Anger,Red Needle,Pink Pattern,Purple Shine,Pink Pearl
+5949,Unlocked,Adult,Moon,1,1638704430,7,112,145,206,112,180,156,128,158,,Red Laser,Blasting Boldness,Green Alien,Turquoise Laser,Blue Flame,Silver Antenna
+16679,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5675,Unlocked,Adult,Candy,1,1638704346,7,184,112,213,128,112,225,179,117,,Caramel Nougat,Sweet Smugness,Strawberry Chocolate,Caramel Chocolate,Chocolate Bar,Graham Cracker
+5814,Unlocked,Adult,Candy,1,1638704048,8,172,123,206,117,117,310,180,112,,Blueberry Swirl,Glazed Smooth,Strawberry Chocolate,Pink Nougat,Graham Cracker,Colorful Marshmallow
+16699,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5670,Unlocked,Adult,Moon,1,1638704936,7,117,128,250,112,176,169,117,257,Single Mythic,Turquoise Moonspot,Dark Comet,Silver Orbital,Blue Laser,Yellow Moonrock,Green Tentacle
+5900,Unlocked,Adult,Heart,1,1638702990,7,149,145,123,207,132,140,152,112,,Lavender Smooth,Radiant Joy,Violet Fossil,Pink Stripe,Orange Cowlick,Red Plushy
+17826,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+7806,Unlocked,Egg,Heart,1,,,,,,,,,,,,,,,,,
+5530,Unlocked,Adult,Moon,1,1638700401,7,123,128,248,117,172,174,112,219,,Red Laser,Blasting Boldness,Silver Antenna,Blue Moonspot,Green Moonrock,Gray Crater
+5991,Unlocked,Adult,Flower,1,1638703834,8,170,112,204,194,128,163,112,133,,Autumn Leaf,Stout Determined,Green Oak,Green Oak,Brown Bark,Red Leaf
+5550,Unlocked,Adult,Candy,1,1638700141,7,232,117,198,112,117,261,156,123,,Pink Chocolate,Sweet Beaming,Strawberry Icecream,Pink Sprinkles,Chocolate Bar,Yellow Whip
+5926,Unlocked,Adult,Cloud,1,1638704302,7,220,220,128,182,117,123,123,134,Single Mythic,Night Ice,Sunny Skies,Fragmented Ice,Thunder God,Shatter Ice,Blue Cloud
+5953,Unlocked,Adult,Moon,1,1638703918,7,128,112,213,156,151,160,117,173,,Turquoise Moonspot,Blasting Boldness,Silver Orbital,Blue Laser,Red Flame,Yellow Crater
+16687,Unlocked,Baby,Crystal,0,0,0,117,98,111,112,112,141,108,117,Double Mythic,Dark Crystal,Crystal Anger,Dark Crystal,Purple Shatter,Turquoise Shine,Purple Shatter
+19249,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5986,Unlocked,Adult,Candy,1,1638704574,7,142,123,185,112,151,204,180,128,,Pink Chocolate,Sweet Beaming,Strawberry Icecream,Pink Sprinkles,Chocolate Bar,Chocolate Bar
+19625,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5513,Unlocked,Adult,Moon,1,1638700041,7,112,145,297,128,138,160,112,181,,Green Moonrock,Other-Worldly Charm,Blue Eye,Gray Laser,Yellow Crater,Green Tentacle
+5870,Unlocked,Adult,Heart,1,1638704186,8,148,123,117,237,180,112,198,123,,Pink Spot,Jazzy Vibes,Yellow Rune,Green Bow,Purple Frame,Pink Puff
+5471,Unlocked,Adult,Heart,1,1638700577,7,162,112,145,206,202,123,185,134,,Pink Spot,Radiant Joy,Red Fossil,Pink Spot,Sunny Braid,Violet Braid
+5815,Unlocked,Adult,Cloud,1,1638703380,8,161,172,140,159,134,134,149,123,,Night Rain,Stormy Horizon,Blue Umbrella,Night Rain,White Cloud,Golden Sun
+19850,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5762,Unlocked,Adult,Candy,1,1638704948,7,182,134,188,145,123,176,150,112,,Mint Chocolate,Sugary Slyness,Strawberry Icecream,Blue Licorice,Strawberry Chocolate,Graham Cracker
+16147,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+5519,Unlocked,Adult,Crystal,1,1638700985,7,128,128,212,112,176,222,123,170,,Purple Stone,Crystal Anger,Pink Spiral,Purple Stone,Purple Shine,Pink Shatter
+5703,Unlocked,Adult,Flower,1,1638704154,8,136,117,264,225,112,175,117,157,,Green Meadow,Stout Determined,Brown Thorn,Calming Meadow,Brown Bark,Green Needle
+6036,Unlocked,Adult,Candy,1,1638703758,8,118,140,171,128,112,193,195,112,,Caramel Nougat,Glazed Smooth,Strawberry Chocolate,Blue Licorice,Caramel Chocolate,Chocolate Bar
+5572,Unlocked,Adult,Crystal,1,1638700205,7,123,123,189,123,156,242,140,149,,Pink Pattern,Crystal Anger,Turquoise Node,Turquoise Pattern,Purple Cascade,Pink Pearl
+5985,Unlocked,Adult,Moon,1,1638704746,7,112,123,203,117,156,149,128,135,,Orange Moonrock,Blasting Boldness,Bronze Antenna,Gray Moonrock,Yellow Crater,Yellow Crater
+5737,Unlocked,Adult,Cloud,1,1638704974,7,197,146,145,181,128,123,143,117,,Thunder Storm,Dumping Raincloud,Dark Lightning,Day Ice,Small Cloud,Dark Cloud
+5776,Unlocked,Adult,Flower,1,1638703736,8,156,168,234,150,112,149,112,143,Single Mythic,Brown Oak,Fairy Flower,Green Oak,Orange Blossom,Pink Vine,Red Bush
+5468,Unlocked,Adult,Candy,1,1638700849,7,136,123,206,112,134,156,126,134,,Blueberry Swirl,Sweet Smugness,Caramel Chocolate,Mint Chocolate,Graham Cracker,Strawberry Chocolate
+5950,Unlocked,Adult,Heart,1,1638703980,8,148,128,112,278,178,117,181,123,,Green Bow,Radiant Joy,Yellow Rune,Pink Bow,Adorbs Braid,Orange Puff
+17328,Unlocked,Egg,Omnom,0,,,,,,,,,,,,,,,,,
+5805,Unlocked,Adult,Candy,1,1638704546,7,199,112,181,134,128,200,165,140,,Pink Sprinkles,Glazed Smooth,Chocolate Marshmallow,Pink Nougat,Chocolate Bar,Caramel Chocolate
+5655,Unlocked,Adult,Heart,1,1638704298,7,156,128,117,228,218,123,201,128,,Orange Spot,Jazzy Vibes,Pink Mop,Turquoise Stripe,Orange Cowlick,Pink Puff
+5755,Unlocked,Adult,Cloud,1,1638703572,8,235,160,128,192,128,151,184,112,,Ground Storm,Fluffy Smile,Yellow Umbrella,Night Ice,Small Cloud,Spikey Ice
+5594,Unlocked,Adult,Moon,1,1638700347,7,112,162,188,112,158,149,117,176,,Orange Moonrock,Other-Worldly Charm,Silver Antenna,Turquoise Laser,Blue Flame,Yellow Crater
+5646,Unlocked,Adult,Heart,1,1638704502,7,182,123,112,264,195,117,215,151,,Pink Spot,Radiant Joy,Violet Rune,Green Bow,Pink Frame,Pink Braid
+5610,Unlocked,Adult,Cloud,1,1638700773,7,178,160,156,156,112,151,170,112,,Night Ice,Dumping Raincloud,Yellow Umbrella,Night Ice,Small Cloud,Blue Cloud
+6055,Unlocked,Adult,Candy,1,1638703648,8,156,112,196,117,134,210,171,123,,Caramel Chocolate,Sweet Beaming,Strawberry Icecream,Caramel Nougat,Colorful Marshmallow,Chocolate Bar
+19577,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+19883,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5581,Unlocked,Adult,Candy,1,1638700859,7,178,123,192,128,134,188,144,134,,Pink Sprinkles,Sweet Smugness,Strawberry Icecream,Blue Licorice,Sweet Treat,Pink Whip
+5912,Unlocked,Adult,Cloud,1,1638703110,7,278,202,112,181,123,151,124,123,,Thunder Storm,Fluffy Smile,Blue Umbrella,Day Ice,Gray Cloud,Shatter Ice
+5724,Unlocked,Adult,Candy,1,1638704622,7,142,145,164,123,128,195,187,117,,Blueberry Swirl,Sugary Slyness,Mint Chocolate,Blue Licorice,Strawberry Whip,Pink Whip
+5567,Unlocked,Adult,Moon,1,1638700463,7,145,112,169,134,180,112,168,179,,Orange Moonrock,Vexed Voltage,Silver Orbital,Red Laser,Yellow Moonrock,Yellow Crater
+5677,Unlocked,Adult,Moon,1,1638704828,7,123,128,186,112,172,163,123,211,,Turquoise Laser,Other-Worldly Charm,Silver Orbital,Blue Moonspot,Yellow Moonrock,Bronze Antenna
+5792,Unlocked,Adult,Cloud,1,1638703532,8,266,152,112,256,117,134,172,123,,Fluffy Snow,Fluffy Smile,Fragmented Ice,Night Rain,Shatter Ice,Shatter Ice
+20113,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5720,Unlocked,Adult,Cloud,1,1638703006,7,200,193,123,214,123,117,147,112,Single Mythic,Thunder Storm,Fluffy Smile,Fragmented Ice,Thunder God,Shatter Ice,Shatter Ice
+5482,Unlocked,Adult,Heart,1,1638700327,7,169,123,117,243,187,112,201,156,,Pink Bow,Haughty Huff,Pink Mop,Pink Stripe,Pink Braid,Green Wizard
+17319,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5832,Unlocked,Adult,Heart,1,1638703248,7,206,145,117,246,144,123,231,123,,Orange Spot,Jazzy Vibes,Pink Mop,Pink Spot,Orange Cowlick,Violet Braid
+5920,Unlocked,Adult,Moon,1,1638703812,8,123,145,264,117,186,154,128,203,,Blue Moonspot,Blasting Boldness,Bronze Antenna,Turquoise Laser,Green Tentacle,Bronze Antenna
+19623,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5681,Unlocked,Adult,Heart,1,1638704566,7,142,123,123,192,165,140,233,128,,Orange Spot,Radiant Joy,Violet Rune,Pink Smooth,Sunny Braid,Purple Plushy
+16664,Unlocked,Baby,Candy,0,0,0,123,112,139,103,103,138,115,94,,Caramel Chocolate,Glazed Smooth,Strawberry Chocolate,Pink Nougat,Strawberry Chocolate,Caramel Chocolate
+5570,Unlocked,Adult,Heart,1,1638700193,7,136,112,123,261,150,123,170,123,,Pink Stripe,Jazzy Vibes,Pink Mop,Pink Bow,Pink Braid,Pink Braid
+5463,Unlocked,Adult,Cloud,1,1638700947,7,210,174,128,157,123,140,118,112,,Night Rain,Stormy Horizon,Fragmented Ice,Night Ice,Gray Cloud,Snowman
+5575,Unlocked,Adult,Cloud,1,1638700487,7,189,134,134,192,117,128,169,145,,Day Ice,Dumping Raincloud,Fragmented Ice,Night Rain,Gray Cloud,Shatter Ice
+5643,Unlocked,Adult,Candy,1,1638702934,7,216,112,226,112,128,222,172,117,Single Mythic,Pink Chocolate,Sweet Smugness,Caramel Chocolate,Pink Nougat,Gummy Bear,Strawberry Chocolate
+5971,Unlocked,Adult,Candy,1,1638703934,8,117,117,145,112,140,156,138,168,,Caramel Chocolate,Sugary Slyness,Chocolate Marshmallow,Caramel Chocolate,Colorful Marshmallow,Chocolate Bar
+5914,Unlocked,Adult,Heart,1,1638703782,8,142,145,140,211,165,128,190,112,,Pink Bow,Placid Mask,Green Mop,Green Bow,Sunny Braid,Red Plushy
+5683,Unlocked,Adult,Heart,1,1638704070,8,136,123,140,237,162,117,164,140,,Orange Spot,Radiant Joy,Pink Mop,Pink Bow,Purple Frame,Purple Wizard
+5722,Unlocked,Adult,Moon,1,1638704618,7,117,112,199,123,180,177,140,202,,Red Laser,Vexed Voltage,Green Eye,Gray Moonrock,Yellow Moonrock,Yellow Crater
+5493,Unlocked,Adult,Candy,1,1638700553,7,136,117,188,117,128,237,170,117,,Caramel Nougat,Glazed Smooth,Chocolate Bar,Blueberry Swirl,Chocolate Bar,Colorful Marshmallow
+5518,Unlocked,Adult,Crystal,1,1638700981,7,117,156,191,112,157,270,112,207,,Night Gem,Crystal Anger,Purple Node,Pink Stone,Purple Spikes,Turquoise Node
+6015,Unlocked,Adult,Moon,1,1638705010,7,123,128,178,112,165,197,112,206,,Green Laser,Vexed Voltage,Purple Alien,Turquoise Laser,Yellow Moonrock,Green Moonrock
+5548,Unlocked,Adult,Flower,1,1638700935,7,130,123,232,180,117,130,112,179,,Autumn Leaf,Fragrant Suave,Green Oak,Red Oak,Yellow Blade,Red Leaf
+18455,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5641,Unlocked,Adult,Heart,1,1638702926,7,166,145,112,240,138,134,256,112,,Orange Spot,Placid Mask,Violet Fossil,Green Bow,Pink Braid,Orange Puff
+19597,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5970,Unlocked,Adult,Cloud,1,1638704874,7,170,166,123,139,128,117,124,134,,Night Rain,Sunny Skies,Dark Lightning,Night Ice,Golden Sun,Gray Cloud
+5845,Unlocked,Adult,Moon,1,1638703018,7,128,134,236,112,151,206,123,217,,Blue Laser,Blasting Boldness,Purple Alien,Blue Moonspot,Green Tentacle,Bronze Antenna
+5961,Unlocked,Adult,Cloud,1,1638704758,7,222,153,128,190,123,128,168,140,Single Mythic,Bright Lightning,Dumping Raincloud,Yellow Umbrella,Bright Lightning,Spikey Ice,Thunder God
+5441,Unlocked,Adult,Flower,1,1638700969,7,124,128,226,208,140,136,140,175,,Green Oak,Fragrant Suave,Green Oak,Brown Meadow,Brown Bark,Red Bloom
+16697,Unlocked,Baby,Star,0,0,0,128,127,117,98,117,98,112,123,,Midnight Glammer,Hard Metalhead,Silver Northstar,Dark Dashers,Intense Mulletspike,Coldblue Puff
+5764,Unlocked,Adult,Candy,1,1638703902,8,192,112,223,112,128,295,165,112,,Pink Chocolate,Sugary Slyness,Strawberry Icecream,Caramel Chocolate,Caramel Chocolate,Yellow Whip
+5897,Unlocked,Adult,Heart,1,1638703890,8,148,112,134,165,151,140,157,117,,Pink Bow,Jazzy Vibes,Yellow Rune,Pink Smooth,Purple Cowlick,Purple Plushy
+20507,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+20122,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5485,Unlocked,Adult,Crystal,1,1638700413,7,112,117,172,123,187,178,117,183,,Pink Gem,Crystal Anger,Red Needle,Purple Gem,Purple Shine,Purple Node
+20092,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5947,Unlocked,Adult,Heart,1,1638704428,7,192,112,112,250,179,134,189,134,,Green Bow,Jazzy Vibes,Pink Mop,Pink Spot,Purple Cowlick,Red Plushy
+16695,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5684,Unlocked,Adult,Cloud,1,1638704074,8,223,173,123,222,112,140,176,112,,Night Rain,Fluffy Smile,Snowman Carrot,Bright Lightning,Small Cloud,White Cloud
+19631,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5810,Unlocked,Adult,Cloud,1,1638704826,7,194,140,117,163,123,112,159,117,,Night Ice,Fluffy Smile,Dark Lightning,Fluffy Snow,Small Cloud,Blue Cloud
+5700,Unlocked,Adult,Cloud,1,1638703354,8,195,167,123,185,123,145,149,145,Single Mythic,Night Ice,Dumping Raincloud,Thunder God,Night Rain,Blue Cloud,Gray Cloud
+5931,Unlocked,Adult,Flower,1,1638703416,8,149,123,213,180,128,163,123,159,,Spring Leaf,Fragrant Suave,Pink Poppy,Spring Leaf,Red Vine,Red Bush
+6053,Unlocked,Adult,Flower,1,1638704918,7,192,112,304,230,112,148,134,165,Single Mythic,Spring Leaf,Stout Determined,Yellow Thorn,Autumn Leaf,Brown Bark,Fairy Flower
+5654,Unlocked,Adult,Candy,1,1638704290,7,170,123,173,112,128,236,158,112,,Pink Nougat,Sweet Beaming,Mint Chocolate,Caramel Chocolate,Chocolate Bar,Mint Chocolate
+6031,Unlocked,Adult,Crystal,1,1638704770,7,151,128,173,134,151,223,123,149,,Turquoise Pattern,Polished Grin,Purple Needle,Night Gem,Pink Spikes,Turqoise Pearl
+5777,Unlocked,Adult,Candy,1,1638703740,8,190,134,211,128,128,243,144,128,,Red Sprinkles,Sweet Beaming,Chocolate Marshmallow,Pink Nougat,Graham Cracker,Pink Whip
+6039,Unlocked,Adult,Candy,1,1638704138,8,142,112,183,123,128,211,240,117,,Pink Sprinkles,Sugary Slyness,Strawberry Chocolate,Blueberry Swirl,Chocolate Bar,Chocolate Bar
+5666,Unlocked,Adult,Crystal,1,1638703126,7,117,117,241,117,150,255,112,184,,Blue Shatter,Polished Grin,Pink Spiral,Blue Shatter,Turquoise Cascade,Turqoise Pearl
+5600,Unlocked,Adult,Moon,1,1638700431,7,123,145,204,117,180,149,123,172,,Red Laser,Other-Worldly Charm,Blue Eye,Turquoise Laser,Gray Crater,Bronze Antenna
+5452,Unlocked,Adult,Flower,1,1638701027,7,136,140,188,193,128,130,112,129,,Spring Leaf,Stout Determined,Green Poppy,Green Oak,Green Frond,Pink Bloom
+5543,Unlocked,Adult,Flower,1,1638700893,7,154,123,233,179,140,161,117,155,,Spring Leaf,Stout Determined,Red Oak,Calming Meadow,Red Bark,Red Leaf
+5532,Unlocked,Adult,Moon,1,1638700003,7,117,117,201,112,157,170,128,225,,Blue Laser,Other-Worldly Charm,Silver Antenna,Turquoise Laser,Green Moonrock,Bronze Antenna
+5939,Unlocked,Adult,Cloud,1,1638703336,7,310,206,123,243,123,123,168,134,,Night Ice,Stormy Horizon,Snowman Carrot,Ground Storm,Golden Sun,Shatter Ice
+5745,Unlocked,Adult,Moon,1,1638703714,8,134,128,204,128,180,154,117,223,,Turquoise Moonspot,Vexed Voltage,Green Eye,Blue Laser,Blue Flame,Silver Antenna
+5638,Unlocked,Adult,Moon,1,1638703558,8,112,112,207,112,172,170,151,207,,Orange Moonrock,Cosmic Cheer,Silver Orbital,Gray Moonrock,Blue Flame,Bronze Antenna
+6005,Unlocked,Adult,Flower,1,1638703042,7,130,128,197,165,134,124,112,154,,Green Blossom,Shady Sad,Pink Poppy,Autumn Leaf,Green Blade,Green Bush
+15843,Unlocked,Baby,Cloud,0,0,0,113,107,126,124,126,98,110,112,,Thunder Storm,Dumping Raincloud,Yellow Umbrella,Day Ice,Spikey Ice,Golden Sun
+5876,Unlocked,Adult,Moon,1,1638703696,8,117,112,197,134,200,161,112,188,,Blue Laser,Blasting Boldness,Silver Antenna,Blue Moonrock,Green Tentacle,Yellow Crater
+20503,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5910,Unlocked,Adult,Cloud,1,1638704822,7,204,189,128,196,134,128,136,112,Single Mythic,Fluffy Snow,Sunny Skies,Golden Sun,Thunder God,White Cloud,Spikey Ice
+5913,Unlocked,Adult,Moon,1,1638703114,7,123,123,176,128,179,163,123,182,,Red Laser,Cosmic Cheer,Bronze Orbital,Turquoise Laser,Green Tentacle,Silver Antenna
+5559,Unlocked,Adult,Moon,1,1638700827,7,123,112,218,112,186,142,123,243,,Turquoise Laser,Vexed Voltage,Green Alien,Green Moonspot,Yellow Moonrock,Blue Tentacle
+6044,Unlocked,Adult,Cloud,1,1638703608,8,186,174,123,184,123,117,140,112,,Day Rain,Stormy Horizon,Blue Umbrella,Fluffy Snow,White Cloud,Shatter Ice
+5887,Unlocked,Adult,Heart,1,1638704524,7,155,128,117,181,172,112,169,151,,Pink Smooth,Haughty Huff,Yellow Rune,Turquoise Stripe,Sunny Braid,Green Wizard
+5469,Unlocked,Adult,Candy,1,1638700569,7,149,134,188,123,123,212,182,128,,Caramel Chocolate,Sweet Beaming,Caramel Chocolate,Pink Nougat,Chocolate Bar,Colorful Marshmallow
+5588,Unlocked,Adult,Crystal,1,1638700269,8,140,112,153,140,151,229,140,149,,Pink Shatter,Polished Grin,Red Needle,Night Gem,Turquoise Cascade,Turquoise Node
+5693,Unlocked,Adult,Candy,1,1638704406,7,149,117,169,134,117,219,126,112,,Blueberry Swirl,Sweet Smugness,Strawberry Chocolate,Caramel Chocolate,Caramel Chocolate,Graham Cracker
+5753,Unlocked,Adult,Moon,1,1638702960,7,134,117,200,128,171,130,134,183,,Red Laser,Cosmic Cheer,Green Alien,Green Moonspot,Blue Flame,Orange Moonrock
+17273,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5866,Unlocked,Adult,Crystal,1,1638704650,7,117,128,128,123,156,195,117,123,,Pink Pattern,Stony Indifference,Turquoise Node,Pink Pattern,Pink Shale,Purple Geode
+5795,Unlocked,Adult,Moon,1,1638703428,8,112,145,223,123,172,136,128,177,,Blue Laser,Other-Worldly Charm,Silver Orbital,Gray Laser,Yellow Crater,Orange Moonrock
+5993,Unlocked,Adult,Heart,1,1638704060,7,174,112,117,240,151,134,205,117,,Pink Stripe,Haughty Huff,Violet Rune,Orange Spot,Sunny Braid,Orange Puff
+5562,Unlocked,Adult,Moon,1,1638700513,7,145,112,226,140,191,130,112,198,,Blue Laser,Vexed Voltage,Blue Eye,Red Laser,Blue Flame,Silver Antenna
+5565,Unlocked,Adult,Moon,1,1638700453,7,128,123,248,145,189,142,112,190,,Blue Moonspot,Blasting Boldness,Green Alien,Red Laser,Green Tentacle,Gray Crater
+5483,Unlocked,Adult,Flower,1,1638700331,7,124,123,173,144,117,124,123,206,,Spring Leaf,Stout Determined,Pink Pollen,Autumn Leaf,Red Frond,Pink Bloom
+5885,Unlocked,Adult,Flower,1,1638703066,7,148,112,208,171,134,148,145,137,,Green Oak,Fragrant Suave,Pink Poppy,Spring Leaf,Yellow Blade,Yellow Needle
+5719,Unlocked,Adult,Crystal,1,1638703002,7,123,112,214,128,223,273,112,136,,Purple Stone,Stony Indifference,Turquoise Tower,Purple Shatter,Purple Shine,Pink Pearl
+20067,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+6027,Unlocked,Adult,Flower,1,1638704262,7,142,134,201,165,134,149,140,157,,Green Blossom,Fragrant Suave,Green Oak,Green Oak,Green Blade,Red Bloom
+20104,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5879,Unlocked,Adult,Moon,1,1638703860,8,117,140,205,123,170,149,134,203,,Green Moonrock,Vexed Voltage,Silver Antenna,Gray Laser,Blue Flame,Bronze Antenna
+5553,Unlocked,Adult,Heart,1,1638700157,7,160,134,128,202,165,123,190,145,,Pink Spot,Jazzy Vibes,Violet Rune,Turquoise Stripe,Orange Cowlick,Green Wizard
+5833,Unlocked,Adult,Flower,1,1638704824,7,149,134,241,202,123,136,117,137,,Brown Oak,Stout Determined,Green Poppy,Orange Blossom,Pink Vine,Yellow Needle
+5521,Unlocked,Adult,Flower,1,1638700443,7,142,123,237,162,123,155,117,152,,Green Blossom,Stout Determined,Green Poppy,Orange Blossom,Brown Bark,Red Bloom
+20498,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5648,Unlocked,Adult,Crystal,1,1638704438,7,117,123,188,128,144,207,123,136,,Pink Stone,Crystal Anger,Red Needle,Pink Pattern,Purple Shine,Pink Pearl
+5726,Unlocked,Adult,Cloud,1,1638704992,7,182,147,151,198,117,140,170,128,,Night Ice,Stormy Horizon,Golden Sun,Bright Lightning,White Cloud,White Cloud
+5797,Unlocked,Adult,Crystal,1,1638704174,7,128,140,224,123,162,242,117,161,,Pink Pattern,Pearly Whites,Turquoise Spiral,Pink Pattern,Turquoise Cascade,Turquoise Geode
+5872,Unlocked,Adult,Candy,1,1638704270,7,161,123,205,117,140,214,157,134,,Blueberry Swirl,Sweet Beaming,Caramel Chocolate,Mint Chocolate,Chocolate Bar,Pink Whip
+20097,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+17280,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5444,Unlocked,Adult,Heart,1,1638700239,7,162,140,123,270,204,112,197,117,Single Mythic,Pink Spot,Haughty Huff,Violet Fossil,Lavender Smooth,Ultimate Princess,Pink Braid
+5549,Unlocked,Adult,Cloud,1,1638700939,7,242,182,128,192,128,123,130,140,,Night Ice,Stormy Horizon,Dark Lightning,Thunder Storm,Golden Sun,Dark Cloud
+6037,Unlocked,Adult,Heart,1,1638704132,7,136,140,123,208,150,112,178,145,,Pink Stripe,Haughty Huff,Pink Mop,Pink Spot,Orange Cowlick,Purple Plushy
+19852,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5883,Unlocked,Adult,Cloud,1,1638704094,8,210,189,112,196,134,123,142,134,,Fluffy Snow,Stormy Horizon,Solid Ice,Ground Storm,Small Cloud,Dark Cloud
+5766,Unlocked,Adult,Moon,1,1638703910,8,128,123,222,117,180,142,140,172,,Green Moonrock,Vexed Voltage,Green Alien,Blue Moonrock,Yellow Moonrock,Bronze Antenna
+16683,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5996,Unlocked,Adult,Moon,1,1638704014,7,123,140,228,134,178,142,112,218,,Turquoise Moonspot,Cosmic Cheer,Blue Eye,Blue Moonrock,Red Flame,Orange Moonrock
+5534,Unlocked,Adult,Flower,1,1638700011,7,124,140,217,201,123,124,128,208,,Green Meadow,Blossoming Smile,Green Poppy,Brown Meadow,Red Bark,Green Bush
+5818,Unlocked,Adult,Candy,1,1638703438,8,162,112,172,145,145,199,138,123,,Mint Chocolate,Sweet Beaming,Graham Cracker,Pink Sprinkles,Caramel Chocolate,Strawberry Chocolate
+19282,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5801,Unlocked,Adult,Heart,1,1638704202,7,182,112,117,189,172,112,181,128,,Turquoise Stripe,Haughty Huff,Violet Fossil,Green Bow,Purple Cowlick,Violet Braid
+5907,Unlocked,Adult,Cloud,1,1638703308,8,239,164,128,201,128,123,156,112,,Fluffy Snow,Stormy Horizon,Bright Lightning,Fluffy Snow,Shatter Ice,Blue Cloud
+5804,Unlocked,Adult,Crystal,1,1638704542,7,112,112,185,112,202,232,134,170,,Pink Shatter,Crystal Anger,Purple Needle,Pink Pattern,Purple Spikes,Turquoise Geode
+19692,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5765,Unlocked,Adult,Crystal,1,1638703906,8,112,134,196,112,176,291,112,156,,Pink Shatter,Crystal Anger,Pink Spiral,Pink Pattern,Purple Shine,Pink Shatter
+5927,Unlocked,Adult,Moon,1,1638704306,7,123,123,172,145,144,136,123,218,,Blue Moonspot,Cosmic Cheer,Silver Antenna,Blue Laser,Yellow Moonrock,Bronze Antenna
+5496,Unlocked,Adult,Cloud,1,1638700357,7,187,147,112,221,112,134,136,123,,Night Rain,Dumping Raincloud,Dark Lightning,Ground Storm,Spikey Ice,White Cloud
+19593,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+16716,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5867,Unlocked,Adult,Flower,1,1638704654,7,136,140,218,163,134,161,117,141,,Spring Leaf,Stout Determined,Pink Poppy,Green Blossom,Yellow Blade,Red Leaf
+5480,Unlocked,Adult,Flower,1,1638700223,7,169,128,180,180,117,130,112,178,Single Mythic,Spring Leaf,Shady Sad,Pink Pollen,Spring Leaf,Green Frond,Fairy Flower
+19554,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5579,Unlocked,Adult,Cloud,1,1638700255,8,301,230,112,235,112,112,162,123,,Ground Storm,Stormy Horizon,Fragmented Ice,Night Rain,Spikey Ice,Shatter Ice
+5990,Unlocked,Adult,Cloud,1,1638703830,8,246,206,112,212,134,128,155,117,Single Mythic,Ground Storm,Stormy Horizon,Bright Lightning,Night Ice,Thunder God,Dark Cloud
+5821,Unlocked,Adult,Heart,1,1638703256,8,129,112,140,202,178,123,173,151,,Pink Stripe,Jazzy Vibes,Yellow Rune,Pink Smooth,Orange Cowlick,Pink Braid
+19818,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5929,Unlocked,Adult,Heart,1,1638703410,8,136,151,145,162,138,112,173,117,,Lavender Smooth,Haughty Huff,Red Fossil,Pink Smooth,Pink Frame,Purple Plushy
+5597,Unlocked,Adult,Cloud,1,1638700907,7,202,164,134,202,112,145,156,123,,Night Ice,Stormy Horizon,Bright Lightning,Night Rain,Gray Cloud,Spikey Ice
+16811,Unlocked,Egg,Omnom,0,,,,,,,,,,,,,,,,,
+17354,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+20654,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5896,Unlocked,Adult,Heart,1,1638703888,8,130,145,112,213,200,112,176,112,,Pink Smooth,Haughty Huff,Green Mop,Pink Stripe,Purple Cowlick,Orange Puff
+5747,Unlocked,Adult,Heart,1,1638704226,7,142,117,123,270,156,128,213,112,,Lavender Smooth,Radiant Joy,Yellow Rune,Turquoise Stripe,Adorbs Braid,Violet Braid
+6032,Unlocked,Adult,Cloud,1,1638704774,7,285,216,123,232,123,117,130,112,Single Mythic,Night Rain,Sunny Skies,Snowman Carrot,Night Rain,Thunder God,Golden Sun
+20057,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5495,Unlocked,Adult,Flower,1,1638700561,7,149,134,204,165,123,136,112,174,,Spring Leaf,Fragrant Suave,Pink Pollen,Orange Blossom,Red Frond,Red Leaf
+17353,Unlocked,Baby,Heart,0,0,0,127,98,98,146,116,117,125,103,,Lavender Smooth,Radiant Joy,Violet Fossil,Pink Stripe,Orange Cowlick,Pink Puff
+5889,Unlocked,Adult,Moon,1,1638704532,7,140,117,186,117,201,136,128,196,,Green Laser,Cosmic Cheer,Green Eye,Blue Moonrock,Red Flame,Yellow Crater
+5945,Unlocked,Adult,Moon,1,1638704856,8,134,117,246,112,191,142,156,210,,Turquoise Laser,Vexed Voltage,Green Eye,Gray Moonrock,Blue Tentacle,Yellow Crater
+20130,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5509,Unlocked,Adult,Cloud,1,1638700545,7,223,140,117,216,112,128,184,128,,Night Rain,Sunny Skies,Fragmented Ice,Night Ice,Golden Sun,Spikey Ice
+5819,Unlocked,Adult,Heart,1,1638703442,8,130,112,128,257,184,123,209,112,,Pink Stripe,Placid Mask,Violet Fossil,Pink Spot,Purple Cowlick,Pink Braid
+6054,Unlocked,Adult,Heart,1,1638704920,7,148,134,128,277,184,112,185,123,,Green Bow,Jazzy Vibes,Violet Fossil,Pink Stripe,Adorbs Braid,Purple Wizard
+5593,Unlocked,Adult,Crystal,1,1638700343,7,134,117,160,134,163,236,134,124,,Pink Gem,Polished Grin,Red Needle,Night Gem,Turquoise Shine,Pink Pearl
+5788,Unlocked,Adult,Crystal,1,1638704434,7,117,112,204,117,180,204,117,136,,Pink Gem,Stony Indifference,Red Needle,Pink Stone,Purple Cascade,Purple Geode
+5481,Unlocked,Adult,Flower,1,1638700325,7,149,134,260,194,112,142,112,181,,Green Blossom,Shady Sad,Pink Poppy,Brown Meadow,Green Frond,Green Bush
+6029,Unlocked,Adult,Crystal,1,1638704886,7,112,145,215,112,144,260,117,174,,Pink Gem,Crystal Anger,Turquoise Spiral,Turquoise Pattern,Turquoise Cascade,Pink Pearl
+5770,Unlocked,Adult,Heart,1,1638704390,7,168,123,134,242,151,117,226,123,,Orange Spot,Jazzy Vibes,Violet Fossil,Turquoise Stripe,Pink Braid,Pink Puff
+16809,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5997,Unlocked,Adult,Heart,1,1638704018,8,162,128,128,182,165,128,161,128,,Orange Spot,Radiant Joy,Pink Mop,Turquoise Stripe,Violet Braid,Purple Wizard
+5852,Unlocked,Adult,Heart,1,1638704468,7,128,112,123,170,195,145,150,128,,Pink Spot,Placid Mask,Pink Mop,Pink Smooth,Pink Braid,Pink Braid
+5839,Unlocked,Adult,Flower,1,1638703966,8,130,128,297,237,128,130,112,169,Single Mythic,Brown Oak,Shady Sad,Brown Thorn,Spring Leaf,Fairy Flower,Green Needle
+5715,Unlocked,Adult,Candy,1,1638703086,7,154,112,219,123,128,273,210,134,,Red Sprinkles,Sweet Beaming,Strawberry Icecream,Blueberry Swirl,Sweet Treat,Mint Chocolate
+6013,Unlocked,Adult,Moon,1,1638705006,7,140,112,169,112,157,163,134,159,,Green Moonrock,Vexed Voltage,Green Eye,Blue Laser,Red Flame,Yellow Crater
+5802,Unlocked,Adult,Crystal,1,1638704202,7,128,112,185,117,151,191,151,170,,Pink Stone,Pearly Whites,Pink Tower,Pink Pattern,Turquoise Shine,Purple Shatter
+6019,Unlocked,Adult,Moon,1,1638703678,8,123,128,207,123,180,185,117,190,,Blue Laser,Vexed Voltage,Green Eye,Green Moonspot,Green Tentacle,Gray Crater
+19617,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5865,Unlocked,Adult,Moon,1,1638703624,8,117,112,287,117,150,170,156,173,,Green Moonrock,Other-Worldly Charm,Silver Orbital,Green Moonspot,Green Tentacle,Orange Moonrock
+18487,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+5546,Unlocked,Adult,Cloud,1,1638700301,8,195,140,134,224,123,123,176,140,,Night Rain,Stormy Horizon,Dark Lightning,Thunder Storm,Small Cloud,Golden Sun
+5525,Unlocked,Adult,Moon,1,1638700769,7,123,112,173,156,165,136,145,155,,Blue Moonspot,Other-Worldly Charm,Purple Alien,Gray Laser,Gray Crater,Yellow Crater
+6007,Unlocked,Adult,Crystal,1,1638702942,7,134,112,217,123,198,285,156,130,,Blue Shatter,Crystal Anger,Red Needle,Pink Pattern,Turquoise Cascade,Turquoise Geode
+16755,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+6020,Unlocked,Adult,Cloud,1,1638703680,8,178,175,134,168,123,117,149,112,,Night Ice,Stormy Horizon,Blue Umbrella,Day Rain,Blue Cloud,Golden Sun
+16988,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5691,Unlocked,Adult,Candy,1,1638704108,8,163,123,186,112,151,184,191,112,,Blueberry Swirl,Sugary Slyness,Caramel Chocolate,Pink Nougat,Sweet Treat,Colorful Marshmallow
+17358,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5824,Unlocked,Adult,Flower,1,1638703454,8,162,112,192,170,112,130,117,169,,Spring Leaf,Fragrant Suave,Pink Pollen,Orange Blossom,Red Frond,Red Bush
+5923,Unlocked,Adult,Crystal,1,1638704898,7,134,123,211,128,189,242,123,123,,Pink Shatter,Crystal Anger,Pink Tower,Purple Gem,Turquoise Cascade,Purple Node
+5808,Unlocked,Adult,Crystal,1,1638703102,7,123,123,222,134,144,216,112,161,,Pink Shatter,Pearly Whites,Red Needle,Pink Pattern,Pink Spikes,Purple Node
+5560,Unlocked,Adult,Crystal,1,1638700829,7,140,112,228,145,208,257,112,142,Single Mythic,Pink Shatter,Pearly Whites,Pink Spiral,Pink Stone,Purple Shine,Dark Crystal
+6025,Unlocked,Adult,Heart,1,1638704258,8,136,112,140,185,151,112,187,123,,Turquoise Stripe,Placid Mask,Green Mop,Lavender Smooth,Orange Cowlick,Purple Plushy
+6003,Unlocked,Adult,Heart,1,1638704282,7,142,134,145,156,151,117,159,123,,Lavender Smooth,Placid Mask,Red Fossil,Lavender Smooth,Purple Frame,Pink Braid
+5674,Unlocked,Adult,Heart,1,1638704338,7,148,112,123,246,218,123,208,112,Single Mythic,Ultimate Princess,Placid Mask,Yellow Rune,Green Bow,Purple Frame,Green Wizard
+5465,Unlocked,Adult,Flower,1,1638700955,7,162,117,191,151,112,192,140,131,,Orange Blossom,Blossoming Smile,Red Oak,Orange Blossom,Brown Bark,Red Bloom
+5569,Unlocked,Adult,Crystal,1,1638700191,7,123,140,161,128,187,223,123,170,,Pink Pattern,Stony Indifference,Turquoise Spiral,Purple Shatter,Purple Shine,Turquoise Geode
+5944,Unlocked,Adult,Candy,1,1638704852,7,163,128,206,123,112,204,158,112,,Caramel Nougat,Sweet Smugness,Mint Chocolate,Mint Chocolate,Caramel Chocolate,Caramel Chocolate
+6033,Unlocked,Adult,Candy,1,1638704802,7,153,117,158,112,112,211,226,128,Single Mythic,Caramel Nougat,Sweet Beaming,Strawberry Chocolate,Gummy Bear,Strawberry Chocolate,Strawberry Chocolate
+5716,Unlocked,Adult,Heart,1,1638704510,7,174,123,112,232,194,123,218,117,Single Mythic,Ultimate Princess,Jazzy Vibes,Pink Mop,Green Bow,Violet Braid,Green Wizard
+20201,Unlocked,Egg,Omnom,0,,,,,,,,,,,,,,,,,
+16710,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5479,Unlocked,Adult,Flower,1,1638700221,7,170,145,195,158,112,142,123,141,,Brown Meadow,Blossoming Smile,Yellow Thorn,Spring Leaf,Green Blade,Green Leaf
+18152,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5767,Unlocked,Adult,Candy,1,1638703484,8,206,112,207,134,134,247,151,123,,Red Sprinkles,Glazed Smooth,Graham Cracker,Pink Nougat,Chocolate Bar,Graham Cracker
+16708,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5667,Unlocked,Adult,Heart,1,1638703134,7,142,123,117,254,230,128,198,112,,Green Bow,Radiant Joy,Yellow Whisp,Pink Bow,Pink Braid,Red Plushy
+17253,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+19571,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5661,Unlocked,Adult,Flower,1,1638703958,8,136,112,232,194,140,124,123,139,,Green Oak,Stout Determined,Pink Pollen,Green Oak,Pink Vine,Red Leaf
+5943,Unlocked,Adult,Moon,1,1638704602,7,134,145,226,112,171,170,128,177,,Orange Moonrock,Blasting Boldness,Green Alien,Blue Moonrock,Yellow Moonrock,Silver Antenna
+5740,Unlocked,Adult,Heart,1,1638704810,7,186,117,123,265,138,117,214,123,,Pink Bow,Haughty Huff,Yellow Whisp,Orange Spot,Violet Braid,Orange Puff
+5812,Unlocked,Adult,Flower,1,1638704040,8,142,128,191,163,128,130,117,183,,Green Meadow,Stout Determined,Yellow Thorn,Red Oak,Brown Bark,Green Bush
+5642,Unlocked,Adult,Flower,1,1638702930,7,155,128,228,178,123,124,117,174,,Spring Leaf,Stout Determined,Pink Pollen,Autumn Leaf,Pink Vine,Green Leaf
+20222,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5758,Unlocked,Adult,Crystal,1,1638703842,8,123,134,169,123,162,262,128,142,,Pink Shatter,Crystal Anger,Pink Tower,Blue Shatter,Purple Shine,Purple Node
+5514,Unlocked,Adult,Heart,1,1638700797,7,130,112,140,267,176,123,185,117,,Pink Spot,Haughty Huff,Pink Mop,Green Bow,Adorbs Braid,Violet Braid
+5416,Unlocked,Adult,Cloud,1,1638699907,7,227,140,140,181,134,123,155,112,,Day Rain,Sunny Skies,Blue Umbrella,Night Ice,Blue Cloud,Blue Cloud
+5979,Unlocked,Adult,Cloud,1,1638704002,8,213,173,112,165,123,128,183,128,,Night Rain,Stormy Horizon,Dark Lightning,Night Ice,Shatter Ice,Shatter Ice
+5520,Unlocked,Adult,Heart,1,1638700439,7,136,112,140,196,186,112,169,117,,Pink Smooth,Haughty Huff,Yellow Rune,Pink Stripe,Pink Braid,Purple Plushy
+5834,Unlocked,Adult,Flower,1,1638704826,7,170,128,264,217,112,155,117,153,,Spring Leaf,Shady Sad,Green Oak,Spring Leaf,Brown Bark,Green Bush
+5473,Unlocked,Adult,Crystal,1,1638700313,7,128,128,207,112,150,227,123,177,Single Mythic,Pink Pattern,Polished Grin,Red Needle,Blue Shatter,Turquoise Cascade,Dark Crystal
+19607,Unlocked,Egg,Omnom,0,,,,,,,,,,,,,,,,,
+5542,Unlocked,Adult,Heart,1,1638700889,7,168,134,128,146,158,140,180,112,,Pink Stripe,Radiant Joy,Green Mop,Turquoise Stripe,Pink Braid,Purple Plushy
+5772,Unlocked,Adult,Heart,1,1638704398,7,156,140,117,202,145,123,164,128,,Pink Smooth,Haughty Huff,Green Mop,Pink Spot,Purple Frame,Purple Wizard
+19581,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5448,Unlocked,Adult,Crystal,1,1638700789,7,123,134,208,117,210,223,117,117,,Purple Stone,Stony Indifference,Pink Spiral,Pink Pattern,Purple Shine,Turquoise Geode
+5523,Unlocked,Adult,Moon,1,1638700765,7,112,123,230,112,202,180,123,241,,Orange Moonrock,Vexed Voltage,Silver Orbital,Gray Laser,Red Flame,Gray Crater
+5708,Unlocked,Adult,Candy,1,1638703802,8,161,134,166,134,128,172,156,123,,Mint Chocolate,Glazed Smooth,Caramel Chocolate,Caramel Chocolate,Graham Cracker,Caramel Chocolate
+5924,Unlocked,Adult,Candy,1,1638704902,7,130,151,183,123,112,245,156,123,Single Mythic,Gummy Bear,Sweet Beaming,Caramel Chocolate,Blue Licorice,Strawberry Whip,Mint Chocolate
+5461,Unlocked,Adult,Cloud,1,1638700131,7,242,218,128,201,117,112,136,123,Single Mythic,Thunder Storm,Sunny Skies,Golden Sun,Night Ice,Small Cloud,Thunder God
+5598,Unlocked,Adult,Candy,1,1638700425,7,170,117,191,112,134,264,213,123,Single Mythic,Pink Sprinkles,Sweet Beaming,Graham Cracker,Caramel Nougat,Caramel Chocolate,Gummy Bear
+16658,Unlocked,Baby,Candy,0,0,0,118,108,147,94,131,187,135,117,,Caramel Chocolate,Glazed Smooth,Mint Chocolate,Mint Chocolate,Chocolate Bar,Colorful Marshmallow
+5497,Unlocked,Adult,Moon,1,1638700357,7,123,140,167,117,150,142,117,191,,Turquoise Laser,Cosmic Cheer,Bronze Antenna,Blue Moonspot,Yellow Crater,Bronze Antenna
+20243,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5494,Unlocked,Adult,Crystal,1,1638700557,7,117,112,159,134,187,199,117,148,,Pink Gem,Polished Grin,Purple Needle,Purple Gem,Turquoise Shale,Purple Shatter
+5687,Unlocked,Adult,Cloud,1,1638703178,7,220,227,123,192,128,112,136,112,,Night Ice,Stormy Horizon,Fragmented Ice,Night Ice,Spikey Ice,Dark Cloud
+5476,Unlocked,Adult,Cloud,1,1638700997,7,212,189,117,199,117,123,160,117,,Day Ice,Dumping Raincloud,Blue Umbrella,Night Ice,White Cloud,Shatter Ice
+16659,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5454,Unlocked,Adult,Crystal,1,1638700111,7,123,117,194,117,144,218,128,185,,Pink Pattern,Pearly Whites,Pink Tower,Purple Stone,Turquoise Cascade,Turquoise Node
+17262,Unlocked,Baby,Cloud,0,0,0,156,158,103,123,112,108,108,103,,Night Rain,Sunny Skies,Solid Ice,Day Rain,Small Cloud,Spikey Ice
+5467,Unlocked,Adult,Cloud,1,1638700845,7,213,174,117,181,123,112,224,117,,Bright Lightning,Dumping Raincloud,Bright Lightning,Day Rain,White Cloud,Spikey Ice
+5706,Unlocked,Adult,Candy,1,1638704456,7,149,134,158,140,112,197,201,112,,Caramel Nougat,Sugary Slyness,Chocolate Bar,Caramel Chocolate,Strawberry Chocolate,Pink Whip
+5874,Unlocked,Adult,Heart,1,1638704274,7,168,123,112,242,180,117,199,140,,Pink Smooth,Jazzy Vibes,Pink Mop,Pink Stripe,Pink Frame,Orange Puff
+19287,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5844,Unlocked,Adult,Candy,1,1638704486,7,149,112,196,112,112,250,179,134,,Pink Nougat,Sweet Smugness,Caramel Chocolate,Caramel Chocolate,Sweet Treat,Chocolate Bar
+5871,Unlocked,Adult,Crystal,1,1638704190,7,151,128,198,112,163,227,117,124,,Purple Stone,Polished Grin,Turquoise Tower,Pink Pattern,Turquoise Shale,Purple Node
+20230,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5439,Unlocked,Adult,Candy,1,1638700963,7,149,112,213,128,117,275,226,112,,Caramel Chocolate,Glazed Smooth,Chocolate Icecream,Caramel Chocolate,Strawberry Chocolate,Chocolate Bar
+16768,Unlocked,Baby,Crystal,0,0,0,98,108,102,112,137,121,112,117,,Turquoise Pattern,Crystal Anger,Turquoise Tower,Purple Stone,Turquoise Shine,Pink Shatter
+5750,Unlocked,Adult,Flower,1,1638704826,7,170,112,230,151,112,149,123,152,,Spring Leaf,Fragrant Suave,Yellow Thorn,Red Oak,Green Blade,Red Bush
+5787,Unlocked,Adult,Candy,1,1638703728,8,170,112,188,128,123,220,210,112,,Pink Nougat,Sweet Beaming,Mint Chocolate,Caramel Chocolate,Sweet Treat,Pink Whip
+5678,Unlocked,Adult,Crystal,1,1638704828,7,117,123,173,112,138,218,123,214,,Pink Pattern,Pearly Whites,Pink Tower,Purple Stone,Turquoise Shine,Pink Pearl
+5974,Unlocked,Adult,Crystal,1,1638702994,7,134,112,211,117,144,266,112,155,,Pink Shatter,Pearly Whites,Turquoise Spiral,Night Gem,Pink Spikes,Pink Pearl
+17338,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5585,Unlocked,Adult,Candy,1,1638700821,7,130,156,193,128,128,198,180,117,Single Mythic,Pink Sprinkles,Gummy Bear,Chocolate Bar,Pink Nougat,Chocolate Bar,Colorful Marshmallow
+5784,Unlocked,Adult,Cloud,1,1638703142,7,214,255,112,175,123,117,156,117,,Night Rain,Dumping Raincloud,Blue Umbrella,Bright Lightning,Shatter Ice,White Cloud
+16777,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+5951,Unlocked,Adult,Flower,1,1638703988,8,156,112,257,191,123,163,128,168,,Autumn Leaf,Stout Determined,Brown Thorn,Red Oak,Brown Bark,Pink Bloom
+6042,Unlocked,Adult,Flower,1,1638704610,7,170,117,204,151,123,136,151,129,,Orange Blossom,Shady Sad,Red Oak,Orange Blossom,Green Blade,Red Bloom
+5566,Unlocked,Adult,Heart,1,1638700457,7,118,134,112,202,162,123,211,145,,Pink Bow,Radiant Joy,Green Mop,Green Bow,Adorbs Braid,Purple Plushy
+19545,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+19679,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5589,Unlocked,Adult,Heart,1,1638700469,7,215,128,128,190,132,117,208,123,,Pink Bow,Jazzy Vibes,Violet Rune,Orange Spot,Violet Braid,Purple Wizard
+16657,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5680,Unlocked,Adult,Heart,1,1638704562,7,136,117,117,212,202,128,228,112,,Pink Spot,Radiant Joy,Green Mop,Pink Bow,Sunny Braid,Violet Braid
+5723,Unlocked,Adult,Crystal,1,1638704618,7,128,112,192,112,150,268,112,177,,Pink Gem,Crystal Anger,Purple Needle,Pink Pattern,Pink Shale,Turqoise Pearl
+16788,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+6046,Unlocked,Adult,Candy,1,1638703468,7,143,112,188,140,134,240,144,140,,Caramel Chocolate,Glazed Smooth,Caramel Chocolate,Pink Sprinkles,Colorful Marshmallow,Chocolate Bar
+5946,Unlocked,Adult,Moon,1,1638704860,7,123,134,270,112,186,168,117,229,,Red Laser,Blasting Boldness,Green Eye,Gray Moonrock,Blue Flame,Green Moonrock
+5690,Unlocked,Adult,Flower,1,1638704106,7,118,128,201,210,134,123,128,193,,Autumn Leaf,Blossoming Smile,Green Oak,Green Oak,Green Blade,Green Leaf
+5850,Unlocked,Adult,Flower,1,1638704250,7,149,112,215,151,128,130,156,166,,Green Oak,Fragrant Suave,Green Oak,Autumn Leaf,Red Frond,Green Leaf
+19251,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5580,Unlocked,Adult,Heart,1,1638700857,7,184,112,145,250,180,117,225,123,,Pink Spot,Jazzy Vibes,Pink Mop,Green Bow,Sunny Braid,Pink Braid
+5536,Unlocked,Adult,Moon,1,1638700501,7,117,123,262,112,158,160,140,217,Single Mythic,Blue Laser,Blasting Boldness,Bronze Orbital,Dark Comet,Green Tentacle,Silver Antenna
+14599,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+19534,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5612,Unlocked,Adult,Crystal,1,1638700777,7,145,117,152,123,144,161,162,134,,Pink Stone,Crystal Anger,Turquoise Node,Purple Shatter,Turquoise Shine,Purple Node
+5800,Unlocked,Adult,Heart,1,1638704198,7,129,112,140,197,179,112,148,117,,Turquoise Stripe,Haughty Huff,Pink Whisp,Lavender Smooth,Orange Cowlick,Violet Braid
+19551,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5544,Unlocked,Adult,Heart,1,1638700293,7,112,140,117,215,172,123,159,128,,Pink Bow,Haughty Huff,Violet Fossil,Pink Bow,Pink Frame,Pink Braid
+5604,Unlocked,Adult,Candy,1,1638700095,7,173,112,159,123,128,207,144,123,,Pink Chocolate,Sweet Beaming,Chocolate Bar,Mint Chocolate,Colorful Marshmallow,Chocolate Bar
+5609,Unlocked,Adult,Heart,1,1638700879,7,140,112,112,222,243,112,174,117,,Pink Bow,Placid Mask,Red Fossil,Pink Smooth,Adorbs Braid,Pink Puff
+5964,Unlocked,Adult,Heart,1,1638704338,7,182,112,112,276,168,112,263,123,,Pink Bow,Haughty Huff,Pink Whisp,Green Bow,Purple Frame,Violet Braid
+19295,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+19254,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5707,Unlocked,Adult,Crystal,1,1638703796,8,140,128,196,112,187,210,112,191,,Pink Shatter,Stony Indifference,Turquoise Spiral,Night Gem,Purple Shine,Purple Node
+5537,Unlocked,Adult,Cloud,1,1638700503,7,156,153,134,199,117,128,124,112,,Fluffy Snow,Fluffy Smile,Snowman Carrot,Thunder Storm,Spikey Ice,Shatter Ice
+5466,Unlocked,Adult,Crystal,1,1638700841,7,112,140,162,117,151,221,123,130,,Pink Pattern,Polished Grin,Turquoise Spiral,Purple Shatter,Turquoise Shale,Pink Pearl
+19561,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5503,Unlocked,Adult,Flower,1,1638700385,7,136,112,233,241,134,142,112,177,Single Mythic,Green Meadow,Fragrant Suave,Pink Poppy,Fairy Flower,Brown Bark,Yellow Needle
+5472,Unlocked,Adult,Heart,1,1638700309,7,176,117,128,273,150,117,222,117,,Lavender Smooth,Radiant Joy,Pink Mop,Pink Bow,Orange Cowlick,Pink Braid
+5456,Unlocked,Adult,Heart,1,1638700117,7,154,112,128,214,150,112,241,140,,Orange Spot,Jazzy Vibes,Pink Whisp,Pink Spot,Pink Braid,Violet Braid
+5605,Unlocked,Adult,Cloud,1,1638700097,7,204,174,123,201,128,123,142,123,,Night Ice,Fluffy Smile,Golden Sun,Night Rain,Gray Cloud,Golden Sun
+5860,Unlocked,Adult,Cloud,1,1638703244,7,176,175,123,180,112,134,153,128,,Fluffy Snow,Sunny Skies,Solid Ice,Night Ice,Blue Cloud,Dark Cloud
+5862,Unlocked,Adult,Cloud,1,1638703246,7,160,168,117,154,134,145,123,128,,Day Rain,Stormy Horizon,Dark Lightning,Day Rain,White Cloud,Shatter Ice
+5942,Unlocked,Adult,Moon,1,1638704602,7,112,134,264,128,168,199,117,233,,Blue Moonspot,Other-Worldly Charm,Green Alien,Red Laser,Blue Flame,Gray Crater
+5568,Unlocked,Adult,Cloud,1,1638700185,7,204,212,145,149,123,145,112,112,,Day Rain,Stormy Horizon,Yellow Umbrella,Thunder Storm,Dark Cloud,Dark Cloud
+6051,Unlocked,Adult,Candy,1,1638703878,8,149,123,205,117,123,237,168,134,,Red Sprinkles,Glazed Smooth,Chocolate Bar,Yellow Sprinkles,Mint Chocolate,Mint Chocolate
+5829,Unlocked,Adult,Heart,1,1638703596,8,136,128,134,258,144,112,203,112,,Pink Spot,Haughty Huff,Violet Rune,Pink Bow,Orange Cowlick,Red Plushy
+5965,Unlocked,Adult,Cloud,1,1638703316,8,198,140,134,183,112,151,169,123,,Day Ice,Fluffy Smile,Dark Lightning,Bright Lightning,Spikey Ice,Golden Sun
+20232,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+19598,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+19291,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5861,Unlocked,Adult,Flower,1,1638703244,7,149,112,260,180,123,149,112,137,,Spring Leaf,Fragrant Suave,Green Oak,Green Oak,Green Blade,Yellow Needle
+5955,Unlocked,Adult,Heart,1,1638703926,8,170,145,123,240,132,117,157,123,,Pink Smooth,Jazzy Vibes,Yellow Rune,Pink Stripe,Purple Frame,Purple Wizard
+19321,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5734,Unlocked,Adult,Candy,1,1638704630,7,156,134,180,112,145,204,172,112,,Caramel Nougat,Sugary Slyness,Graham Cracker,Yellow Sprinkles,Graham Cracker,Strawberry Chocolate
+5882,Unlocked,Adult,Heart,1,1638704090,7,170,117,117,268,172,112,167,117,,Turquoise Stripe,Haughty Huff,Violet Rune,Pink Stripe,Purple Frame,Orange Puff
+19582,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5841,Unlocked,Adult,Moon,1,1638703972,8,123,140,236,123,182,161,156,195,Single Mythic,Dark Comet,Blasting Boldness,Silver Orbital,Turquoise Laser,Blue Flame,Bronze Antenna
+5743,Unlocked,Adult,Cloud,1,1638703708,7,189,167,128,201,112,112,162,128,,Ground Storm,Fluffy Smile,Dark Lightning,Day Rain,White Cloud,Shatter Ice
+5798,Unlocked,Adult,Moon,1,1638704174,8,112,112,225,112,218,162,117,174,,Blue Laser,Blasting Boldness,Bronze Antenna,Green Moonspot,Green Moonrock,Blue Tentacle
+6010,Unlocked,Adult,Flower,1,1638704958,7,123,112,251,201,134,123,112,186,,Spring Leaf,Stout Determined,Pink Poppy,Green Oak,Green Blade,Green Leaf
+5735,Unlocked,Adult,Heart,1,1638704634,7,180,112,123,244,165,123,226,112,Single Mythic,Pink Bow,Jazzy Vibes,Red Fossil,Pink Smooth,Violet Braid,Ultimate Princess
+5658,Unlocked,Adult,Moon,1,1638704822,7,128,128,211,123,158,149,123,195,,Red Laser,Other-Worldly Charm,Green Eye,Blue Laser,Blue Flame,Gray Crater
+19538,Unlocked,Baby,Heart,0,0,0,112,108,112,156,120,94,139,103,,Orange Spot,Placid Mask,Pink Mop,Orange Spot,Pink Braid,Red Plushy
+5561,Unlocked,Adult,Moon,1,1638700835,7,112,117,187,151,165,130,123,178,,Green Laser,Cosmic Cheer,Green Alien,Red Laser,Yellow Moonrock,Bronze Antenna
+5952,Unlocked,Adult,Cloud,1,1638703990,8,212,221,123,162,117,123,112,134,,Fluffy Snow,Stormy Horizon,Blue Umbrella,Night Ice,White Cloud,Shatter Ice
+5558,Unlocked,Adult,Crystal,1,1638701015,8,112,123,190,112,165,228,112,177,,Pink Shatter,Stony Indifference,Purple Node,Turquoise Pattern,Turquoise Shale,Turquoise Node
+5736,Unlocked,Adult,Moon,1,1638704634,7,117,123,179,117,165,149,134,178,,Orange Moonrock,Cosmic Cheer,Silver Antenna,Red Laser,Yellow Crater,Green Moonrock
+5982,Unlocked,Adult,Cloud,1,1638703198,7,225,152,140,224,112,128,143,117,,Day Rain,Stormy Horizon,Fragmented Ice,Night Rain,Golden Sun,Blue Cloud
+5898,Unlocked,Adult,Flower,1,1638703894,8,149,123,189,202,134,156,112,137,,Brown Meadow,Shady Sad,Pink Poppy,Orange Blossom,Brown Bark,Pink Bloom
+17908,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+5749,Unlocked,Adult,Candy,1,1638704826,7,176,123,240,128,123,220,150,117,,Pink Chocolate,Glazed Smooth,Strawberry Chocolate,Pink Sprinkles,Graham Cracker,Strawberry Chocolate
+13871,Unlocked,Baby,Flower,0,0,0,130,108,155,128,94,120,108,132,,Autumn Leaf,Fragrant Suave,Green Poppy,Autumn Leaf,Yellow Blade,Green Bush
+5606,Unlocked,Adult,Moon,1,1638700101,7,123,117,261,112,163,183,123,165,,Turquoise Moonspot,Blasting Boldness,Green Alien,Red Laser,Yellow Crater,Bronze Antenna
+17291,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+19550,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+6012,Unlocked,Adult,Moon,1,1638704966,7,117,134,225,112,158,177,134,192,,Turquoise Moonspot,Other-Worldly Charm,Green Eye,Red Laser,Blue Tentacle,Silver Antenna
+5987,Unlocked,Adult,Flower,1,1638704586,7,155,134,209,156,140,130,117,169,,Brown Meadow,Fragrant Suave,Green Oak,Red Oak,Red Vine,Red Bloom
+5739,Unlocked,Adult,Candy,1,1638704980,8,185,117,160,145,112,197,138,117,,Pink Nougat,Glazed Smooth,Strawberry Chocolate,Pink Nougat,Caramel Chocolate,Strawberry Chocolate
+5781,Unlocked,Adult,Crystal,1,1638703054,8,140,134,179,112,162,215,140,136,Single Mythic,Pink Gem,Pearly Whites,Turquoise Node,Blue Shatter,Dark Crystal,Purple Node
+5577,Unlocked,Adult,Candy,1,1638700247,7,156,123,205,134,117,250,186,112,Single Mythic,Pink Nougat,Sweet Beaming,Chocolate Bar,Pink Nougat,Gummy Bear,Chocolate Bar
+5447,Unlocked,Adult,Moon,1,1638700753,7,134,117,217,123,165,155,123,224,,Red Laser,Blasting Boldness,Bronze Antenna,Gray Laser,Green Moonrock,Gray Crater
+5916,Unlocked,Adult,Heart,1,1638703790,8,142,123,128,239,170,128,201,112,,Pink Bow,Haughty Huff,Yellow Rune,Green Bow,Pink Frame,Pink Puff
+6030,Unlocked,Adult,Candy,1,1638704890,7,162,128,185,117,117,171,145,117,,Blueberry Swirl,Glazed Smooth,Graham Cracker,Yellow Sprinkles,Mint Chocolate,Strawberry Chocolate
+5578,Unlocked,Adult,Cloud,1,1638700251,7,237,159,123,224,128,112,148,128,,Night Ice,Fluffy Smile,Solid Ice,Bright Lightning,Small Cloud,Spikey Ice
+5639,Unlocked,Adult,Candy,1,1638703562,8,170,112,183,145,112,170,165,123,,Caramel Chocolate,Glazed Smooth,Caramel Chocolate,Caramel Nougat,Chocolate Bar,Caramel Chocolate
+5728,Unlocked,Adult,Moon,1,1638705018,7,117,151,246,123,191,163,117,192,,Turquoise Laser,Other-Worldly Charm,Green Alien,Red Laser,Blue Flame,Green Tentacle
+20226,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5799,Unlocked,Adult,Heart,1,1638704178,7,148,117,123,253,200,123,236,117,,Green Bow,Radiant Joy,Violet Rune,Pink Smooth,Adorbs Braid,Purple Plushy
+19242,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+19252,Unlocked,Egg,Cloud,0,,,,,,,,,,,,,,,,,
+19827,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5899,Unlocked,Adult,Flower,1,1638702972,8,149,112,210,151,123,163,117,150,,Orange Blossom,Fragrant Suave,Green Oak,Green Blossom,Red Bark,Pink Bloom
+5769,Unlocked,Adult,Cloud,1,1638703490,8,216,158,112,182,162,128,149,112,,Night Ice,Stormy Horizon,Solid Ice,Fluffy Snow,Small Cloud,Gray Cloud
+19659,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5853,Unlocked,Adult,Candy,1,1638704470,7,163,134,185,117,117,222,178,123,Single Mythic,Gummy Bear,Glazed Smooth,Chocolate Bar,Caramel Chocolate,Chocolate Bar,Pink Whip
+5705,Unlocked,Adult,Cloud,1,1638704452,7,200,196,112,189,112,162,192,112,,Fluffy Snow,Fluffy Smile,Blue Umbrella,Bright Lightning,Dark Cloud,Gray Cloud
+5933,Unlocked,Adult,Crystal,1,1638704670,7,112,134,187,123,208,184,112,156,,Pink Stone,Stony Indifference,Red Needle,Purple Shatter,Purple Shine,Purple Geode
+5761,Unlocked,Adult,Candy,1,1638704948,7,142,128,166,123,117,161,189,112,,Pink Chocolate,Glazed Smooth,Mint Chocolate,Mint Chocolate,Mint Chocolate,Caramel Chocolate
+17366,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+6045,Unlocked,Adult,Crystal,1,1638703610,7,123,112,164,117,171,180,123,136,,Night Gem,Crystal Anger,Red Needle,Purple Gem,Purple Shine,Purple Shatter
+5491,Unlocked,Adult,Flower,1,1638700537,7,170,140,202,172,140,142,112,152,,Green Blossom,Shady Sad,Yellow Thorn,Green Blossom,Red Bark,Pink Bloom
+16700,Unlocked,Egg,Rainbow,0,,,,,,,,,,,,,,,,,
+17276,Unlocked,Egg,Star,0,,,,,,,,,,,,,,,,,
+5988,Unlocked,Adult,Crystal,1,1638704590,7,112,117,206,151,171,194,112,190,,Turquoise Pattern,Crystal Anger,Purple Node,Pink Pattern,Purple Spikes,Turquoise Node
+17887,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5823,Unlocked,Adult,Heart,1,1638703264,7,143,140,112,175,138,123,175,117,,Lavender Smooth,Jazzy Vibes,Violet Rune,Pink Smooth,Pink Frame,Purple Plushy
+5453,Unlocked,Adult,Cloud,1,1638701031,7,204,160,112,157,112,134,156,145,,Day Rain,Dumping Raincloud,Fragmented Ice,Fluffy Snow,Shatter Ice,Spikey Ice
+20103,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+5500,Unlocked,Adult,Heart,1,1638700921,7,178,112,123,302,193,112,268,123,,Orange Spot,Jazzy Vibes,Yellow Rune,Green Bow,Pink Braid,Violet Braid
+5669,Unlocked,Adult,Candy,1,1638704932,7,124,117,169,112,128,277,210,123,Single Mythic,Mint Chocolate,Sweet Beaming,Chocolate Icecream,Caramel Chocolate,Mint Chocolate,Gummy Bear
+5541,Unlocked,Adult,Flower,1,1638700885,8,136,117,204,172,112,210,117,137,,Brown Oak,Stout Determined,Green Oak,Green Blossom,Green Frond,Green Bush
+5975,Unlocked,Adult,Heart,1,1638702994,7,155,112,128,190,165,134,169,145,,Pink Smooth,Jazzy Vibes,Yellow Whisp,Orange Spot,Violet Braid,Pink Puff
+5517,Unlocked,Adult,Moon,1,1638700979,7,134,112,333,112,208,148,117,207,,Red Laser,Cosmic Cheer,Blue Eye,Red Laser,Yellow Crater,Bronze Antenna
+5790,Unlocked,Adult,Moon,1,1638704436,7,117,140,197,112,158,118,123,168,,Red Laser,Cosmic Cheer,Silver Antenna,Gray Laser,Yellow Moonrock,Orange Moonrock
+5936,Unlocked,Adult,Heart,1,1638703666,8,155,123,128,214,194,112,253,123,,Turquoise Stripe,Placid Mask,Violet Rune,Orange Spot,Purple Cowlick,Purple Wizard
+5679,Unlocked,Adult,Flower,1,1638704830,7,136,123,205,172,134,143,123,154,,Green Blossom,Fragrant Suave,Red Pollen,Red Oak,Pink Vine,Red Bloom
+5838,Unlocked,Adult,Heart,1,1638703400,8,161,128,145,180,144,134,203,123,,Pink Stripe,Haughty Huff,Yellow Whisp,Orange Spot,Pink Braid,Purple Plushy
+5793,Unlocked,Adult,Flower,1,1638703536,8,176,134,249,126,117,176,145,133,,Green Blossom,Shady Sad,Yellow Thorn,Autumn Leaf,Pink Vine,Red Bush
+5488,Unlocked,Adult,Moon,1,1638700053,7,140,117,156,128,191,136,112,157,,Turquoise Laser,Blasting Boldness,Silver Antenna,Blue Moonrock,Gray Crater,Yellow Crater
+6001,Unlocked,Adult,Moon,1,1638704278,7,128,123,217,112,176,148,123,209,,Blue Laser,Vexed Voltage,Bronze Orbital,Green Moonspot,Blue Tentacle,Yellow Crater
+5647,Unlocked,Adult,Candy,1,1638704436,7,184,123,192,140,134,215,165,112,,Blueberry Swirl,Sugary Slyness,Caramel Chocolate,Caramel Nougat,Graham Cracker,Yellow Whip
+6049,Unlocked,Adult,Crystal,1,1638703872,8,140,140,143,128,132,187,123,130,,Pink Shatter,Polished Grin,Pink Spiral,Turquoise Pattern,Purple Cascade,Turquoise Node
+5489,Unlocked,Adult,Flower,1,1638700057,7,142,123,259,198,123,149,123,172,,Spring Leaf,Blossoming Smile,Yellow Thorn,Brown Meadow,Pink Vine,Pink Bloom
+5538,Unlocked,Adult,Flower,1,1638700369,7,142,156,158,165,123,124,123,167,,Green Oak,Shady Sad,Pink Poppy,Red Oak,Green Frond,Red Bloom
+5459,Unlocked,Adult,Moon,1,1638700071,7,128,168,204,112,144,149,123,175,,Green Moonrock,Blasting Boldness,Bronze Orbital,Green Moonspot,Blue Flame,Yellow Crater
+5442,Unlocked,Adult,Moon,1,1638700231,7,134,151,225,117,172,130,112,155,,Turquoise Laser,Blasting Boldness,Silver Antenna,Gray Moonrock,Red Flame,Orange Moonrock
+5721,Unlocked,Adult,Heart,1,1638703014,7,163,112,128,204,187,112,164,117,,Lavender Smooth,Radiant Joy,Red Fossil,Pink Smooth,Violet Braid,Orange Puff
+5516,Unlocked,Adult,Heart,1,1638700803,7,184,112,123,235,151,123,171,117,,Green Bow,Jazzy Vibes,Red Fossil,Pink Bow,Purple Frame,Violet Braid
+5650,Unlocked,Adult,Heart,1,1638704026,7,170,112,145,186,151,123,227,112,Single Mythic,Green Bow,Placid Mask,Yellow Rune,Ultimate Princess,Purple Cowlick,Purple Plushy
+5868,Unlocked,Adult,Candy,1,1638704662,7,156,134,175,123,123,178,172,128,,Pink Chocolate,Glazed Smooth,Chocolate Marshmallow,Blueberry Swirl,Strawberry Chocolate,Colorful Marshmallow
+5702,Unlocked,Adult,Flower,1,1638704150,7,155,123,190,132,156,148,117,151,,Orange Blossom,Blossoming Smile,Yellow Thorn,Green Blossom,Brown Bark,Red Bush
+16744,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+5515,Unlocked,Adult,Heart,1,1638700799,7,130,112,128,206,156,140,222,123,,Green Bow,Jazzy Vibes,Yellow Rune,Pink Bow,Pink Braid,Purple Plushy
+16817,Unlocked,Egg,Flower,0,,,,,,,,,,,,,,,,,
+19871,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5571,Unlocked,Adult,Candy,1,1638700201,7,124,112,227,123,112,209,194,134,,Caramel Chocolate,Sugary Slyness,Chocolate Icecream,Blueberry Swirl,Chocolate Bar,Chocolate Bar
+6022,Unlocked,Adult,Crystal,1,1638703498,8,117,112,192,134,178,198,123,177,,Turquoise Pattern,Stony Indifference,Pink Spiral,Pink Stone,Purple Cascade,Pink Shatter
+5984,Unlocked,Adult,Crystal,1,1638704742,7,112,117,193,112,210,237,128,155,Single Mythic,Turquoise Pattern,Polished Grin,Dark Crystal,Purple Shatter,Purple Cascade,Pink Pearl
+20505,Unlocked,Egg,Candy,0,,,,,,,,,,,,,,,,,
+5966,Unlocked,Adult,Crystal,1,1638703320,8,140,128,163,112,151,178,128,136,,Pink Shatter,Crystal Anger,Turquoise Spiral,Purple Gem,Turquoise Shine,Pink Shatter
+5576,Unlocked,Adult,Heart,1,1638700489,7,136,128,112,243,202,112,163,123,,Pink Smooth,Haughty Huff,Yellow Rune,Pink Spot,Purple Cowlick,Red Plushy
+5835,Unlocked,Adult,Crystal,1,1638704826,7,112,123,177,123,165,232,145,156,,Blue Shatter,Pearly Whites,Purple Needle,Pink Stone,Purple Cascade,Purple Node
+5836,Unlocked,Adult,Moon,1,1638703394,8,123,123,270,112,170,156,140,175,,Red Laser,Vexed Voltage,Green Alien,Red Laser,Green Tentacle,Silver Antenna
+5731,Unlocked,Adult,Cloud,1,1638703362,7,233,134,134,229,112,134,205,123,,Day Ice,Dumping Raincloud,Golden Sun,Thunder Storm,Spikey Ice,Golden Sun
+5504,Unlocked,Adult,Crystal,1,1638700389,7,123,117,165,117,179,281,123,136,,Pink Shatter,Polished Grin,Turquoise Tower,Purple Gem,Pink Shale,Pink Shatter
+17258,Unlocked,Egg,Moon,0,,,,,,,,,,,,,,,,,
+20135,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5608,Unlocked,Adult,Heart,1,1638700875,7,123,112,112,291,211,117,196,128,,Pink Bow,Haughty Huff,Violet Rune,Pink Bow,Adorbs Braid,Red Plushy
+20508,Unlocked,Egg,Crystal,0,,,,,,,,,,,,,,,,,
+16981,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5775,Unlocked,Adult,Flower,1,1638704124,7,123,123,223,184,140,117,134,156,,Brown Oak,Blossoming Smile,Green Oak,Green Blossom,Pink Vine,Green Needle
+19271,Unlocked,Egg,Heart,0,,,,,,,,,,,,,,,,,
+5729,Unlocked,Adult,Candy,1,1638705022,7,130,134,195,112,123,174,158,112,,Mint Chocolate,Sugary Slyness,Caramel Chocolate,Blue Licorice,Mint Chocolate,Strawberry Chocolate
+5922,Unlocked,Adult,Flower,1,1638703820,8,173,134,189,151,140,130,112,154,,Green Blossom,Shady Sad,Green Oak,Spring Leaf,Pink Vine,Pink Bloom
+5602,Unlocked,Adult,Crystal,1,1638700175,7,112,140,186,123,172,217,123,136,Single Mythic,Pink Pattern,Stony Indifference,Dark Crystal,Turquoise Pattern,Pink Spikes,Purple Node
