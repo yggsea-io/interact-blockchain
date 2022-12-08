@@ -34,4 +34,4 @@ async function start(port) {
     await scholarAcsModel.revertData()
     await scholarAcsModel.run();
 }
-start(1500);
+start(17000);

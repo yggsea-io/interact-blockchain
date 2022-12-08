@@ -32,17 +32,14 @@ class ScholarAcsModel {
     async run(){
         this.lastDate = await this.getDate(this.lastBlock);
         const currentBlock = await web3.eth.getBlockNumber();
-        console.log("test block",this.lastBlock, currentBlock)
         await this.saveDataPastLog(this.lastBlock, currentBlock)
         this.interval = setInterval(async () => {
             try {
                 const currentBlock = await web3.eth.getBlockNumber();
-                console.log(this.lastBlock, currentBlock)
                 const saveData = await this.saveDataPastLog(this.lastBlock, currentBlock)
             } catch (err) { console.log(`Crawl ERROR`, err); }
         }, 30000)
     }
-
     async saveDataPastLog(fromBlock, toBlock){
         const data = await this.getLogs(fromBlock, toBlock)
         
@@ -59,7 +56,7 @@ class ScholarAcsModel {
                     address : scholar,
                     amountReceived : amountReceived,
                     blockNumber : blockNumber,
-                    time : time,
+                    time : time.toString(),
                     logIndex : data[i + 1].logIndex,
                     txid :data[i + 1].transactionHash
                 }
@@ -74,7 +71,6 @@ class ScholarAcsModel {
                     this.modelReportDate[key] = 0
                 }
                 this.modelReportDate[key] += amountReceived
-                console.log(key, this.modelReportDate[key])
 
                  // report flow scholar
                 if(!this.modelReportScholar[scholar.toLowerCase()]){
@@ -174,6 +170,4 @@ class ScholarAcsModel {
         return date;
     }
 }
-
 module.exports = ScholarAcsModel;
-
