@@ -5,15 +5,13 @@ const  Web3 = require("web3");
 const web3 = new Web3("https://api.avax.network/ext/bc/C/rpc");
 const TOPIC = '0x288d9a5737d39d766acb848da277a970d9ee31f9115e17490b9393e282fa7b4d';
 const REPORT_SCHOLAR_FILE = path.join(__dirname, './data/reportScholar.csv');
-const REPORT_DATE_FILE = path.join(__dirname, './data/reportDate.csv');
 
 class ScholarAcsModel {
     constructor() {
         this.modelReportDate = {};
         this.modelReportScholar = {};
-        this.lastBlock = 23010000;
+        this.lastBlock = 19915650;
         this.scholarWriter = fs.createWriteStream(REPORT_SCHOLAR_FILE, { flags: "a" });
-        this.dateWriter = fs.createWriteStream(REPORT_DATE_FILE, { flags: "a" });
         this.savedTx = {}
     }
 
@@ -41,8 +39,7 @@ class ScholarAcsModel {
         }, 30000)
     }
     async saveDataPastLog(fromBlock, toBlock){
-        const data = await this.getLogs(fromBlock, toBlock)
-        
+        const data = await this.getLogs(fromBlock, toBlock) 
         for(let i = 0; i < data.length ; i++){
             const address = web3.eth.abi.decodeParameters(['address'], data[i].topics[1])[0]
             if(address != "0x3D094Bb9Db4b8f3961bF06b0DA01F0471d26a055") continue
@@ -63,15 +60,21 @@ class ScholarAcsModel {
                 // report flow date
                 if(time.getTime() >= this.getTimeStampEndDate()){
                     let date = new Date(this.getTimeStampEndDate())
-                    //this.dateWriter.write(`${this.lastDate},${scholar},${this.modelReportDate[this.lastDate + "," + scholar.toLowerCase()]}\n`);
                     this.lastDate = date.toISOString().slice(0, 10)
                 }
-                const key = this.lastDate + "," + scholar.toLowerCase()
-                if(!this.modelReportDate[key]){
-                    this.modelReportDate[key] = 0
+                if(!this.modelReportDate[this.lastDate]){
+                    this.modelReportDate[this.lastDate] = []
                 }
-                this.modelReportDate[key] += amountReceived
-
+                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address == scholar.toLowerCase())
+                if(foundIndex == -1){
+                    this.modelReportDate[this.lastDate].push({
+                        address : scholar.toLowerCase(),
+                        amount : amountReceived
+                    })
+                }else{
+                    var foundReport = this.modelReportDate[this.lastDate][foundIndex]
+                    this.modelReportDate[this.lastDate][foundIndex].amount = parseFloat(foundReport.amount) + parseFloat(amountReceived)
+                }
                  // report flow scholar
                 if(!this.modelReportScholar[scholar.toLowerCase()]){
                     this.modelReportScholar[scholar.toLowerCase()] = []
@@ -90,6 +93,9 @@ class ScholarAcsModel {
                 if(!this.modelReportScholar[item.address.toLowerCase()]){
                     this.modelReportScholar[item.address.toLowerCase()] = []
                 }
+                if(!item.amountReceived){
+                    console.log("fail",item)
+                }
                 this.modelReportScholar[item.address.toLowerCase()].push({
                     address : item.address,
                     amountReceived : item.amountReceived,
@@ -98,17 +104,27 @@ class ScholarAcsModel {
                     logIndex : item.logIndex,
                     txid : item.txid
                 })
+                //console.log(this.modelReportScholar[item.address.toLowerCase()])
                 this.updateLastDate(item.time)
 
-                const key = this.lastDate + "," + item.address.toLowerCase()
-                if(!this.modelReportDate[key]){
-                    this.modelReportDate[key] = 0
+                if(!this.modelReportDate[this.lastDate]){
+                    this.modelReportDate[this.lastDate] = []
                 }
-                this.modelReportDate[key] += parseFloat(item.amountReceived)
+
+                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address == item.address.toLowerCase())
+                if(foundIndex == -1){
+                    this.modelReportDate[this.lastDate].push({
+                        address : item.address.toLowerCase(),
+                        amount : item.amountReceived
+                    })
+                }else{
+                    var foundReport = this.modelReportDate[this.lastDate][foundIndex]
+                    const totalAmount = parseFloat(foundReport.amount) + parseFloat(item.amountReceived)
+                    this.modelReportDate[this.lastDate][foundIndex].amount = totalAmount 
+                }
                 this.lastBlock = parseInt(item.blockNumber)
                 this.savedTx[item.txid] = true
             });
-        this.lastBlock += 1
         return new Promise((res, rej) =>
             reader.on('end', () => res()).on('error', err => rej(err))
         )
@@ -124,8 +140,8 @@ class ScholarAcsModel {
         }
     }
 
-    loadAcsReceivedDate(scholar, date){
-        return this.modelReportDate[date + "," + scholar.toLowerCase()]
+    loadAcsReceivedDate(date){
+        return this.modelReportDate[date]
     }
     loadHistoryUserReceivedAcs(scholar){
         return this.modelReportScholar[scholar.toLowerCase()]
@@ -149,7 +165,6 @@ class ScholarAcsModel {
                     toBlock : end,
                     topics: [TOPIC],
                 })
-
                 start = end
                 end = start + 2000
                 result.push(...pastLogs)

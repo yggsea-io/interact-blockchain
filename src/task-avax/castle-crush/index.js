@@ -5,18 +5,17 @@ const scholarAcsModel = new ScholarAcsModel();
 const app = express();
 app.use(express.json());
 
-app.get('/getAcsReceived', async (req, res) => {
-    let scholarAdrr = req.query.scholarAdrress
+app.get('/castle-crush/acs-received', async (req, res) => {
     let date = req.query.date
-    if(!scholarAdrr || !date){
+    if(!date){
         return res.json({ message: "params is valid" })
     }
-    let amount = scholarAcsModel.loadAcsReceivedDate(scholarAdrr, date)
-    if(!amount) amount = 0
-    return res.json({ amount : amount});
+    let result = scholarAcsModel.loadAcsReceivedDate(date)
+    if(!result) result = []
+    return res.json(result);
 });
-app.get('/history', async (req, res) => {
-    let scholarAdrr = req.query.scholarAdrress
+app.get('/castle-crush/history', async (req, res) => {
+    let scholarAdrr = req.query.scholar
     if(!scholarAdrr){
         return res.json({ message: "params is valid" })
     }
