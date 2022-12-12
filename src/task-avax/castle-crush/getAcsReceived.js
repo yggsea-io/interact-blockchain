@@ -65,15 +65,14 @@ class ScholarAcsModel {
                 if(!this.modelReportDate[this.lastDate]){
                     this.modelReportDate[this.lastDate] = []
                 }
-                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address == scholar.toLowerCase())
+                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address.toLowerCase() == scholar.toLowerCase())
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
                         address : scholar.toLowerCase(),
                         amount : parseFloat(amountReceived)
                     })
                 }else{
-                    var foundReport = this.modelReportDate[this.lastDate][foundIndex]
-                    this.modelReportDate[this.lastDate][foundIndex].amount = parseFloat(foundReport.amount) + parseFloat(amountReceived)
+                    this.modelReportDate[this.lastDate][foundIndex].amount += parseFloat(amountReceived)
                 }
                  // report flow scholar
                 if(!this.modelReportScholar[scholar.toLowerCase()]){
@@ -107,16 +106,14 @@ class ScholarAcsModel {
                     this.modelReportDate[this.lastDate] = []
                 }
 
-                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address == item.address.toLowerCase())
+                var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address.toLowerCase() == item.address.toLowerCase())
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
                         address : item.address.toLowerCase(),
                         amount : parseFloat(item.amountReceived)
                     })
                 }else{
-                    var foundReport = this.modelReportDate[this.lastDate][foundIndex]
-                    const totalAmount = parseFloat(foundReport.amount) + parseFloat(item.amountReceived)
-                    this.modelReportDate[this.lastDate][foundIndex].amount = totalAmount 
+                    this.modelReportDate[this.lastDate][foundIndex].amount += parseFloat(item.amountReceived) 
                 }
                 this.lastBlock = parseInt(item.blockNumber)
                 this.savedTx[item.txid] = true
@@ -141,8 +138,8 @@ class ScholarAcsModel {
     }
 
     loadAcsReceived(fromDate, toDate){
-        const from = new Date(fromDate);
-        const to = new Date(toDate);
+        let from = new Date(fromDate);
+        let to = new Date(toDate);
         if(to.getTime() < from.getTime()){
             let error = {
                 error : "The end date must not be greater than the start date"
@@ -150,18 +147,31 @@ class ScholarAcsModel {
             return error
         }
         let result = []
-        result.push(...this.modelReportDate[fromDate])
-        let currentDate = fromDate
-        while(currentDate != toDate){
-            let nextDate = new Date(currentDate)
-            nextDate.setDate(nextDate.getDate() + 1)
-            nextDate = nextDate.toISOString().slice(0, 10)
-            currentDate = nextDate
-            result.push(...this.modelReportDate[currentDate])
+        while(from.getTime() <= to.getTime()){
+            const data = this.modelReportDate[from.toISOString().slice(0, 10)]
+            if(!data){
+                from.setDate(from.getDate() + 1)
+                continue
+            } 
+            for(let item of data){
+                var foundIndex = result.findIndex(e => e.address.toLowerCase() == item.address.toLowerCase())
+                if(foundIndex == -1){
+                    result.push({
+                        address : item.address,
+                        amount : item.amount
+                    })
+                }else{
+                    if(item.address == "0x620d995bf5d77a3c837a508cb3ba46da5fdf2146"){
+                        console.log(result[foundIndex].amount, parseFloat(item.amount), result[foundIndex].amount + parseFloat(item.amount))
+                    }
+                    result[foundIndex].amount += parseFloat(item.amount)
+                }
+            }
+            from.setDate(from.getDate() + 1)
         }
-        result.push(...this.modelReportDate[toDate])
         return result
     }
+
     loadHistoryUserReceivedAcs(scholar){
         return this.modelReportScholar[scholar.toLowerCase()]
     } 
