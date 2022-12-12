@@ -39,7 +39,7 @@ class ScholarAcsModel {
         }, 30000)
     }
     async saveDataPastLog(fromBlock, toBlock){
-        const data = await this.getLogs(fromBlock, toBlock) 
+        const data = await this.getLogs(fromBlock, toBlock)
         for(let i = 0; i < data.length ; i++){
             const address = web3.eth.abi.decodeParameters(['address'], data[i].topics[1])[0]
             if(address != "0x3D094Bb9Db4b8f3961bF06b0DA01F0471d26a055") continue
@@ -51,7 +51,7 @@ class ScholarAcsModel {
                 const time = await this.getDateTime(blockNumber)
                 const dataResult = {
                     address : scholar,
-                    amountReceived : amountReceived,
+                    amountReceived : parseFloat(amountReceived),
                     blockNumber : blockNumber,
                     time : time.toString(),
                     logIndex : data[i + 1].logIndex,
@@ -69,7 +69,7 @@ class ScholarAcsModel {
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
                         address : scholar.toLowerCase(),
-                        amount : amountReceived
+                        amount : parseFloat(amountReceived)
                     })
                 }else{
                     var foundReport = this.modelReportDate[this.lastDate][foundIndex]
@@ -93,18 +93,14 @@ class ScholarAcsModel {
                 if(!this.modelReportScholar[item.address.toLowerCase()]){
                     this.modelReportScholar[item.address.toLowerCase()] = []
                 }
-                if(!item.amountReceived){
-                    console.log("fail",item)
-                }
                 this.modelReportScholar[item.address.toLowerCase()].push({
                     address : item.address,
-                    amountReceived : item.amountReceived,
+                    amountReceived : parseFloat(item.amountReceived),
                     blockNumber : item.blockNumber,
                     time : item.time,
                     logIndex : item.logIndex,
                     txid : item.txid
                 })
-                //console.log(this.modelReportScholar[item.address.toLowerCase()])
                 this.updateLastDate(item.time)
 
                 if(!this.modelReportDate[this.lastDate]){
@@ -115,7 +111,7 @@ class ScholarAcsModel {
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
                         address : item.address.toLowerCase(),
-                        amount : item.amountReceived
+                        amount : parseFloat(item.amountReceived)
                     })
                 }else{
                     var foundReport = this.modelReportDate[this.lastDate][foundIndex]
@@ -142,6 +138,29 @@ class ScholarAcsModel {
 
     loadAcsReceivedDate(date){
         return this.modelReportDate[date]
+    }
+
+    loadAcsReceived(fromDate, toDate){
+        const from = new Date(fromDate);
+        const to = new Date(toDate);
+        if(to.getTime() < from.getTime()){
+            let error = {
+                error : "The end date must not be greater than the start date"
+            }
+            return error
+        }
+        let result = []
+        result.push(...this.modelReportDate[fromDate])
+        let currentDate = fromDate
+        while(currentDate != toDate){
+            let nextDate = new Date(currentDate)
+            nextDate.setDate(nextDate.getDate() + 1)
+            nextDate = nextDate.toISOString().slice(0, 10)
+            currentDate = nextDate
+            result.push(...this.modelReportDate[currentDate])
+        }
+        result.push(...this.modelReportDate[toDate])
+        return result
     }
     loadHistoryUserReceivedAcs(scholar){
         return this.modelReportScholar[scholar.toLowerCase()]

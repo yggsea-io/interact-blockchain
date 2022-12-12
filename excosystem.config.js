@@ -1,7 +1,7 @@
 module.exports = {
     apps: [
       {
-        name: "test",
+        name: "acs-received",
         script: "src/task-avax/castle-crush/index.js",
         instances: 1,
         autorestart: true,
