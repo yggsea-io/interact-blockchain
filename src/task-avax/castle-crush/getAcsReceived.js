@@ -38,8 +38,7 @@ class ScholarAcsModel {
             } catch (err) { console.log(`Crawl ERROR`, err); }
         }, 30000)
     }
-    async saveDataPastLog(fromBlock, toBlock){
-        const data = await this.getLogs(fromBlock, toBlock)
+    async saveData(data){
         for(let i = 0; i < data.length ; i++){
             const address = web3.eth.abi.decodeParameters(['address'], data[i].topics[1])[0]
             if(address != "0x3D094Bb9Db4b8f3961bF06b0DA01F0471d26a055") continue
@@ -83,7 +82,6 @@ class ScholarAcsModel {
                 this.scholarWriter.write(`${scholar},${amountReceived},${blockNumber},${time},${data[i + 1].logIndex},${data[i + 1].transactionHash}\n`);
             }
         }
-        this.lastBlock = toBlock
     }
 
     revertData(){
@@ -176,15 +174,14 @@ class ScholarAcsModel {
         return this.modelReportScholar[scholar.toLowerCase()]
     } 
     
-    async getLogs(fromBlock, toBlock) {
-        const result = [];
+    async saveDataPastLog(fromBlock, toBlock) {
         if(toBlock - fromBlock <= 2000){
             const pastLogs = await web3.eth.getPastLogs({
                 fromBlock : fromBlock,
                 toBlock : toBlock,
                 topics: [TOPIC],
             })
-            result.push(...pastLogs)
+            await this.saveData(pastLogs)
         }else{
             let start = fromBlock
             let end = start + 2000
@@ -196,16 +193,16 @@ class ScholarAcsModel {
                 })
                 start = end
                 end = start + 2000
-                result.push(...pastLogs)
+                await this.saveData(pastLogs)
             }
             const pastLogs = await web3.eth.getPastLogs({
                 fromBlock : start,
                 toBlock : toBlock,
                 topics: [TOPIC],
             })
-            result.push(...pastLogs)
+            await this.saveData(pastLogs)
         }
-        return result;
+        this.lastBlock = toBlock
     }
     async getDateTime(block) {
         let time = await web3.eth.getBlock(block);
