@@ -6,20 +6,18 @@ const app = express();
 app.use(express.json());
 
 app.get('/castle-crush/acs-received', async (req, res) => {
-    let date = req.query.date
+
     let fromDate = req.query.fromDate
     let toDate = req.query.toDate
-    if(date){
-        let result = scholarAcsModel.loadAcsReceivedDate(date)
-        if(!result) result = []
-        return res.json(result);
-    }else if(fromDate && toDate){
-        let result = scholarAcsModel.loadAcsReceived(fromDate, toDate)
-        if(!result) result = []
-        return res.json(result);
+    let result
+    if(fromDate && toDate){
+        result = scholarAcsModel.loadAcsReceived(fromDate, toDate)
     }else{
-        return res.json({ error: "params is valid" })
+        let currentDate = new Date()
+        result = scholarAcsModel.loadAcsReceived(scholarAcsModel.startDate, currentDate.toISOString().slice(0, 10))
     }
+    if(!result) result = []
+    return res.json(result);
 });
 
 app.get('/castle-crush/history', async (req, res) => {

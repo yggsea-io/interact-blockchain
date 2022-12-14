@@ -5,6 +5,7 @@ const  Web3 = require("web3");
 const web3 = new Web3("https://api.avax.network/ext/bc/C/rpc");
 const TOPIC = '0x288d9a5737d39d766acb848da277a970d9ee31f9115e17490b9393e282fa7b4d';
 const REPORT_SCHOLAR_FILE = path.join(__dirname, './data/reportScholar.csv');
+const REWARD_ADDRESS = "0x3D094Bb9Db4b8f3961bF06b0DA01F0471d26a055"
 
 class ScholarAcsModel {
     constructor() {
@@ -12,7 +13,8 @@ class ScholarAcsModel {
         this.modelReportScholar = {};
         this.lastBlock = 19915650;
         this.scholarWriter = fs.createWriteStream(REPORT_SCHOLAR_FILE, { flags: "a" });
-        this.savedTx = {}
+        this.savedTx = {};
+        this.startDate =  undefined
     }
 
     getTimeStampEndDate(){
@@ -29,6 +31,9 @@ class ScholarAcsModel {
 
     async run(){
         this.lastDate = await this.getDate(this.lastBlock);
+        if(!this.startDate){
+            this.startDate = await this.getDate(this.lastBlock)
+        }
         const currentBlock = await web3.eth.getBlockNumber();
         await this.saveDataPastLog(this.lastBlock, currentBlock)
         this.interval = setInterval(async () => {
@@ -41,7 +46,7 @@ class ScholarAcsModel {
     async saveData(data){
         for(let i = 0; i < data.length ; i++){
             const address = web3.eth.abi.decodeParameters(['address'], data[i].topics[1])[0]
-            if(address != "0x3D094Bb9Db4b8f3961bF06b0DA01F0471d26a055") continue
+            if(address != REWARD_ADDRESS) continue
             if( data[i].logIndex + 2 == data[i + 1].logIndex && data[i].topics[3] == data[i + 1].topics[3]){
                 if(this.savedTx[data[i + 1].transactionHash]) continue
                 const scholar = web3.eth.abi.decodeParameters(['address'], data[i + 1].topics[1])[0]
@@ -67,6 +72,7 @@ class ScholarAcsModel {
                 var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address.toLowerCase() == scholar.toLowerCase())
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
+                        fromAddress : REWARD_ADDRESS,
                         address : scholar.toLowerCase(),
                         amount : parseFloat(amountReceived)
                     })
@@ -84,7 +90,8 @@ class ScholarAcsModel {
         }
     }
 
-    revertData(){
+    async revertData(){
+        this.startDate = await this.getDate(this.lastBlock)
         const reader = fs.createReadStream(REPORT_SCHOLAR_FILE).pipe(csv())
             .on('data', (item) => {
                 if(!this.modelReportScholar[item.address.toLowerCase()]){
@@ -107,6 +114,7 @@ class ScholarAcsModel {
                 var foundIndex = this.modelReportDate[this.lastDate].findIndex(e => e.address.toLowerCase() == item.address.toLowerCase())
                 if(foundIndex == -1){
                     this.modelReportDate[this.lastDate].push({
+                        fromAddress : item.fromAddress ? item.fromAddress : REWARD_ADDRESS,
                         address : item.address.toLowerCase(),
                         amount : parseFloat(item.amountReceived)
                     })
@@ -131,10 +139,6 @@ class ScholarAcsModel {
         }
     }
 
-    loadAcsReceivedDate(date){
-        return this.modelReportDate[date]
-    }
-
     loadAcsReceived(fromDate, toDate){
         let from = new Date(fromDate);
         let to = new Date(toDate);
@@ -155,13 +159,11 @@ class ScholarAcsModel {
                 var foundIndex = result.findIndex(e => e.address.toLowerCase() == item.address.toLowerCase())
                 if(foundIndex == -1){
                     result.push({
+                        fromAddress : item.fromAddress ? item.fromAddress : REWARD_ADDRESS,
                         address : item.address,
                         amount : item.amount
                     })
                 }else{
-                    if(item.address == "0x620d995bf5d77a3c837a508cb3ba46da5fdf2146"){
-                        console.log(result[foundIndex].amount, parseFloat(item.amount), result[foundIndex].amount + parseFloat(item.amount))
-                    }
                     result[foundIndex].amount += parseFloat(item.amount)
                 }
             }
@@ -173,7 +175,6 @@ class ScholarAcsModel {
     loadHistoryUserReceivedAcs(scholar){
         return this.modelReportScholar[scholar.toLowerCase()]
     } 
-    
     async saveDataPastLog(fromBlock, toBlock) {
         if(toBlock - fromBlock <= 2000){
             const pastLogs = await web3.eth.getPastLogs({
